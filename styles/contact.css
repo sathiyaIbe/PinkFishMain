@@ -1,0 +1,243 @@
+.contact_input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #F33288;
+    @apply  p-1 border-b-2 text-[#F33288]
+
+}
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+
+contact_input:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.contact_label{
+    @apply text-[12px] leading-[20px] font-[400] font-[Sofia] text-[#F33288]
+}
+
+.contact_submit{
+    @apply bg-[#F33288] rounded w-full text-center md:w-fit    p-2 flex justify-center text-[16px] leading-[24px] font-[Sofia] text-white font-[500] ;
+
+}
+
+.contact_header{
+    @apply text-[24px] md:text-[40px] leading-[24px] md:leading-[48px] font-[500] font-[Integral] text-[#F33288]
+
+}
+.contact_text{
+    @apply text-[10px] md:text-[16px] leading-[14px] md:leading-[24px] font-[400] font-[Sofia] text-[#F33288] w-[85%]
+}
+
+.contact_sub_header{
+    @apply text-[16px] md:text-[24px] leading-[18px] md:leading-[28px] font-[500] font-[Integral] text-[#F33288]
+
+}
+
+.contact_main_container{
+background-color: #F33288;
+}
+
+.question_text{
+    @apply text-[16px] md:text-[18px] leading-[24px] md:leading-[27px] font-[700] font-[Sofia] text-white uppercase
+
+}
+
+.answer_text{
+    @apply text-[18px] leading-[27px] font-[700] font-[Sofia] text-white
+
+}
+.top_btn{
+    @apply text-[12px] md:text-[18px]  leading-[13.5px] md:leading-[24px] font-[500] font-[Integral] text-white uppercase
+
+}
+.faq_main_container{
+    background: url('/hero_blackGradient.png')  bottom no-repeat, url("/faq_bg.png")  top no-repeat  ;
+    min-width: 100vw;
+    background-size: cover;
+   
+}
+
+.event_container{
+    background: url("/news_bg.png")   ;
+    background-repeat: no-repeat;
+  
+  
+}
+
+.event_main_container{
+    background-color: rgb(6, 6, 6);
+}
+
+
+.event_main_header{
+    @apply text-[64px] leading-[84px] font-[500] font-[Integral] text-white text-center uppercase
+
+}
+
+.date_event_main_text{
+    /* @apply font-[Sofia] text-[20px] font-[400] leading-[24px] uppercase text-white */
+    @apply text-white text-[10px] md:text-[20px] leading-[24px] font-[400] font-[Sofia] uppercase tracking-[10px];
+
+}
+
+.event_section_header{
+    @apply font-[Integral] text-[24px] md:text-[40px] font-[400] leading-[24px] uppercase text-white tracking-[8px]
+
+}
+
+.event_section_text{
+    @apply font-[Sofia] text-[10px] md:text-[20px] font-[400] leading-[14px] md:leading-[24px]  text-white w-[80%]
+
+}
+
+.buy_ticket_event_main{
+    @apply font-[Sofia] text-[12px] md:text-[16px] font-[700] leading-[20px] text-center  text-black bg-[#B2B2B2] text-center p-1 rounded ;
+    text-align: center !important;
+}
+
+.soldout_ticket_event_main{
+    @apply font-[Sofia]  text-[12px] md:text-[16px] font-[400] leading-[20px]  text-black bg-[#D1CFCF] text-center p-1 rounded;
+
+}
+
+.event_bottom_container{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 1%, rgba(244,0,134,1) 1%, rgba(246,6,129,1) 2%, rgba(246,137,175,1) 98%, rgba(239,128,175,1) 99%, rgba(0,0,0,1) 99%);
+    margin-bottom: -10px;
+}
+
+.event_bottom_header{
+    @apply font-[Sofia] text-[14px] md:text-[24px] font-[400] leading-[18px] md:leading-[25px] uppercase text-white tracking-[1px]
+
+}
+
+.event_bottom_main_hearder{
+    @apply font-[Integral] text-[48px] md:text-[80px] font-[400] leading-[52px] md:leading-[94px] uppercase text-white w-[90%] md:w-[75%]
+
+}
+
+.black_btn{
+    @apply font-[Integral] rounded text-[12px] md:text-[14px] font-[400] leading-[13px] md:leading-[24px] uppercase text-white bg-black p-2 text-center  w-fit
+
+}
+
+.details_container{
+    border: solid 1px #F33288;
+   @apply text-white w-[100%] md:w-[80%];
+}
+
+.details_header{
+    @apply font-[Integral] text-[32px] font-[400] leading-[42px] uppercase text-white 
+
+}
+
+.details_sub_header{
+    @apply font-[Sofia] text-[16px] font-[800] leading-[24px] uppercase text-white 
+ 
+}
+
+.details_text{
+    @apply font-[Sofia] text-[14px] font-[400] leading-[24px] uppercase text-white 
+
+}
+
+.more_shows_header{
+    @apply font-[Integral] text-[24px] md:text-[64px] font-[500] leading-[24px] md:leading-[82px] uppercase text-white  text-center mt-11 mb-6
+
+}
+
+.first_container{
+ background: linear-gradient(180deg, transparent 20%, rgb(105, 96, 96) 40%, rgba(0,0,0,1) 40%, ); 
+}
+
+.tnc_header{
+    @apply text-[24px] md:text-[64px] font-[500] leading-[24px] md:leading-[74px] text-center  font-[Integral] uppercase mb-11;
+}
+
+.text_tnc_container{
+    @apply w-[75%] mt-11 flex flex-col gap-11 self-center ;
+}
+
+.tnc_text_header{
+    @apply text-[16px] md:text-[18px] font-[600] leading-[18px] md:leading-[20px]  font-[Sofia] ;
+
+}
+
+.tnc_text{
+    @apply text-[14px] md:text-[16px] font-[200] leading-[16px] md:leading-[20px]  font-[Sofia] ;
+
+}
+
+.bg_about_us{
+    background-image: url("/aboutus_bg_1.png");
+
+}
+
+.bg_about_us_2{
+    background-image: url("/aboutus_bg_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about_us_header{
+    @apply text-[14px] md:text-[16px] font-[200] leading-[16px] md:leading-[20px] font-[400]  font-[Sofia]  text-center ;
+
+}
+
+.about_us_main_header{
+    @apply text-[14px] md:text-[128px] font-[200] leading-[16px] md:leading-[164px] font-[700]  font-[Integral] text-center ;
+
+}
+
+.about_us_text{
+    @apply text-[12px] md:text-[16px] font-[400] leading-[14px] md:leading-[18px] font-[400]  font-[Sofia]  text-center ;
+
+}
+
+.about_us_btn{
+    @apply bg-white rounded text-[#FF0086] font-[Sofia] md:text-[16px] text-[12px] font-[400] leading-[14px] md:leading-[18px] p-2 pl-4 pr-4
+}
+
+.about_us_sub_header{
+    @apply text-[48px] md:text-[64px] font-[700] leading-[50px] md:leading-[72px]  font-[Integral]  text-center ;
+
+}
+
+.party_banner_header{
+    @apply text-[24px] md:text-[48px] font-[500] leading-[32px] md:leading-[54px]   font-[Integral]   ;
+
+}
+
+.pat_banner_text{
+    @apply text-[16px] md:text-[24px] font-[500] leading-[24px] md:leading-[32px]   font-[manrope]  ;
+
+}
+
+.about_us_botton_container{
+    background-image: url('/bottom_bg_about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box_text{
+    @apply text-[12px] md:text-[16px] font-[400] leading-[12px] md:leading-[16px]   font-[Sofia]  ;
+
+}
+
+.news_heading{
+    @apply text-[24px] md:text-[36px] font-[400] leading-[24px] md:leading-[36px]   font-[Sofia]  ;
+ 
+}
+
+.news_text{
+    @apply text-[12px] md:text-[16px] font-[400] leading-[12px] md:leading-[21.5px]   font-[Sofia]  ;
+
+}
