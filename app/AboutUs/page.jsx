@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client'
 import '../../styles/contact.css';
 import { Navbar } from '../../components';
