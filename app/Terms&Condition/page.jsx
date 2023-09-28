@@ -1,38 +1,5 @@
 import { Footer, Navbar } from '../../components';
-import '../../styles/contact.css';
-
-// 
-// 
-
-// 
-// 
-
-// 
-// 
-// 
-// 
-
-// 
-// 
-
-// 
-// 
-
-// 
-// 
-
-// 8. 
-// 
-
-// 9. 
-// 
-
-// 
-
-// 
-
-// 
- 
+import '../../styles/contact.css';  
 const Terms_Condition = () => {
   return (
     <div className='text-white  min-h-screen min-w-screen bg-[#FF0086]  overflow-hidden   flex flex-col'>
