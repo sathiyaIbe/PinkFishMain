@@ -13,6 +13,7 @@ const Contact = () => (
                variants={textVariant2}
                initial="hidden"
                whileInView="show"
+               viewport={{ once: true }}
               
               className='about_us_main_header'>join the party</motion.h1>
           </div>

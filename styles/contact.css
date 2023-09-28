@@ -23,7 +23,7 @@ contact_input:focus{
 }
 
 .contact_submit{
-    @apply bg-[#F33288] rounded w-full text-center md:w-fit    p-2 flex justify-center text-[16px] leading-[24px] font-[Sofia] text-white font-[500] ;
+    @apply bg-[#F33288] rounded  text-center w-fit    p-2 flex justify-center text-[16px] leading-[24px] font-[Sofia] text-white font-[500] ;
 
 }
 
@@ -193,7 +193,7 @@ background-color: #F33288;
 }
 
 .about_us_main_header{
-    @apply text-[14px] md:text-[128px] font-[200] leading-[16px] md:leading-[164px] font-[700]  font-[Integral] text-center ;
+    @apply text-[36px] md:text-[128px] font-[200] leading-[40px] md:leading-[164px] font-[700]  font-[Integral] text-center ;
 
 }
 
@@ -233,7 +233,7 @@ background-color: #F33288;
 }
 
 .news_heading{
-    @apply text-[24px] md:text-[36px] font-[400] leading-[24px] md:leading-[36px]   font-[Sofia]  ;
+    @apply text-[36px] md:text-[36px] font-[400] leading-[36px] md:leading-[36px]   font-[Sofia]  ;
  
 }
 
@@ -241,3 +241,4 @@ background-color: #F33288;
     @apply text-[12px] md:text-[16px] font-[400] leading-[12px] md:leading-[21.5px]   font-[Sofia]  ;
 
 }
+

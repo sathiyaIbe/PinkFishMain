@@ -2,7 +2,7 @@
 
 const PartyBanner = () => (
   <section className=" flex justify-center mt-11  ">
-    <div className="md:min-w-[80vw]">
+    <div className="min-w-[90vw] md:min-w-[80vw]">
     <div className="border-[1px] border-white flex flex-col ">
       <div className="self-center flex flex-col gap-2 mb-11 mt-11 ">
    <h1 className="party_banner_header ">JOIN THE PARTY</h1>

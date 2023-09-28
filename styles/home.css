@@ -302,3 +302,35 @@ background-size: cover;
     left: 100%
   }
 }
+
+
+.svg_hero{
+    @apply absolute top-0 ;
+}
+.svg_1{
+    @apply left-[10%] top-[40%]
+}
+
+.svg_2{
+    @apply left-[70%] top-[20%]
+}
+
+.svg_7{
+    @apply left-[75%] top-[25%]
+}
+
+.svg_3{
+    @apply left-[80%] top-[65%]
+}
+
+.svg_6{
+    @apply left-[10%] top-[80%]
+}
+
+.svg_4{
+    @apply left-[18%] top-[87%]
+}
+
+.svg_5{
+    @apply left-[55%] top-[78%]
+}
