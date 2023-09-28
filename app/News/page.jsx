@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client'
 import '../../styles/contact.css';
 import { scrollTop } from '../../components/jsfile';
