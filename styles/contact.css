@@ -242,3 +242,15 @@ background-color: #F33288;
 
 }
 
+.bg_home_footer{
+    background-color: black;
+}
+
+@media screen and (max-width:768px) {
+    .bg_home_footer{
+    background-image: url('/bottom_bg_about_mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+

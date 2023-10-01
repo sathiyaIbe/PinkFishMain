@@ -10,6 +10,18 @@
     margin-top: 0px;
 }
 
+.hero_container_1 {
+    /* background-image: url('/HEROIMG.png'); */
+    background:url("/HERO_2.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position: center; */
+    min-height: 100vh !important;
+    
+    margin-top: 0px;
+}
+
 @media screen and (max-width:768px) {
 .hero_container{
     /* background-image: url('/HEROIMG_Mob.png');
@@ -21,7 +33,7 @@
 }
 
 .text_change{
-    @apply  text-white text-[14px]  md:text-[16px] leading-[16px] md:leading-[21px] font-[400]  font-[Sofia] ;
+    @apply  text-white text-[12px]  md:text-[16px] leading-[16px] md:leading-[21px] font-[400]  font-[Sofia] ;
 
 }
 
@@ -310,7 +322,7 @@ background-size: cover;
     @apply absolute top-0 ;
 }
 .svg_1{
-    @apply left-[5%] top-[45%] w-[15%]  md:left-[10%] md:top-[30%]
+    @apply left-[5%] top-[45%] w-[15%]  md:top-[40%] md:left-[5%] lg:left-[10%] lg:top-[30%]
 }
 
 .svg_2{
@@ -336,3 +348,8 @@ background-size: cover;
 .svg_5{
     @apply  left-[65%] top-[65%] w-[35%] md:w-[20%] md:left-[55%] md:top-[65%] 
 }
+
+.wave_svg{
+    @apply md:left-[75%] md:top-[70%]
+}
+

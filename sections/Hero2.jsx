@@ -7,7 +7,7 @@ import gsap from 'gsap';
 import { Footer, Navbar } from '../components';
 import { useRef, useState } from 'react';
 import PartyBanner from './PartyBanner';
-const Hero = () => {
+const Hero2 = () => {
   let firstRef=useRef(null)
   let secondRef=useRef(null)
   let thirdRef=useRef(null)
@@ -52,7 +52,7 @@ const Hero = () => {
   }
   return(
 
-  <section className="hero_container min-h-screen flex flex-col justify-between overflow-hidden"  >
+  <section className="hero_container_1  min-h-screen flex flex-col justify-between overflow-hidden"  >
    
     <Navbar selectItem='home' />
     <div>
@@ -64,7 +64,7 @@ const Hero = () => {
           <div className=''>
           <div className='flex justify-center '>
           
-        <img className=' w-[90%]' src='/main_logo.png'/>
+        <img className=' w-[90%]' src='/main_logo_2.png'/>
        
         </div>
         </div>
@@ -83,7 +83,7 @@ const Hero = () => {
         <img ref={el=>fourRef=el} className='svg_hero svg_4' src="/sparkle_left_home.svg" />
         </div>
         <div className='' onMouseOut={()=>backTo(fiveRef)}  onMouseMove={(e)=>mouseMoveFunc(e,fiveRef)}>
-        <img ref={el=>fiveRef=el} className='svg_hero svg_5 ' src="/wave_home.svg" />
+        <img ref={el=>fiveRef=el} className='svg_hero svg_5 wave_svg' src="/wave_home.svg" />
         </div>
         <div className='' onMouseOut={()=>backTo(sixRef)}  onMouseMove={(e)=>mouseMoveFunc(e,sixRef)}>
         <img ref={el=>sixRef=el} className='svg_hero svg_6' src="/star_left_home.svg" />
@@ -110,16 +110,19 @@ const Hero = () => {
                 </div>
                 <Footer />
               </div>     */}
-
                 <div className='flex items-center text-white '>
-<Link href='/' className='w-1/2 bg-[#F33288] text_change text-center p-3 cursor-pointer'>
+                   
+<Link href='/' className='w-1/2  bg-white bg-opacity-25  text_change text-center p-3 cursor-pointer'>
 Pinkfish Music & Art Festival 
 </Link>
-<Link href='PinkFishLive' className='w-1/2  text-center text_change bg-white bg-opacity-25 p-3 cursor-pointer'>
+
+
+<Link href="PinkFishLive" className='w-1/2  text-center text_change bg-[#F33288] p-3 cursor-pointer'>
 Pinkfish Live 
 </Link>
+
     </div>
   </section>
 );
   }
-export default Hero;
+export default Hero2;

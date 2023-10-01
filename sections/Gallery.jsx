@@ -109,8 +109,8 @@ return(
 
 <div id="container" className="flex md:hidden overflow-x-scroll">
 
-  <img src='/left_arrow.svg' className="absolute bottom-[-45%] left-[85%]" onClick={()=>{sideScroll('right',25,100,414)}}/>
-  <img src='/right_arrow.svg' className="absolute bottom-[-45%] left-[5%]" onClick={()=>{sideScroll('left',25,100, 414)}} />
+  {/* <img src='/left_arrow.svg' className="absolute bottom-[-45%] left-[85%]" onClick={()=>{sideScroll('right',25,100,414)}}/>
+  <img src='/right_arrow.svg' className="absolute bottom-[-45%] left-[5%]" onClick={()=>{sideScroll('left',25,100, 414)}} /> */}
   <img className="w-ful object-none" src="/Gallery/pinkfish/gallery_lg_1.png" />
           <img className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_2.png" /> 
           <img className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_3.png" />
