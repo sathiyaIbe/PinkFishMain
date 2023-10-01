@@ -34,7 +34,7 @@ const AboutUs = () => {
                initial="hidden"
                whileInView="show"
                viewport={{ once: true }}
-              src='/PinkfishImg_1.png' className='w-84 self-center mt-6' />
+              src='/PinkfishImg_1.png' className='md:w-84 w-64 self-center mt-6' />
                 <div
                
                 className='w-[70%] self-center flex flex-col gap-4 mt-11 bg-[transparent]'>
@@ -60,16 +60,18 @@ festival. Headliners included DJ Snake, Yellow Claw, Meduza & Dash Berlin, and w
 regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p>
 </div>
             </div>
+           
+            </div>
+            
+            </div>
             <motion.div
              variants={planetVariants('right')}
              initial="hidden"
             whileInView="show"
                viewport={{ once: true }}
-            className='self-center mt-11 mb-11'>
-              <button className='about_us_btn' type='button'>Visit Pinkfish Music & Art Festival website  &nbsp; &gt;</button>
+            className='self-center mt-11 mb-11 flex flex-col '>
+              <button className='about_us_btn w-full md:w-fit self-center ' type='button'>Visit Pinkfish Music & Art Festival website  &nbsp; &gt;</button>
             </motion.div>
-            </div>
-            </div>
          </div>
          <div className='bg_about_us_2'>
          <div className='flex flex-col border-b-[1px] border-white   mt-11'>
@@ -78,7 +80,7 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p
                initial="hidden"
               whileInView="show"
                viewport={{ once: true }}
-              src='/PinkfishImg_2.png' className='w-84 self-center mt-6' />
+              src='/PinkfishImg_2.png' className='md:w-84 w-64 self-center mt-6' />
                 <div className='w-[70%] self-center flex flex-col gap-4 mt-11 bg-[transparent]'>
                 <motion.p
                   variants={textVariant2}
@@ -105,13 +107,13 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p
             initial="hidden"
            whileInView="show"
                viewport={{ once: true }}
-            className='self-center mt-11 mb-24'>
-              <button className='about_us_btn' type='button'>Visit Pinkfish Live website  &nbsp;    &gt;</button>
+            className=' mt-11 mb-24 flex flex-col'>
+              <button className='about_us_btn w-full md:w-fit self-center' type='button'>Visit Pinkfish Live website  &nbsp;    &gt;</button>
             </motion.div>
             </div>
             </div>
             <div className='bg-[#FF0086] flex flex-col'>
-            <div className='flex flex-col gap-6 mt-24 self-center'>
+            <div className='flex flex-col w-[80%] gap-6 mt-24 self-center'>
                 <motion.h1
                  variants={textVariant2}
                  initial="hidden"
@@ -124,21 +126,23 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p
                  whileInView="show"
                viewport={{ once: true }}
                 className='about_us_sub_header'>THE CURATORS</motion.h1>
-            </div>
-            <div className='flex flex-col self-center gap-6  md:flex-row mb-11 mt-11 '>
            
+            <div className='flex flex-column   gap-6   mb-11 mt-11 '>
+           <div className='self-center flex md:flex-row flex-col justify-center md:justify-between '>
               <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"
                 whileInView="show"
                viewport={{ once: true }}
-              src='/aboutus_logo_2.png' alt="logo" />
+              src='/aboutus_logo_2.png' className='w-[80%] md:w-[40%] self-center md:self-start' alt="logo" />
               <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"
                 whileInView="show"
                viewport={{ once: true }}
-              src='/aboutus_logo_1.png' alt="logo" className='h-[80px] w-[450px] mt-11' />
+              src='/aboutus_logo_1.png' alt="logo" className=' w-[80%] md:w-[40%] mt-11 self-center md:self-start' />
+               </div>
+              </div>
               </div>
               </div>
               <div className='about_us_botton_container flex flex-col  '>

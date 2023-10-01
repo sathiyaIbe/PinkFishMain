@@ -203,7 +203,7 @@ background-color: #F33288;
 }
 
 .about_us_btn{
-    @apply bg-white rounded text-[#FF0086] font-[Sofia] md:text-[16px] text-[12px] font-[400] leading-[14px] md:leading-[18px] p-2 pl-4 pr-4
+    @apply bg-white rounded text-[#FF0086] font-[Sofia] md:text-[16px] text-[12px] font-[400] leading-[14px] md:leading-[18px] pt-3 pb-3 pl-4 pr-4
 }
 
 .about_us_sub_header{
