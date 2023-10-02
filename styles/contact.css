@@ -28,11 +28,11 @@ contact_input:focus{
 }
 
 .contact_header{
-    @apply text-[24px] md:text-[40px] leading-[24px] md:leading-[48px] font-[500] font-[Integral] text-[#F33288]
+    @apply text-[36px] md:text-[40px] leading-[38px] md:leading-[48px] font-[500] font-[Integral] text-[#F33288]
 
 }
 .contact_text{
-    @apply text-[10px] md:text-[16px] leading-[14px] md:leading-[24px] font-[400] font-[Sofia] text-[#F33288] w-[85%]
+    @apply text-[14px] md:text-[16px] leading-[18px] md:leading-[24px] font-[400] font-[Sofia] text-[#F33288] w-[85%]
 }
 
 .contact_sub_header{

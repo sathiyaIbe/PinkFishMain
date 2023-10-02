@@ -19,52 +19,52 @@ const Contact = () => (
           </div>
     <div className="  flex flex-col md:flex-row bg-white pb-6 pt-11 ">
       <div className="md:basis-2/5  flex justify-center">
-        <div className='w-[50%]'>
+        <div className='md:w-[50%] w-[80%]'>
         <h1 className="contact_header">Contact Information</h1>
         
-        <div className="flex flex-col gap-6 mt-6 hidden md:block">
-<div className='flex gap-2 mb-4'>
-        <img className="w-6" src='/email_contact.svg' />
+        <div className="flex flex-col md:gap-6 gap-2 mt-6 ">
+<div className='flex gap-2 md:mb-4 items-center'>
+        <img className=" md:w-6 w-8 " src='/email_contact.svg' />
 <p className="contact_text ">info@pinkfishfestival.com</p>
 </div>
-<div className='flex gap-2 mb-4'>
-        <img className="w-6" src='/ig_contact.svg' />
+<div className='flex gap-2 md:mb-4 items-center'>
+        <img className="md:w-6 w-8" src='/ig_contact.svg' />
 <p className="contact_text underline">Instagram</p>
 </div>
-<div className='flex gap-2 mb-4'>
-        <img className="w-6" src='/yt_contact.svg' />
+<div className='flex gap-2 md:mb-4 items-center'>
+        <img className="md:w-6 w-8" src='/yt_contact.svg' />
 <p className="contact_text underline">Youtube</p>
 </div>
-<div className='flex gap-2 mb-4'>
-        <img className="w-6" src='/fb_contact.svg' />
+<div className='flex gap-2 md:mb-4 items-center'>
+        <img className="md:w-6 w-8" src='/fb_contact.svg' />
 <p className="contact_text underline">Facebook</p>
 </div>
-<div className='flex gap-2'>
-        <img className="w-6" src='/tt_contact.svg' />
+<div className='flex gap-2 md:mb-4 items-center'>
+        <img className="md:w-6 w-8" src='/tt_contact.svg' />
 <p className="contact_text underline">Tiktok </p>
 </div>
         </div>
         </div>
       </div>
 
-      <div className="md:basis-3/5 mt-11 md:mt-0 ">
-        <form className="flex flex-col w-[75%] gap-8">
-          <div className='flex gap-6'>
-          <div className="flex flex-col w-[50%] ">
+      <div className="  mt-11 md:mt-0 ">
+        <form className="flex flex-col self-center w-[80%] md:w-[100%]  gap-8">
+          <div className='flex md:flex-row flex-col gap-6'>
+          <div className="flex flex-col md:w-[50%] ">
             <label className="contact_label">First Name</label>
             <input className="contact_input" type="text" />
           </div>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col md:w-[50%]">
             <label className="contact_label">Last Name</label>
             <input className="contact_input" type="text" />
           </div>
           </div>
-          <div className='flex gap-6'>
-          <div className="flex flex-col w-[50%] ">
+          <div className='flex md:flex-row flex-col gap-6'>
+          <div className="flex flex-col md:w-[50%] ">
             <label className="contact_label">Email</label>
             <input className="contact_input" type="text" />
           </div>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col md:w-[50%]">
             <label className="contact_label">Phone Number</label>
             <input className="contact_input" type="text" />
           </div>
@@ -72,24 +72,32 @@ const Contact = () => (
           <div className="flex flex-col gap-2">
             <label className="contact_label">Select Subject?</label>
            
-<div class="flex">
-    <div class="flex items-center mr-4">
+<div class="flex md:flex-row flex-col gap-4">
+    <div class="flex items-center  ">
         <input id="inline-checked-radio" checked type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
-        <label for="inline-checked-radio" class="ml-2 text-[12px] font-[Sofia] font-[400] text-[#F33288] ">General Inquiry</label>
+        <label for="inline-checked-radio" class="ml-2  text-[12px] font-[Sofia] font-[400] text-[#F33288] ">General Inquiry</label>
     </div>
-    <div class="flex items-center mr-4">
+    <div class="flex items-center  ">
         <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
         <label for="inline-2-radio" class="ml-2 text-[12px] font-[Sofia] font-[400] text-[#F33288] ">Career</label>
     </div>
-    <div class="flex items-center mr-4">
+    <div class="flex items-center  ">
+        <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
+        <label for="inline-2-radio" class="ml-2 text-[12px] font-[Sofia] font-[400] text-[#F33288] ">Other</label>
+        <input className="contact_input mb-3 w-full  md:hidden " type="text" />
+
+    </div>
+    <input className="contact_input mb-3 w-full hidden md:block " type="text" />
+
+    {/* <div class="flex items-center  min-w-[100%]">
         <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf] "/>
         <div className='flex gap-1'>
         <label for="inline-2-radio" class="ml-2 text-[12px] font-[Sofia] font-[400] text-[#F33288] mt-4  ">Other: </label>
-        <div className='w-[380px]'>
-        <input className="contact_input mb-3   w-[100%]" type="text" />
-        </div>
-        </div>
+      
+        <input className="contact_input mb-3 min-w-[100%]  " type="text" />
+
     </div>
+    </div> */}
    
 </div>
 {/* <div className='flex'>
@@ -114,18 +122,7 @@ const Contact = () => (
           </div>
         </form>
       </div>
-      <div className='flex justify-center'>
-      <div className="flex flex-col  gap-1  items-center md:hidden">
-      <div className='flex gap-3'>
-<img src='/email_contact.svg' />
-<p className="contact_text mt-3">info@pinkfishfestival.com</p>
-</div>
-<h1 className="contact_sub_header mt-3 mb-3">Socials</h1>
-<p className="contact_text text-center">Instagram</p>
-<p className="contact_text text-center">Youtube</p>
-<p className="contact_text text-center">Facebook</p>
-</div>
-</div>
+      
     </div>
     <div className='pt-6'>
     <Footer />
