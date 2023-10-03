@@ -32,11 +32,11 @@ return (
           <h1 className={props.selectItem==="contact"?"select menu_text":'menu_text'}>Contact us</h1>
         </Link>
       </div>
-      <div className='mt-3 flex gap-4'  href="/Events-Individual">
-                <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img src='/fb_icon.svg'/></a>
-                <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank">  <img src='/yt_icon.svg'/> </a>
-                <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src='/ig_icon.svg'/></a>
-                <a href='https://www.tiktok.com/@pinkfishfestival' target="_blank">  <img src='/tt_icon.svg'/></a>
+      <div className='mt-3 flex gap-4 items-center'  href="/Events-Individual">
+                <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img  className='h-6' src='/fb_icon.svg'/></a>
+                <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank">  <img  className=' w-8 h-8' src='/yt_icon.svg'/> </a>
+                <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img className='h-6' src='/ig_icon.svg'/></a>
+                <a href='https://www.tiktok.com/@pinkfishfestival' target="_blank">  <img className='h-6' src='/tt_icon.svg'/></a>
               
 
       </div>

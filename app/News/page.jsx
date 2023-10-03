@@ -72,9 +72,9 @@ const Event = () => {
                 whileInView="show"
                viewport={{ once: true }}
                 className='contact_submit'>
-          <button className="flex " type="submit">Read more
-          
-          </button>
+         <a href='https://worldofbuzz.com/what-the-fish-heres-how-pinkfish-is-serving-msias-hottest-music-arts-festival-in-2023/' target='_blank'>
+          <button className="flex " type="submit">Read more </button>
+          </a>
           </motion.div>
                 </div>
                 <div className='flex gap-4 flex-col   '>
@@ -115,9 +115,9 @@ const Event = () => {
                 whileInView="show"
                viewport={{ once: true }}
                 className='contact_submit'>
-          <button className="flex " type="submit">Read more
-          
-          </button>
+                    <a href='https://liftedasia.com/article/tyga' target='_blank'>
+          <button className="flex " type="submit">Read more</button>
+          </a>
           </motion.div>
                 </div>
                 <div className='flex gap-4 flex-col   mb-3'>
@@ -142,7 +142,8 @@ const Event = () => {
                      initial="hidden"
                     whileInView="show"
                viewport={{ once: true }}
-                    src="/news_img3.png"/>
+               className='object-fill'
+                    src="/news_img3.png" />
                 </div>
                 <div className='flex flex-col gap-3'>
                   <motion.p
@@ -161,20 +162,14 @@ const Event = () => {
                 whileInView="show"
                viewport={{ once: true }}
                 className='contact_submit'>
+                  <a href='https://says.com/my/entertainment/tyga-is-coming-to-malaysia-in-august' target='_blank'>
           <button className="flex " type="submit">Read more
-          
+       
           </button>
+          </a>
           </motion.div>
                 </div>
-                <motion.div
-                variants={planetVariants('right')}
-                initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }}
-              className='border border-white   flex mb-6'>
-              <p className='text-center p-2 pl-[45%] box_text  underline'> Next &nbsp;    &gt;</p>
-              
-              </motion.div>
+               
             </div>
         </div>
         </div>
@@ -182,7 +177,7 @@ const Event = () => {
     
       <div className='bg-[#FF0086] flex flex-col  '>
                 <PartyBanner  />
-                <div className='mt-11 mb-0  flex self-center gap-6'  href="/Events-Individual">
+                <div className='mt-11 mb-0  flex self-center items-center gap-6'  href="/Events-Individual">
                 <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img src='/fb_icon.svg'/></a>
                 <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank">  <img src='/yt_icon.svg'/> </a>
                 <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src='/ig_icon.svg'/></a>

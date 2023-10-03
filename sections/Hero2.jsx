@@ -50,6 +50,43 @@ const Hero2 = () => {
       });
     };
   }
+
+
+  const throttled = (delay, fn) => {
+    let lastCall = 0;
+    return function (...args) {
+      const now = (new Date).getTime();
+      if (now - lastCall < delay) {
+        return;
+      }
+      lastCall = now;
+      return fn(...args);
+    }
+  }
+  
+  
+
+
+  
+  const mouseMoveHandler2 = (e) => {
+    const movableElements =   document.querySelectorAll('.movable');
+  
+    movableElements.forEach(
+      (movableElement) => {
+        const  shiftValue = movableElement.getAttribute('data-value');
+        const moveX = (e.clientX * (shiftValue)) / 250;
+        const moveY = (e.clientY * (shiftValue)) / 250;
+        
+        
+        gsap.to(movableElement, {x: moveX, y: moveY, duration: 1})
+  
+      }
+    );
+  };
+  
+  const tHandler = throttled(200, mouseMoveHandler2);
+
+
   return(
 
   <section className="hero_container_1  min-h-screen flex flex-col justify-between overflow-hidden"  >
@@ -64,32 +101,32 @@ const Hero2 = () => {
           <div className=''>
           <div className='flex justify-center '>
           
-        <img className=' w-[90%]' src='/main_logo_2.png'/>
+        <img data-value="-30"   onMouseMove={(e)=>tHandler(e)} className=' w-[90%] movable element' src='/main_logo_2.png'/>
        
         </div>
         </div>
         </div>
-        <div className='' onMouseOut={()=>backTo(firstRef)}  onMouseMove={(e)=>mouseMoveFunc(e,firstRef,208)}>
-        <img ref={el=>firstRef=el} className='svg_hero svg_1' src="/triangle_home.svg" />
+        <div className='svg_hero movable element svg_1'  data-value="-10">
+        <img   src="/triangle_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(secondRef)}  onMouseMove={(e)=>mouseMoveFunc(e,secondRef)}>
+        <div className='svg_hero movable element svg_2' data-value="-10">
 
-        <img ref={el=>secondRef=el} className='svg_hero svg_2' src="/star_right_home.svg" />
+        <img src="/star_right_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(thirdRef)}  onMouseMove={(e)=>mouseMoveFunc(e,thirdRef)}>
-        <img ref={el=>thirdRef=el} className='svg_hero svg_3' src="/sparkle_right_home.svg" />
+        <div className='svg_hero movable element svg_3' data-value="-40">
+        <img src="/sparkle_right_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(fourRef)}  onMouseMove={(e)=>mouseMoveFunc(e,fourRef)}>
-        <img ref={el=>fourRef=el} className='svg_hero svg_4' src="/sparkle_left_home.svg" />
+        <div className='svg_hero movable element svg_4' data-value="-40">
+        <img   src="/sparkle_left_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(fiveRef)}  onMouseMove={(e)=>mouseMoveFunc(e,fiveRef)}>
-        <img ref={el=>fiveRef=el} className='svg_hero svg_5 wave_svg' src="/wave_home.svg" />
+        <div className='svg_hero movable element svg_5 wave_svg' data-value="13">
+        <img src="/wave_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(sixRef)}  onMouseMove={(e)=>mouseMoveFunc(e,sixRef)}>
-        <img ref={el=>sixRef=el} className='svg_hero svg_6' src="/star_left_home.svg" />
+        <div className='svg_hero movable element svg_6'  data-value="40">
+        <img  src="/star_left_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(sevenRef)}  onMouseMove={(e)=>mouseMoveFunc(e,sevenRef)}>
-        <img ref={el=>sevenRef=el} className='svg_hero svg_7' src="/hi_home.svg" />
+        <div className='svg_hero movable element svg_7' data-value="-10">
+        <img   src="/hi_home.svg" />
         </div>
 
 
@@ -100,16 +137,7 @@ const Hero2 = () => {
   
     </div>
     </div>
-    {/* <div className='bg-[#FF0086] flex flex-col  '>
-                <PartyBanner  />
-                <div className='mt-11 mb-0  flex self-center gap-6'  href="/Events-Individual">
-                  <img src='/fb_icon.svg'/>
-                  <img src='/yt_icon.svg'/>
-                  <img src='/ig_icon.svg'/>
-                  <img src='/tt_icon.svg'/>
-                </div>
-                <Footer />
-              </div>     */}
+   
                 <div className='flex items-center text-white '>
                    
 <Link href='/' className='w-1/2  bg-white bg-opacity-25  text_change text-center p-3 cursor-pointer'>

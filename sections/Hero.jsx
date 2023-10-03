@@ -129,7 +129,7 @@ const Hero = () => {
           <div className=''>
           <div className='flex justify-center '>
           
-        <img className=' w-[90%]'   onMouseMove={(e)=>tHandler(e)} src='/main_logo.png'/>
+        <img className=' w-[90%] movable element'  data-value="-30"   onMouseMove={(e)=>tHandler(e)} src='/main_logo.png'/>
         
         </div>
         </div>
@@ -138,7 +138,7 @@ const Hero = () => {
         <div className='movable element svg_hero svg_1' data-value="-10"  >
         <img   className='' src="/triangle_home.svg" />
         </div>
-        <div className='movable  element svg_hero svg_2' data-value="-40">
+        <div className='movable  element svg_hero svg_2' data-value="-10">
 
         <img  className='' src="/star_right_home.svg" />
         </div>
@@ -181,9 +181,11 @@ const Hero = () => {
 <Link href='/' className='w-1/2 bg-[#F33288] text_change text-center p-3 cursor-pointer'>
 Pinkfish Music & Art Festival 
 </Link>
-<Link href='PinkFishLive' className='w-1/2  text-center text_change bg-white bg-opacity-25 p-3 cursor-pointer'>
+ 
+<Link href='PinkFishLive' className='w-1/2  text-center text_change bg-white bg-opacity-25 p-3 cursor-pointer' >
 Pinkfish Live 
 </Link>
+
     </div>
   </section>
 );

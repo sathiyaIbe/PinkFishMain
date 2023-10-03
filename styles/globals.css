@@ -44,8 +44,7 @@
 /* NAVBAR */
 
 .navbar_main_container{
-  @apply    top-0 flex flex-col justify-center  border-b-[1px] border-white ; 
-  min-height: 16vh;
+  @apply min-h-[10vh]  md:min-h-[16vh] top-0 flex flex-col justify-center  border-b-[1px] border-white ; 
   z-index: 99;
 }
 *:focus {
@@ -76,7 +75,7 @@
 
 .menu_text_mob{
 
-  @apply w-fit  uppercase text-[white]  pt-5 pb-5 font-[Integral] font-[700] text-[33px] leading-[39px] md:leading-[24px] tracking-[5px];
+  @apply w-fit  uppercase text-[white] font-[Integral] font-[700] text-[20px] leading-[24px] md:leading-[24px] tracking-[5px];
 }
 .menu_text{
 

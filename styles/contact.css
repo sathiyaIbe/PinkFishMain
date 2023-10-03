@@ -32,7 +32,7 @@ contact_input:focus{
 
 }
 .contact_text{
-    @apply text-[14px] md:text-[16px] leading-[18px] md:leading-[24px] font-[400] font-[Sofia] text-[#F33288] w-[85%]
+    @apply md:text-[16px] leading-[18px] md:leading-[24px] font-[400] font-[Sofia] text-[#F33288] w-[85%]
 }
 
 .contact_sub_header{
@@ -254,3 +254,6 @@ background-color: #F33288;
     }
 }
 
+.bg-contact{
+    background-image: url('/bg_contact.png');
+}

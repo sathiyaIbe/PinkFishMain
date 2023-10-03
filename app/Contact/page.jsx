@@ -17,7 +17,7 @@ const Contact = () => (
               
               className='about_us_main_header'>join the party</motion.h1>
           </div>
-    <div className="  flex flex-col md:flex-row bg-white pb-6 pt-11 ">
+    <div className="  flex flex-col md:flex-row bg-contact pb-6 pt-11 ">
       <div className="md:basis-2/5  flex justify-center">
         <div className='md:w-[50%] w-[80%]'>
         <h1 className="contact_header">Contact Information</h1>
@@ -26,30 +26,41 @@ const Contact = () => (
 <div className='flex gap-2 md:mb-4 items-center'>
         <img className=" md:w-6 w-8 " src='/email_contact.svg' />
 <p className="contact_text ">info@pinkfishfestival.com</p>
+
 </div>
-<div className='flex gap-2 md:mb-4 items-center'>
+<div className='flex gap-2 md:mb-4 '>
+<a href='https://www.instagram.com/pinkfishfestival/' target="_blank" className='flex gap-2 items-center'>
         <img className="md:w-6 w-8" src='/ig_contact.svg' />
 <p className="contact_text underline">Instagram</p>
+</a>
 </div>
 <div className='flex gap-2 md:mb-4 items-center'>
+<a href='https://www.youtube.com/@Pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
+
         <img className="md:w-6 w-8" src='/yt_contact.svg' />
 <p className="contact_text underline">Youtube</p>
+</a>
 </div>
 <div className='flex gap-2 md:mb-4 items-center'>
+<a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className='flex gap-2 items-center'>
+
         <img className="md:w-6 w-8" src='/fb_contact.svg' />
 <p className="contact_text underline">Facebook</p>
+</a>
 </div>
 <div className='flex gap-2 md:mb-4 items-center'>
+<a href=' https://www.tiktok.com/@pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
         <img className="md:w-6 w-8" src='/tt_contact.svg' />
 <p className="contact_text underline">Tiktok </p>
+</a>
 </div>
         </div>
         </div>
       </div>
 
-      <div className="  mt-11 md:mt-0 ">
-        <form className="flex flex-col self-center w-[80%] md:w-[100%]  gap-8">
-          <div className='flex md:flex-row flex-col gap-6'>
+      <div className="flex flex-col w-[90%]  md:w-[100%] mt-11 md:mt-0 ">
+        <form className="flex flex-col  self-center   gap-8">
+          <div className='flex md:flex-row  flex-col gap-6'>
           <div className="flex flex-col md:w-[50%] ">
             <label className="contact_label">First Name</label>
             <input className="contact_input" type="text" />
