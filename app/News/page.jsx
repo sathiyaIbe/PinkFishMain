@@ -23,7 +23,7 @@ const Event = () => {
               className='about_us_main_header'>latest news</motion.h1>
           </div>
         <div className='flex justify-center mt-11'>
-            <div className='flex flex-col gap-6  w-[90%] md:w-[70%] '>
+            <div className='flex flex-col gap-6  w-[90%] md:w-[60%] '>
                
                 <div className='flex gap-4 flex-col   '>
               <motion.div
@@ -47,6 +47,7 @@ const Event = () => {
                      initial="hidden"
                     whileInView="show"
                viewport={{ once: true }}
+               className='object-none'
                     src="/news_img1.png"/>
                 </div>
                 <div className='flex flex-col gap-3'>
@@ -182,10 +183,10 @@ const Event = () => {
       <div className='bg-[#FF0086] flex flex-col  '>
                 <PartyBanner  />
                 <div className='mt-11 mb-0  flex self-center gap-6'  href="/Events-Individual">
-                  <img src='/fb_icon.svg'/>
-                  <img src='/yt_icon.svg'/>
-                  <img src='/ig_icon.svg'/>
-                  <img src='/tt_icon.svg'/>
+                <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img src='/fb_icon.svg'/></a>
+                <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank">  <img src='/yt_icon.svg'/> </a>
+                <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src='/ig_icon.svg'/></a>
+                <a href='https://www.tiktok.com/@pinkfishfestival' target="_blank">  <img src='/tt_icon.svg'/></a>
                 </div>
                 <Footer />
               </div>    

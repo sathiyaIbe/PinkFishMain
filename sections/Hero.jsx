@@ -17,38 +17,103 @@ const Hero = () => {
   let sevenRef=useRef(null)
   const [moveDistance, setMoveDistance]=useState(0)
 
-  function backTo(a){
-    gsap.to(a, {
-      x: 0,
-      y: 0,
-      duration:2,
-    });
+
+
+  const throttled = (delay, fn) => {
+    let lastCall = 0;
+    return function (...args) {
+      const now = (new Date).getTime();
+      if (now - lastCall < delay) {
+        return;
+      }
+      lastCall = now;
+      return fn(...args);
+    }
+  }
+  
+  const movableElementsWrapper = document.querySelector('.movable-elements-wrapper');
+  
+
+
+  
+  const mouseMoveHandler2 = (e) => {
+    const movableElements =   document.querySelectorAll('.movable');
+  
+    movableElements.forEach(
+      (movableElement) => {
+        const  shiftValue = movableElement.getAttribute('data-value');
+        const moveX = (e.clientX * (shiftValue)) / 250;
+        const moveY = (e.clientY * (shiftValue)) / 250;
+        
+        
+        gsap.to(movableElement, {x: moveX, y: moveY, duration: 1})
+  
+      }
+    );
   };
   
-  function mouseMoveFunc(e,a,c) {
-    console.log(e.pageX)
-    let oldx=0
+  const tHandler = throttled(200, mouseMoveHandler2);
 
-     {
-      const depth = 10;
-      const moveX = (e.pageX  / 2) / depth;
-      const moveY = (e.pageY  / 2) / depth;
+
+
+
+
+
+
+
+
+  function backTo(a){
+    // gsap.to(a, {
+    //   x: 0,
+    //   y: 0,
+    //   duration:2,
+    // });
+    // gsap.utils.toArray(".movable element").forEach(layer => {
+     
+    //   gsap.to(layer, {
+    //     x: 0,
+    //     y: 0,
+    //   }, 0);
+    // });
+  };
+  function mouseMoveFunc(){
+
+  }
+  function mouseMoveFuncs(e,a,c) {
+  //   console.log(e.pageX)
+  //   let oldx=0
+
+  //    {
+  //     const depth = 10;
+  //     const moveX = (e.pageX  / 2) / depth;
+  //     const moveY = (e.pageY  / 2) / depth;
       
-      if (e.pageX < c) {
-        console.log("left")
+  //     if (e.pageX < c) {
+  //       console.log("left")
       
-   } else if (e.pageX > oldx) {
-      console.log("right")
-   }
-      gsap.to(a, {
-        x: 30,
-        y: -50,
-        direction:"right",
-        // onComplete:backTo
-        type:'elastic',
+  //  } else if (e.pageX > oldx) {
+  //     console.log("right")
+  //  }
+  //     gsap.to(a, {
+  //       x: 30,
+  //       y: -50,
+  //       direction:"right",
+  //       // onComplete:backTo
+  //       type:'elastic',
       
-      });
-    };
+  //     });
+  //   };
+  // console.log(e)
+  // const tl = gsap.timeline({ease: "slow", duration: 1})
+  // gsap.utils.toArray(".movable element").forEach(layer => {
+  //   const depth = layer.dataset.depth;
+  //   const moveX = ((e.pageX)-(window.innerWidth/2));
+  //   const moveY = ((e.pageY)-(window.innerHeight/2));
+  //   tl.to(layer, {
+  //     x: moveX/depth,
+  //     y: moveY/depth
+  //   }, 0);
+  // });
   }
   return(
 
@@ -64,35 +129,36 @@ const Hero = () => {
           <div className=''>
           <div className='flex justify-center '>
           
-        <img className=' w-[90%]' src='/main_logo.png'/>
-       
+        <img className=' w-[90%]'   onMouseMove={(e)=>tHandler(e)} src='/main_logo.png'/>
+        
         </div>
         </div>
         </div>
-        <div className='' onMouseOut={()=>backTo(firstRef)}  onMouseMove={(e)=>mouseMoveFunc(e,firstRef,208)}>
-        <img ref={el=>firstRef=el} className='svg_hero svg_1' src="/triangle_home.svg" />
+        <div className=''>
+        <div className='movable element svg_hero svg_1' data-value="-10"  >
+        <img   className='' src="/triangle_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(secondRef)}  onMouseMove={(e)=>mouseMoveFunc(e,secondRef)}>
+        <div className='movable  element svg_hero svg_2' data-value="-40">
 
-        <img ref={el=>secondRef=el} className='svg_hero svg_2' src="/star_right_home.svg" />
+        <img  className='' src="/star_right_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(thirdRef)}  onMouseMove={(e)=>mouseMoveFunc(e,thirdRef)}>
-        <img ref={el=>thirdRef=el} className='svg_hero svg_3' src="/sparkle_right_home.svg" />
+        <div className='movable element svg_hero svg_3' data-value="-40" >
+        <img className='' src="/sparkle_right_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(fourRef)}  onMouseMove={(e)=>mouseMoveFunc(e,fourRef)}>
-        <img ref={el=>fourRef=el} className='svg_hero svg_4' src="/sparkle_left_home.svg" />
+        <div className='movable element svg_hero svg_4' data-value="-40" >
+        <img  className='' src="/sparkle_left_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(fiveRef)}  onMouseMove={(e)=>mouseMoveFunc(e,fiveRef)}>
-        <img ref={el=>fiveRef=el} className='svg_hero svg_5 ' src="/wave_home.svg" />
+        <div className='movable element svg_hero svg_5' data-value="23" >
+        <img  className=' ' src="/wave_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(sixRef)}  onMouseMove={(e)=>mouseMoveFunc(e,sixRef)}>
-        <img ref={el=>sixRef=el} className='svg_hero svg_6' src="/star_left_home.svg" />
+        <div className='movable element svg_hero svg_6' data-value="40">
+        <img  className='' src="/star_left_home.svg" />
         </div>
-        <div className='' onMouseOut={()=>backTo(sevenRef)}  onMouseMove={(e)=>mouseMoveFunc(e,sevenRef)}>
-        <img ref={el=>sevenRef=el} className='svg_hero svg_7' src="/hi_home.svg" />
+        <div className='movable element svg_hero svg_7' data-value="-10" >
+        <img  className='' src="/hi_home.svg" />
         </div>
-
-
+        </div>
+      
 
        
       </div>

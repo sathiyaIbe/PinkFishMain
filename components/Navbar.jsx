@@ -33,10 +33,11 @@ return (
         </Link>
       </div>
       <div className='mt-3 flex gap-4'  href="/Events-Individual">
-     <img src='/fb_icon.svg'/>
-     <img src='/yt_icon.svg'/>
-     <img src='/ig_icon.svg'/>
-     <img src='/tt_icon.svg'/>
+                <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img src='/fb_icon.svg'/></a>
+                <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank">  <img src='/yt_icon.svg'/> </a>
+                <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src='/ig_icon.svg'/></a>
+                <a href='https://www.tiktok.com/@pinkfishfestival' target="_blank">  <img src='/tt_icon.svg'/></a>
+              
 
       </div>
     </div>

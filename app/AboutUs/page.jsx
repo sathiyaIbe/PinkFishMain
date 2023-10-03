@@ -37,7 +37,7 @@ const AboutUs = () => {
               src='/PinkfishImg_1.png' className='md:w-84 w-64 self-center mt-6' />
                 <div
                
-                className='w-[70%] self-center flex flex-col gap-4 mt-11 bg-[transparent]'>
+                className='w-[60%] self-center flex flex-col gap-4 mt-11 bg-[transparent]'>
                 <motion.p 
                   variants={textVariant2}
                  initial="hidden"
@@ -81,7 +81,7 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p
               whileInView="show"
                viewport={{ once: true }}
               src='/PinkfishImg_2.png' className='md:w-84 w-64 self-center mt-6' />
-                <div className='w-[70%] self-center flex flex-col gap-4 mt-11 bg-[transparent]'>
+                <div className='w-[60%] self-center flex flex-col gap-4 mt-11 bg-[transparent]'>
                 <motion.p
                   variants={textVariant2}
                  initial="hidden"
@@ -113,7 +113,7 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p
             </div>
             </div>
             <div className='bg-[#FF0086] flex flex-col'>
-            <div className='flex flex-col w-[80%] gap-6 mt-24 self-center'>
+            <div className='flex flex-col  gap-6 mt-24 self-center'>
                 <motion.h1
                  variants={textVariant2}
                  initial="hidden"
@@ -148,10 +148,10 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p
               <div className='about_us_botton_container flex flex-col  '>
                 <PartyBanner  />
                 <div className='mt-11 mb-0  flex self-center gap-6'  href="/Events-Individual">
-                  <img src='/fb_icon.svg'/>
-                  <img src='/yt_icon.svg'/>
-                  <img src='/ig_icon.svg'/>
-                  <img src='/tt_icon.svg'/>
+                <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img src='/fb_icon.svg'/></a>
+                <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank">  <img src='/yt_icon.svg'/> </a>
+                <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src='/ig_icon.svg'/></a>
+                <a href='https://www.tiktok.com/@pinkfishfestival' target="_blank">  <img src='/tt_icon.svg'/></a>
                 </div>
                 <Footer />
               </div>    
