@@ -353,7 +353,20 @@ background-size: cover;
     @apply  md:left-[75%] md:top-[70%] top-[65%]
 }
 
+.image_11 {
+    overflow: hidden;
+}
+.image_11 img {
+    transition: all 0.3s;
+    display: block;
+   
+    transform: scale(1);
+}
 
+
+.image_11:hover img {
+    transform: scale(1.1);
+}
 
 .movable-elements-wrapper {
   

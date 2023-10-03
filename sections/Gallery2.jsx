@@ -79,78 +79,116 @@ return(
     <div className=" hidden md:block  flex flex-col overflow-hidden  pt-4 pb-4">
 <div className="flex flex-col ">
         <div className="flex self-center gap-4 mt-11 "> 
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_11")} onMouseLeave={(e)=>mouseOut(".image_11")} className=" object-none image_11" src="/Gallery/pinkLive_lg_1.png" />
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_2")} onMouseLeave={(e)=>mouseOut(".image_2")} className="object-none image_2" src="/Gallery/pinkLive_lg_2.png" /> 
+        <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className=" object-none " src="/Gallery/pinkLive_lg_1.png" />
+          </motion.div>
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className="object-none image_2" src="/Gallery/pinkLive_lg_2.png" /> 
+          </motion.div>
         </div>
         <div className="flex self-center gap-4  mt-4"> 
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_3")} onMouseLeave={(e)=>mouseOut(".image_3")} className=" object-none image_3" src="/Gallery/pinkLive_lg_3.png" />
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_4")} onMouseLeave={(e)=>mouseOut(".image_4")} className=" object-none image_4" src="/Gallery/pinkLive_lg_4.png" /> 
+      
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className=" object-none image_3" src="/Gallery/pinkLive_lg_3.png" />
+          </motion.div>
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className=" object-none image_4" src="/Gallery/pinkLive_lg_4.png" /> 
+          </motion.div>
         </div>
-        <div className="flex self-center gap-4  mt-4"> 
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_5")} onMouseLeave={(e)=>mouseOut(".image_5")} className="object-none image_5" src="/Gallery/pinkLive_lg_5.png" /> 
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className=" flex self-center gap-4  mt-4 image_11">
+          <img className="object-none image_5" src="/Gallery/pinkLive_lg_5.png" /> 
+          </motion.div>
+        <div className="flex self-center gap-4 mt-4 "> 
+       
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className="object-none image_6" src="/Gallery/pinkLive_lg_6.png" />
+          </motion.div>
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className="object-none image_7" src="/Gallery/pinkLive_lg_7.png" /> 
+          </motion.div>
         </div>
         <div className="flex self-center gap-4 mt-4 "> 
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_6")} onMouseLeave={(e)=>mouseOut(".image_6")} className="object-none image_6" src="/Gallery/pinkLive_lg_6.png" />
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_7")} onMouseLeave={(e)=>mouseOut(".image_7")} className="object-none image_7" src="/Gallery/pinkLive_lg_7.png" /> 
+       
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className="object-none image_8" src="/Gallery/pinkLive_lg_8.png" />
+          </motion.div>
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className="object-none image_9" src="/Gallery/pinkLive_lg_9.png" /> 
+          </motion.div>
         </div>
         <div className="flex self-center gap-4 mt-4 "> 
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_8")} onMouseLeave={(e)=>mouseOut(".image_8")} className="object-none image_8" src="/Gallery/pinkLive_lg_8.png" />
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_9")} onMouseLeave={(e)=>mouseOut(".image_9")} className="object-none image_9" src="/Gallery/pinkLive_lg_9.png" /> 
-        </div>
-        <div className="flex self-center gap-4 mt-4 "> 
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_10")} onMouseLeave={(e)=>mouseOut(".image_10")} className=" object-none image_10" src="/Gallery/pinkLive_lg_10.png" />
+        
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className=" object-none image_10" src="/Gallery/pinkLive_lg_10.png" />
+          </motion.div>
           <div className="w-3/5 flex flex-col gap-4">
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_100")} onMouseLeave={(e)=>mouseOut(".image_100")} className="object-none image_100" src="/Gallery/pinkLive_lg_11.png" /> 
-          <motion.img 
-               variants={fadeIn("up", "tween",.1,1)}
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true }} onMouseOver={(e)=>mouseDown(".image_101")} onMouseLeave={(e)=>mouseOut(".image_101")} className="object-none image_101" src="/Gallery/pinkLive_lg_12.png" /> 
-
+          
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11">
+          <img className="object-none image_100" src="/Gallery/pinkLive_lg_11.png" />
+          </motion.div>
+          <motion.div
+          variants={fadeIn("up", "tween", .1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+           className="image_11"> 
+          <img className="object-none image_101" src="/Gallery/pinkLive_lg_12.png" /> 
+          </motion.div>
           </div>
         </div>
         </div>
