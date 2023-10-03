@@ -32,7 +32,6 @@ const Hero = () => {
     }
   }
   
-  const movableElementsWrapper = document.querySelector('.movable-elements-wrapper');
   
 
 
