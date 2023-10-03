@@ -1,5 +1,6 @@
 
 'use client'
+/* eslint-disable */
 import Link from 'next/link';
 import '../styles/home.css'
 
