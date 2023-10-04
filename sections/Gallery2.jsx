@@ -61,18 +61,66 @@ return(
 
   {/* <img src='/left_arrow.svg' className="absolute bottom-[-45%] left-[85%]" onClick={()=>{sideScroll('right',25,100,414)}}/>
   <img src='/right_arrow.svg' className="absolute bottom-[-45%] left-[5%]" onClick={()=>{sideScroll('left',25,100, 414)}} /> */}
-  <img className="w-ful object-none" src="/Gallery/pinkLive_lg_1.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_2.png" /> 
-          <img className="w-full object-none" src="/Gallery/pinkfishLive_lg_3.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_4.png" /> 
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_5.png" /> 
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_6.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_7.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_8.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_9.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_10.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_11.png" />
-          <img className="w-full object-none" src="/Gallery/pinkLive_lg_12.png" />
+  <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-ful object-none" src="/Gallery/pinkLive_lg_1.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_2.png" /> 
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkfishLive_lg_3.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_4.png" /> 
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_5.png" /> 
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_6.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_7.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_8.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_9.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_10.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_11.png" />
+          <motion.img
+                         variants={fadeIn("up", "tween", .1, 1)}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkLive_lg_12.png" />
 </div>
 
 
