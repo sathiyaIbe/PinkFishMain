@@ -67,7 +67,9 @@ background-color: #F33288;
 .event_container{
     background: url("/news_bg.png")   ;
     background-repeat: no-repeat;
-  
+   min-width: 100vw;
+   background-size: contain;
+   min-height:100vh;
   
 }
 

@@ -338,7 +338,7 @@ background-size: cover;
 }
 
 .svg_6{
-    @apply  left-[25%] top-[60%] w-[10%] md:w-[5%] md:left-[10%] md:top-[70%]
+    @apply  left-[25%] top-[70%] w-[10%] md:w-[5%] md:left-[10%] md:top-[70%]
 }
 
 .svg_4{
@@ -346,7 +346,7 @@ background-size: cover;
 }
 
 .svg_5{
-    @apply  left-[60%] top-[55%] w-[35%] md:w-[20%] md:left-[55%] md:top-[65%] 
+    @apply  left-[60%] top-[65%] w-[35%] md:w-[20%] md:left-[55%] md:top-[65%] 
 }
 
 .wave_svg{

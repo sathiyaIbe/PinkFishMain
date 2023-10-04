@@ -12,6 +12,7 @@ const Event = () => {
     <div className='event_main_container text-white  min-h-screen min-w-screen  overflow-hidden'>
       
         <div className='event_container '>
+          
         <Navbar selectItem='news' />
         <div className='flex flex-col gap-6  pb-11 pt-6 header_container_aboutus border-b-[1px] border-white w-full '>
               
@@ -47,7 +48,7 @@ const Event = () => {
                      initial="hidden"
                     whileInView="show"
                viewport={{ once: true }}
-               className='object-none'
+               className='w-[100%]'
                     src="/news_img1.png"/>
                 </div>
                 <div className='flex flex-col gap-3'>
@@ -99,6 +100,7 @@ const Event = () => {
                      initial="hidden"
                     whileInView="show"
                viewport={{ once: true }}
+               className='w-[100%]'
                     src="/news_img2.png"/>
                 </div>
                 <div className='flex flex-col gap-3'>
@@ -142,7 +144,7 @@ const Event = () => {
                      initial="hidden"
                     whileInView="show"
                viewport={{ once: true }}
-               className='object-fill'
+               className='w-[100%]'
                     src="/news_img3.png" />
                 </div>
                 <div className='flex flex-col gap-3'>
