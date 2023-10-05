@@ -338,19 +338,19 @@ background-size: cover;
 }
 
 .svg_6{
-    @apply  left-[25%] top-[70%] w-[10%] md:w-[5%] md:left-[10%] md:top-[70%]
+    @apply  left-[25%] top-[73%] w-[10%] md:w-[5%] md:left-[10%] md:top-[70%]
 }
 
 .svg_4{
-    @apply  left-[5%] top-[68%] w-[10%] md:w-[8%] md:left-[18%] md:top-[77%] 
+    @apply  left-[5%] top-[70%] w-[10%] md:w-[8%] md:left-[18%] md:top-[77%] 
 }
 
 .svg_5{
-    @apply  left-[60%] top-[65%] w-[35%] md:w-[20%] md:left-[55%] md:top-[65%] 
+    @apply  left-[60%] top-[70%] w-[35%] md:w-[20%] md:left-[55%] md:top-[65%] 
 }
 
 .wave_svg{
-    @apply  md:left-[75%] md:top-[70%] top-[65%]
+    @apply  md:left-[75%] md:top-[70%] top-[70%]
 }
 
 .image_11 {

@@ -258,4 +258,6 @@ background-color: #F33288;
 
 .bg-contact{
     background-image: url('/bg_contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

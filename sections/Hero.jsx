@@ -124,12 +124,12 @@ const Hero = () => {
     <div className='flex flex-col '>
     <div className='  header_container flex justify-center'>
     
-      <div className='flex flex-col md:flex-row items-center md:justify-center md: p-4 md:w-[90%]'>
+      <div className='flex flex-col md:flex-row items-center md:justify-center md: p-4 md:w-[90%] ' onMouseMove={(e)=>tHandler(e)}>
         <div className="flex flex-col self-end">
           <div className=''>
-          <div className='flex justify-center '>
+          <div className='flex justify-center ' >
           
-        <img className=' w-[90%] movable element'  data-value="-30"   onMouseMove={(e)=>tHandler(e)} src='/main_logo.png'/>
+        <img className=' w-[90%] movable element'  data-value="-30"    src='/main_logo.png'/>
         
         </div>
         </div>
@@ -182,9 +182,9 @@ const Hero = () => {
 Pinkfish Music & Art Festival 
 </Link>
  
-<Link href='PinkFishLive' className='w-1/2  text-center text_change bg-white bg-opacity-25 p-3 cursor-pointer' >
+<a href='https://main--idyllic-llama-7efc38.netlify.app/' target='_blank' className='w-1/2  text-center text_change bg-white bg-opacity-25 p-3 cursor-pointer' >
 Pinkfish Live 
-</Link>
+</a>
 
     </div>
   </section>
