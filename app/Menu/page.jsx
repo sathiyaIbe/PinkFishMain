@@ -4,7 +4,6 @@ import React from 'react';
 import { Footer } from '../../components';
 import Link from 'next/link';
 const menu = (props) => {
-
     return (
     <div className="min-h-screen bg-[#FF0086] md:hidden">
        

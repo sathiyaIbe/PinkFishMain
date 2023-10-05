@@ -3,12 +3,19 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useNavigate} from "react-router-dom";
+import Footer from './Footer';
+import { useRouter } from 'next/navigation';
+
 const Navbar = (props) => {
+  const router =useRouter()
+
   const [toggleDropdown, setToggleDropdown] = useState(false)
   function changeToggle(){  
     console.log(toggleDropdown)
    
   }
+
+
   
 return (
   <nav className="navbar_main_container ">
@@ -52,9 +59,9 @@ return (
       <Link className='self-center' href="/Menu" query={props.selectItem}>
 
       <button type='button'>{props.selectItem==="mobile_menu"
-      ?<Link href='/'>
-      <img   src='/close.png'/>
-      </Link>:
+      ?<>
+      <img onClick={() => router.back()}  src='/close.png'/>
+      </>:
       <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24.7392 2.71679H1.26098C0.726193 2.71679 0.282715 2.25413 0.282715 1.69622C0.282715 1.13831 0.726193 0.675659 1.26098 0.675659H24.7392C25.274 0.675659 25.7175 1.13831 25.7175 1.69622C25.7175 2.25413 25.274 2.71679 24.7392 2.71679Z" fill="white"/>
 <path d="M24.7392 9.52056H1.26098C0.726193 9.52056 0.282715 9.0579 0.282715 8.5C0.282715 7.94209 0.726193 7.47943 1.26098 7.47943H24.7392C25.274 7.47943 25.7175 7.94209 25.7175 8.5C25.7175 9.0579 25.274 9.52056 24.7392 9.52056Z" fill="white"/>
