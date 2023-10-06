@@ -6,12 +6,12 @@ const Gallery = () => {
      return (
           <section className="mt-24">
          <h1 className="gallery_header text-center  mb-6">Gallery</h1>
-               <div id="container" className="flex md:hidden overflow-x-scroll">
+               <div id="container" className="flex md:hidden overflow-x-scroll overflow-hidden">
                     <motion.img
                          variants={fadeIn("up", "tween", .1, 1)}
                          initial="hidden"
                          whileInView="show"
-                         viewport={{ once: true }} className="w-ful object-none" src="/Gallery/pinkfish/gallery_lg_1.png" />
+                         viewport={{ once: true }} className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_1.png" />
                     <motion.img
                          variants={fadeIn("up", "tween", .1, 1)}
                          initial="hidden"

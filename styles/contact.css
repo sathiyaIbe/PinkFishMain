@@ -179,6 +179,8 @@ background-color: #F33288;
 
 .bg_about_us{
     background-image: url("/aboutus_bg_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
