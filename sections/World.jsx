@@ -37,9 +37,10 @@ const World = () => (
       <div className="flex self-center   gap-6   ">
       <div className="basis-1/2 flex flex-col gap-3">
         <div className="flex justify-between ">
-          <h1 className="home_bottom_header">
+          <a href='/Gallery' className="home_bottom_header">
           festival oasis
-          </h1>
+          </a>
+         
           <div className="flex gap-2">
           <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
           <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
