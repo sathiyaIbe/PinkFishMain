@@ -26,9 +26,25 @@ contact_input:focus{
     @apply bg-[#F33288] rounded  text-center w-fit    p-2 flex justify-center text-[16px] leading-[24px] font-[Sofia] text-white font-[500] ;
 
 }
+.contact_text_header{
+    @apply text-[32px] md:text-[48px] leading-[38px] md:leading-[52px] font-[900] font-[Integral] text-[#fff]
 
+}
+.contact_sub_text {
+    @apply text-[14px] md:text-[16px] leading-[16px] md:leading-[18px] font-[500] font-[Sofia] text-[#fff]
+
+}
+
+.fish_bottom_heading {
+    @apply text-[14px] md:text-[16px] leading-[16px] md:leading-[20px] font-[700] font-[Sofia] text-[#fff]
+
+}
+.fish_bottom_text {
+    @apply text-[10px] md:text-[12px] leading-[16px] md:leading-[20px] font-[500] font-[Sofia] text-[#fff]
+
+}
 .contact_header{
-    @apply text-[36px] md:text-[40px] leading-[38px] md:leading-[48px] font-[500] font-[Integral] text-[#F33288]
+    @apply text-[14px] md:text-[16px] leading-[16px] md:leading-[18px] font-[900] font-[Integral] text-[#F33288]
 
 }
 .contact_text{
@@ -39,15 +55,107 @@ contact_input:focus{
     @apply text-[16px] md:text-[24px] leading-[18px] md:leading-[28px] font-[500] font-[Integral] text-[#F33288]
 
 }
+.hero_text_heading{
+    @apply text-[16px] md:text-[24px] leading-[18px] md:leading-[28px] font-[500] font-[Integral] text-[#fff]
+
+}
+.hero_button{
+    @apply text-[12px] md:text-[14px] leading-[18px] md:leading-[24px] font-[500] font-[Sofia] text-[#fff]
+
+}
+.fan_button{
+    @apply bg-[#F33288] rounded-lg  p-2  gap-2 text-white  text-[12px] md:text-[14px] leading-[14px] md:leading-[16px] font-[500] font-[Sofia];
+
+}
 
 .contact_main_container{
-background-color: #F33288;
+background-image: url("/contact_bg.png");
+background-repeat: no-repeat;
+background-size:contain;
 }
+
+.fan_main_container{
+    background-image: url("/fan_bg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    }
+    .news_main_container{
+
+        background-image: url("/news_bg.png");
+
+        background-repeat: no-repeat;
+        background-size:contain;
+        }
+
+        .news_card_text{
+            @apply text-[8px] md:text-[10px] leading-[10px] md:leading-[12px]  font-[Sofia] text-white
+
+        }
+
+        .news_card_header{
+            @apply text-[12px] md:text-[16px] leading-[14px] md:leading-[20px]  font-[500] font-[Sofia] text-white
+ 
+        }
+        .news_read_btn{
+            @apply cursor-pointer text-[10px] md:text-[12px] leading-[12px] md:leading-[14px] p-2 font-[500] font-[Sofia] text-white border border-white rounded w-fit
+
+        }
+
+.pink_btn{
+    @apply p-4 bg-[#F33288] pl-6 pr-6
+}
+.gallery_btn{
+    @apply p-4  pl-6 pr-6;
+    background-color: rgb(14, 11, 11);
+
+}
+
+
+.image_11 {
+    overflow: hidden;
+}
+.image_11 img {
+    transition: all 0.3s;
+    display: block;
+   
+    transform: scale(1);
+}
+
+
+.image_11:hover img {
+    transform: scale(1.1);
+}
+
+.galler_svg_1{
+    @apply absolute top-[90%] left-[13%]
+}
+
+.galler_svg_2{
+    @apply absolute top-[205%] left-[5%]
+}
+
+.galler_svg_3{
+    @apply absolute top-[350%] left-[4%]
+}
+
+.galler_svg_4{
+    @apply absolute top-[130%] right-[13%]
+}
+
+.galler_svg_5{
+    @apply absolute top-[250%] right-[7%]
+}
+
+.galler_svg_6{
+    @apply absolute top-[290%] right-[18%]
+}
+
 
 .question_text{
     @apply text-[16px] md:text-[18px] leading-[24px] md:leading-[27px] font-[700] font-[Sofia] text-white uppercase
 
 }
+
 
 .answer_text{
     @apply text-[18px] leading-[27px] font-[700] font-[Sofia] text-white
@@ -211,7 +319,11 @@ background-color: #F33288;
 }
 
 .about_us_sub_header{
-    @apply text-[48px] md:text-[64px] font-[700] leading-[50px] md:leading-[72px]  font-[Integral]  text-center ;
+    @apply text-[24px] md:text-[36px] font-[700] leading-[30px] md:leading-[42px]  font-[Integral]  text-center ;
+
+}
+
+.fish_bottom_heading{
 
 }
 

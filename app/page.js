@@ -1,4 +1,4 @@
-import { PinkText, Events, Gallery, Hero, Banner } from '../sections';
+import { PinkText, Events, Gallery, Hero, Banner,World } from '../sections';
 import '../styles/contact.css';
 
 const Page = () => (
@@ -6,8 +6,9 @@ const Page = () => (
     <Hero />
     {/* <PinkText />
     <Events />*/}
-    <Gallery />
-    <Banner /> 
+    {/* <Gallery />
+    <Banner />  */}
+ <World/>
   </div>
 );
 export default Page;

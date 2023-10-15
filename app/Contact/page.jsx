@@ -5,9 +5,8 @@ import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
 import { Footer, Navbar } from '../../components';
 const Contact = () => (
-  <div className="contact_main_container  min-h-screen  text-white   ">
-    <Navbar selectItem="contact"/>
-     <div className='flex flex-col gap-6  pb-11 pt-6 header_container_aboutus border-b-[1px] border-white w-full '>
+  <div className="contact_main_container min-h-screen  text-white   ">
+     {/* <div className='flex flex-col gap-6  pb-11 pt-6 header_container_aboutus border-b-[1px] border-white w-full '>
               
               <motion.h1
                variants={textVariant2}
@@ -16,39 +15,44 @@ const Contact = () => (
                viewport={{ once: true }}
               
               className='about_us_main_header'>join the party</motion.h1>
+          </div> */}
+          <div className='flex flex-col gap-6 pt-11 pb-24 '>
+            <h1 className='contact_text_header self-center'>contact us</h1>
+            <h1 className='contact_sub_text self-center'>Get in touch with us now for any inquiries and issues! Sit tight as we get back to you.s</h1>
           </div>
-    <div className="  flex flex-col md:flex-row bg-contact pb-6 pt-11 ">
-      <div className="md:basis-2/5  flex justify-center">
-        <div className='md:w-[50%] w-[80%]'>
-        <h1 className="contact_header">Contact Information</h1>
+          <div className='flex flex-col'>
+    <div className="  flex flex-col md:flex-row bg-contact pb-6 pt-11 w-[70%]  self-center">
+      <div className="md:basis-2/5  flex justify-center ">
+        <div className='md:w-[60%] w-[80%] flex flex-col justify-center'>
+        <h1 className="contact_header">reach out to us</h1>
         
         <div className="flex flex-col md:gap-6 gap-2 mt-6 ">
-<div className='flex gap-2 md:mb-4 items-center'>
+<div className='flex gap-2 m items-center'>
         <img className=" md:w-6 w-8 " src='/email_contact.svg' />
 <p className="contact_text ">info@pinkfishfestival.com</p>
 
 </div>
-<div className='flex gap-2 md:mb-4 '>
+<div className='flex gap-2  '>
 <a href='https://www.instagram.com/pinkfishfestival/' target="_blank" className='flex gap-2 items-center'>
         <img className="md:w-6 w-8" src='/ig_contact.svg' />
 <p className="contact_text underline">Instagram</p>
 </a>
 </div>
-<div className='flex gap-2 md:mb-4 items-center'>
+<div className='flex gap-2  items-center'>
 <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
 
         <img className="md:w-6 w-8" src='/yt_contact.svg' />
 <p className="contact_text underline">Youtube</p>
 </a>
 </div>
-<div className='flex gap-2 md:mb-4 items-center'>
+<div className='flex gap-2  items-center'>
 <a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className='flex gap-2 items-center'>
 
         <img className="md:w-6 w-8" src='/fb_contact.svg' />
 <p className="contact_text underline">Facebook</p>
 </a>
 </div>
-<div className='flex gap-2 md:mb-4 items-center'>
+<div className='flex gap-2 items-center'>
 <a href=' https://www.tiktok.com/@pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
         <img className="md:w-6 w-8" src='/tt_contact.svg' />
 <p className="contact_text underline">Tiktok </p>
@@ -83,7 +87,7 @@ const Contact = () => (
           <div className="flex flex-col gap-2">
             <label className="contact_label">Select Subject?</label>
            
-<div class="flex md:flex-row flex-col gap-4">
+<div class="flex md:flex-row flex-col gap-3">
     <div class="flex items-center  ">
         <input id="inline-checked-radio" checked type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
         <label for="inline-checked-radio" class="ml-2  text-[12px] font-[Sofia] font-[400] text-[#F33288] ">General Inquiry</label>
@@ -99,27 +103,8 @@ const Contact = () => (
 
     </div>
     <input className="contact_input mb-3 w-full hidden md:block " type="text" />
-
-    {/* <div class="flex items-center  min-w-[100%]">
-        <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf] "/>
-        <div className='flex gap-1'>
-        <label for="inline-2-radio" class="ml-2 text-[12px] font-[Sofia] font-[400] text-[#F33288] mt-4  ">Other: </label>
-      
-        <input className="contact_input mb-3 min-w-[100%]  " type="text" />
-
     </div>
-    </div> */}
-   
-</div>
-{/* <div className='flex'>
-<input type="radio" id="html" checked name="fav_language" value="HTML"/>
-  <label for="html">HTML</label>
-  <input type="radio" id="css" name="fav_language" value="CSS"/>
-  <label for="css">CSS</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript"/>
-  <label for="javascript">JavaScript</label>
-</div> */}
-          </div>
+    </div>
           <div className="flex flex-col gap-2">
             <label className="contact_label">Message</label>
             <input className="contact_input"  type="text" />
@@ -135,9 +120,8 @@ const Contact = () => (
       </div>
       
     </div>
-    <div className='pt-6'>
-    <Footer />
     </div>
+   
   </div>
 );
 

@@ -6,8 +6,10 @@ import '../styles/home.css'
 
 import gsap from 'gsap';
 import { Footer, Navbar } from '../components';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import PartyBanner from './PartyBanner';
+import VideoPlayer from "react-background-video-player";
+
 const Hero = () => {
   let firstRef=useRef(null)
   let secondRef=useRef(null)
@@ -17,7 +19,9 @@ const Hero = () => {
   let sixRef=useRef(null)
   let sevenRef=useRef(null)
   const [moveDistance, setMoveDistance]=useState(0)
-
+useEffect(()=>{
+firstRef.play()
+},[])
 
 
   const throttled = (delay, fn) => {
@@ -117,24 +121,27 @@ const Hero = () => {
   }
   return(
 
-  <section className="hero_container min-h-screen flex flex-col justify-between overflow-hidden"  >
-   
-    <Navbar selectItem='home' />
-    <div>
-    <div className='flex flex-col '>
-    <div className='  header_container flex justify-center'>
+  <section className="hero_container flex flex-col justify-center min-h-screen overflow-hidden"  >
+    {/* <Navbar selectItem='home' /> */}
     
-      <div className='flex flex-col md:flex-row items-center md:justify-center md: p-4 md:w-[90%] ' onMouseMove={(e)=>tHandler(e)}>
-        <div className="flex flex-col self-end">
-          <div className=''>
-          <div className='flex justify-center ' >
-          
-        <img className=' w-[90%] movable element'  data-value="-30"    src='/main_logo.png'/>
+    {/* <div class="bg-video-wrap">
+    <video src="/bg_video.mp4" loop muted autoplay>
+    </video>
+    <div class="overlay">
+    </div>
+    <h1>Fullscreen video background
+    </h1>
+  </div> */}
+      {/* <div className='flex flex-col md:flex-row items-center md:justify-center md: p-4 md:w-[90%] ' onMouseMove={(e)=>tHandler(e)}> */}
+    
+      <video src="/bg_video.mp4" ref={(el)=>firstRef=el} className='object-cover' id='videos' autoplay loop playsinline muted ></video>
+    
+          <div className='flex flex-col absolute self-center gap-6 '>
+        <img className=' w-1/2  self-center '  data-value="-30"    src='/main_logo.png'/>
         
-        </div>
-        </div>
-        </div>
-        <div className=''>
+       <h1 className='hero_text_heading self-center'>more than just a festival</h1>
+       <button className='hero_button border border-white w-fit self-center p-1 rounded text-white pl-2 pr-2'>Learn More</button>
+        {/* <div className=''>
         <div className='movable element svg_hero svg_1' data-value="-10"  >
         <img   className='' src="/triangle_home.svg" />
         </div>
@@ -157,14 +164,13 @@ const Hero = () => {
         <div className='movable element svg_hero svg_7' data-value="-10" >
         <img  className='' src="/hi_home.svg" />
         </div>
-        </div>
+        </div> */}
       
 
        
-      </div>
-    </div>
+      
+   
   
-    </div>
     </div>
     {/* <div className='bg-[#FF0086] flex flex-col  '>
                 <PartyBanner  />
@@ -177,7 +183,7 @@ const Hero = () => {
                 <Footer />
               </div>     */}
 
-                <div className='flex items-center text-white '>
+                {/* <div className='flex items-center text-white '>
 <Link href='/' className='w-1/2 bg-[#F33288] text_change text-center p-3 cursor-pointer'>
 Pinkfish Music & Art Festival 
 </Link>
@@ -186,7 +192,8 @@ Pinkfish Music & Art Festival
 Pinkfish Live 
 </a>
 
-    </div>
+    </div> */}
+
   </section>
 );
   }

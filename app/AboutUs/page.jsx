@@ -132,7 +132,7 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</motion.p
               <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"
-                whileInView="show"
+                whileInView="show" 
                viewport={{ once: true }}
               src='/aboutus_logo_2.png' className='w-[80%] md:w-[40%] self-center md:self-start' alt="logo" />
               <motion.img

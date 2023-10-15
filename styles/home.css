@@ -1,6 +1,6 @@
 .hero_container {
     /* background-image: url('/HEROIMG.png'); */
-    background:url("/HEROIMG.png") ;
+    background:url("/bg_video.mp4") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,6 +21,29 @@
     
     margin-top: 0px;
 }
+.hero_banner{
+    background-image: url('/hero_bottom_bg.png');
+    background-size: contain;
+
+}
+.world_header{
+    @apply  text-white text-[28px]  md:text-[48px] leading-[32px] md:leading-[54px] font-[400]  font-[Integral] ;
+
+}
+
+.world_text{
+    @apply  text-white text-[12px]  md:text-[16px] leading-[16px] md:leading-[20px]   font-[Sofia] ;
+
+}
+.text-block {
+    position: absolute;
+    bottom: 20px;
+
+    color: white;
+    padding-left: 24px;
+    padding-right: 20px;
+}
+
 
 @media screen and (max-width:768px) {
 .hero_container{
@@ -174,7 +197,7 @@ font-family: "Integral";
     @apply bg-[#fff] text-black rounded-lg w-fit md:w-fit p-2 flex text-[12px] md:text-[16px] leading-[14px] md:leading-[20px] font-[Integral];
 }
 
-.buy_ticket {
+/* .buy_ticket {
     background-color: #F33288;
     @apply rounded-lg gap-2 text-white p-3;
     text-transform: uppercase;
@@ -182,7 +205,9 @@ font-family: "Integral";
     line-height: 24px;
     font-weight: 500;
     font-family: Integral;
-}
+} */
+
+
 
 .gallery_container{
     background-color: #F33288;
@@ -214,7 +239,10 @@ div::-webkit-scrollbar {
  @apply overflow-x-scroll overflow-hidden;
 
 }
+.home_bottom_header{
+    @apply text-[12px] md:text-[16px] leading-[16px] md:leading-[20px] font-[Integral] text-white  font-[500]
 
+}
 .banner_header{
     @apply text-[36px] md:text-[80px] leading-[50px] md:leading-[95px] font-[Integral] text-white uppercase font-[500]
    

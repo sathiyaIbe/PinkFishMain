@@ -2,10 +2,10 @@ import { Footer, Navbar } from '../../components';
 import '../../styles/contact.css';  
 const Terms_Condition = () => {
   return (
-    <div className='text-white  min-h-screen min-w-screen bg-[#FF0086]  overflow-hidden   flex flex-col'>
-        <Navbar />
-<h1 className='tnc_header mt-11'>terms & Conditions</h1>
-<div className='border-b-2 flex justify-center pb-24'>
+    <div className='text-white  min-h-screen min-w-screen bg-[#000]  overflow-hidden   flex flex-col'>
+       
+<h1 className='contact_text_header w-[40%] self-center text-center mt-11'>terms & Conditions</h1>
+<div className=' flex justify-center pb-24'>
 <ul className='text_tnc_container  '>
     <li className='flex flex-col gap-2'>
         <h1 className='tnc_text_header'>1. Acceptance of Terms </h1>
@@ -53,9 +53,8 @@ const Terms_Condition = () => {
 
 </ul>
 </div>
-<div className='pt-6'>
-<Footer />
-</div>
+
+
     </div>
   )
 }

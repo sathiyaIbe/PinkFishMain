@@ -10,7 +10,7 @@ const Banner = () => (
                 <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img className='h-6' src='/ig_icon.svg'/></a>
                 <a href='https://www.tiktok.com/@pinkfishfestival' target="_blank">  <img className='h-6' src='/tt_icon.svg'/></a>
                 </div>
-                <Footer />
+                
               </div>
 );
 export default Banner;
