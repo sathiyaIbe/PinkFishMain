@@ -1,5 +1,22 @@
 "use client";
-const World = () => (
+const World = () =>{
+  function sideScroll(direction,speed,distance,step){
+        var element =   document.getElementById('container')
+       
+         var scrollAmount = 0;
+          var slideTimer = setInterval(function(){
+              if(direction == 'left'){
+                  element.scrollLeft -= step;
+              } else {
+                  element.scrollLeft += step;
+              }
+              scrollAmount += step;
+              if(scrollAmount >= distance){
+                  window.clearInterval(slideTimer);
+              }
+          }, speed);
+      }
+return(
   <div className="flex flex-col max-w-[100vw]  gap-11">
   <section className='hero_banner flex flex-col  text-white'>
 <div className="   w-[70%] self-center  ">
@@ -23,18 +40,45 @@ const World = () => (
   </section>
   <section className="flex flex-col gap-11 w-[80%] self-center itmes-center">
     <div className="flex justify-around ">
-    <img src='/hero_logo_1.png' />
-    <img src='/hero_logo_2.png' />
     <img src='/hero_logo_3.png' />
+    <img src='/hero_logo_2.png' />
+    <img src='/hero_logo_1.png' />
     </div>
-    <div className="flex flex-col ">
-    <div className="flex gap-3 self-center">
+    <div className="flex flex-col  self-center ">
+    <div className="flex gap-3 ">
       <img src='/left_arrow_home.svg' alt='arrow'/>
-      <img src='/countdown_banner.png' alt='arrow'/>
-
-      <img src='/right_arrow_home.svg' alt='arrow'/>
+      <div id='container' className=" flex  overflow-x-scroll gap-6">
+      {/* <span className="min-w-[100%]"> 
+      <img className="" src="/countdown_banner.png" />
+      </span>
+      <img className="" src="/countdown_banner.png" /> */}
+      
+      <div className="container w-full  ">
+          <img className="object-cover" src="/countdown_banner.png" />
+          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
+            
+            <button className="event_tickets2 text-block self-center " alt="button">View More
+             
+              </button>
+          </div>
+        </div>
+        
+      {/* <span className="container   ">
+          <img className="" src="/countdown_banner.png" />
+          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
+            
+            <button className="event_tickets2 text-block self-center " alt="button">View More
+             
+              </button>
+          </div>
+        </span> */}
+       
+      {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
+      </div>
+      <img src='/right_arrow_home.svg' onClick={()=>{sideScroll("right",2,900,1900)}} alt='arrow'/>
       </div>
     </div>
+   
     <div className="flex flex-col  text-white">
       <div className="flex self-center   gap-6   ">
       <div className="basis-1/2 flex flex-col gap-3">
@@ -45,17 +89,12 @@ const World = () => (
          
           <div className="flex gap-2">
           <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
-          <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
+          <img src='/right_arrow_home_bottom.svg' alt='arrow'/>
           </div>
         </div>
         <img src='/home_bottom_img_2.png' className="object-none" alt='gallery'/>
 
-        <h1 className="home_bottom_header text-center mt-6">a curated adventure by</h1>
-        <div className="flex justify-between">
-          <img src='/home_bottom_logo_1.png'/>
-          <img className="object-none" src='/home_bottom_logo_2.png'/>
-
-        </div>
+       
       </div>
       <div className="basis-1/2 flex flex-col gap-3">
         <div className="flex justify-between">
@@ -64,33 +103,29 @@ const World = () => (
           </h1>
           <div className="flex gap-2">
           <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
-          <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
+          <img src='/right_arrow_home_bottom.svg' alt='arrow'/>
           </div>
         </div>
         
         <img src='/home_bottom_img_1.png' className="object-none" alt='gallery'/>
-        <h1 className="home_bottom_header text-center mt-6">as seen on</h1>
-        <div className="flex gap-6 self-center">
-          <img src='/home_bottom_logo_3.png'/>
-          <img className="object-none" src='/home_bottom_logo_4.png'/>
-          <img src='/home_bottom_logo_5.png'/>
-          <img className="object-none" src='/home_bottom_logo_6.png'/>
-
-        </div>
-        <div className="flex gap-6 self-center">
-          <img src='/home_bottom_logo_7.png'/>
-          <img className="object-none" src='/home_bottom_logo_8.png'/>
-          <img src='/home_bottom_logo_9.png'/>
-
-        </div>
        
         
        
       </div>
+      
     </div>
+    <div className="flex flex-col">
+    <h1 className="home_bottom_header text-center mt-6  self-center">a curated adventure by</h1>
+        <div className="flex gap-6 self-center ">
+          <img src='/home_bottom_logo_1.png'/>
+          <img className="object-none" src='/home_bottom_logo_2.png'/>
+          </div>
+
+        </div>
     </div>
     
   </section>
   </div>
 );
+}
 export default World;

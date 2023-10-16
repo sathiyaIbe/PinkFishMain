@@ -29,6 +29,21 @@ const Footer = () => (
 </a> 
         
         </div>
+       
+        <h1 className="home_bottom_header text-center mt-6">as seen on</h1>
+        <div className="flex gap-6 self-center">
+          <img src='/home_bottom_logo_3.png'/>
+          <img className="object-none" src='/home_bottom_logo_4.png'/>
+          <img src='/home_bottom_logo_5.png'/>
+          <img className="object-none" src='/home_bottom_logo_6.png'/>
+
+        </div>
+        <div className="flex gap-6 self-center">
+          <img src='/home_bottom_logo_7.png'/>
+          <img className="object-none" src='/home_bottom_logo_8.png'/>
+          <img src='/home_bottom_logo_9.png'/>
+
+        </div>
       </div>
       <div className="flex flex-col gap-5 md:items-start items-center ">
       <img src='/logo_footer.png' alt='logo'/>

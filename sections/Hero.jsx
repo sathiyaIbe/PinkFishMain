@@ -134,10 +134,10 @@ firstRef.play()
   </div> */}
       {/* <div className='flex flex-col md:flex-row items-center md:justify-center md: p-4 md:w-[90%] ' onMouseMove={(e)=>tHandler(e)}> */}
     
-      <video src="/bg_video.mp4" ref={(el)=>firstRef=el} className='object-cover' id='videos' autoplay loop playsinline muted ></video>
+      <video src="/bg_video_1.mp4" ref={(el)=>firstRef=el} className='max-h-[100vh]  object-cover' id='videos' autoplay loop playsinline muted ></video>
     
-          <div className='flex flex-col absolute self-center gap-6 '>
-        <img className=' w-1/2  self-center '  data-value="-30"    src='/main_logo.png'/>
+          <div className='flex flex-col justify-center h-full absolute self-center gap-6 mt-24'>
+        <img className=' w-2/3  self-center '  data-value="-30"    src='/main_logo.png'/>
         
        <h1 className='hero_text_heading self-center'>more than just a festival</h1>
        <button className='hero_button border border-white w-fit self-center p-1 rounded text-white pl-2 pr-2'>Learn More</button>

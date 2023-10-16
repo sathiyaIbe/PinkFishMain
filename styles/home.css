@@ -38,8 +38,8 @@
 }
 .text-block {
     position: absolute;
-    bottom: 20px;
-
+    bottom: 45px;
+    text-align: center;
     color: white;
     padding-left: 24px;
     padding-right: 20px;
@@ -155,20 +155,13 @@ font-family: "Integral";
 
 }
 
-.text-block {
-    position: absolute;
-    bottom: 20px;
 
-    color: white;
-    padding-left: 24px;
-    padding-right: 20px;
-}
 
 
 
 .container {
     position: relative;
-    @apply left-[23%] md:left-[28%] overflow-hidden
+    /* @apply left-[23%] md:left-[28%] overflow-hidden */
 }
 
 
