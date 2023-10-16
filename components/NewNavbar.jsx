@@ -52,7 +52,7 @@ return (
       <div className='flex'>
       <div className='w-[90%] self-center flex justify-between'>
     <Link className='self-center' href="/">
-    <img  src="/new_menu_logo.svg" className="  w-[220px] items-center" />
+    <img  src="/new_menu_logo.svg" className="  w-[220px] p-2 items-center" />
       </Link>
       <button type='button' onClick={()=>{  setToggleDropdown(((prev)=>!prev)); changeToggle()}}>
       <svg clipPath='pt-6' width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">

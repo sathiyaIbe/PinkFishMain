@@ -28,7 +28,7 @@
 
 }
 .world_header{
-    @apply  text-white text-[28px]  md:text-[48px] leading-[32px] md:leading-[54px] font-[400]  font-[Integral] ;
+    @apply  text-white text-[48px]  md:text-[48px] leading-[54px] md:leading-[54px] font-[900]  font-[Integral] ;
 
 }
 
@@ -47,7 +47,8 @@
 
 .hero_banner_mob{
     background-image: url('/bg_hero_bottom_mob.png');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 

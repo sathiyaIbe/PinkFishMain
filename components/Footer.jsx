@@ -86,7 +86,7 @@ const Footer = () => (
  
 </div>
 <div className='md:hidden'>
-  <div className='flex flex-col mt-6 '>
+  <div className='flex flex-col mt-11 '>
   <div className='w-[80%] self-center flex flex-col gap-6'>
 <div className='flex flex-col gap-3 self-center mb-6'>
         <h1 className="home_bottom_header text-center mt-6">as seen on</h1>
@@ -104,8 +104,8 @@ const Footer = () => (
 
         </div>
         </div>
-  <hr className="hr_line_footer  " />
-  <div className="flex flex-col text-white mt-6  gap-3  ">
+  <hr className="hr_line_footer w-[110%] self-center " />
+  <div className="flex flex-col text-white mt-11  gap-1  ">
       <Link className='flex justify-center' href="/">
         <p className="cursor-pointer icon_text  ">What The Fish</p>
         </Link>
@@ -120,7 +120,7 @@ const Footer = () => (
         </Link>
        
       </div>
-      <div className="flex flex-col gap-5 md:items-start items-center mb-6 ">
+      <div className="flex flex-col gap-5 md:items-start items-center mb-11 ">
         <h1 className="address_title icon_text">Follow us</h1>
         <div className="flex items-center  gap-6 md:gap-3">
 
@@ -144,7 +144,7 @@ const Footer = () => (
         
         </div>
         </div>
-        <hr className="hr_line_footer  " />
+        <hr className="hr_line_footer w-[110%] self-center  " />
         <div className="flex flex-col gap-5 md:items-start items-center mt-6">
       <img src='/logo_footer.png' className='w-1/2' alt='logo'/>
       </div>
