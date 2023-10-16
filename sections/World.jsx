@@ -42,7 +42,7 @@ return(
   </div>
   <div className="md:hidden ">
     <div className="hero_banner_mob flex flex-col  gap-4">
-      <div className="w-[90%] self-center flex flex-col gap-4">
+      <div className="w-[85%] self-center flex flex-col gap-4">
     <h1 className="world_header mt-11 ">Ride on the rhythm of life</h1>
     <p className="world_text">Live your life loud and vibrant at Pinkfish!
   </p>
