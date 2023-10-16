@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '../components';
+import { Footer, NewNavbar } from '../components';
 import '../styles/globals.css';
 'use client'
 const RootLayout = ({ children }) => (
@@ -10,7 +10,7 @@ const RootLayout = ({ children }) => (
     </head>
     <body>
       <div className="min-h-screen bg-black ">
-      {/* <Navbar /> */}
+      <NewNavbar />
     
       <img className=' right-[0] top-[70%]  fixed  ' src='/fish.png' />
      

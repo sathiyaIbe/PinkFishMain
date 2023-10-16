@@ -33,8 +33,8 @@ hits and had them singing along.</p>
 
             </div>
             </div>
-            <div className='basis-1/2'>
-                <img src='/fan_box_1.png' alt='demo image'/>
+            <div className='basis-1/2 flex justify-end'>
+                <img src='/fan_box_1.png' className='' alt='demo image'/>
                 </div>
             </div>
             <div className='fan_box flex border border-white rounded w-[70%] self-center bg-black'>
@@ -57,7 +57,7 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
 
             </div>
             </div>
-            <div className='basis-1/2'>
+            <div className='basis-1/2 flex justify-end'>
                 <img src='/fan_box_2.png' alt='demo image'/>
                 </div>
             </div>
@@ -77,7 +77,7 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
 
             </div>
             </div>
-            <div className='basis-1/2'>
+            <div className='basis-1/2 flex justify-end'>
                 <img src='/fan_box_3.png' alt='demo image'/>
                 </div>
             </div>

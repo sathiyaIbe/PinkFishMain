@@ -4,7 +4,7 @@ import Link from 'next/link';
 import '../styles/home.css'
 
 import gsap from 'gsap';
-import { Footer, Navbar } from '../components';
+import { Footer,  } from '../components';
 import { useRef, useState } from 'react';
 import PartyBanner from './PartyBanner';
 const Hero2 = () => {
@@ -91,7 +91,6 @@ const Hero2 = () => {
 
   <section className="hero_container_1  min-h-screen flex flex-col justify-between overflow-hidden"  >
    
-    <Navbar selectItem='home' />
     <div>
     <div className='flex flex-col '>
     <div className='  header_container flex justify-center'>
