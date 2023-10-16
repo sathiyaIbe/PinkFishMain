@@ -2,18 +2,20 @@
 const World = () => (
   <div className="flex flex-col max-w-[100vw]  gap-11">
   <section className='hero_banner flex flex-col  text-white'>
-<div className="flex p-11 w-[70%] self-center ">
-  <div className="basis-1/2 flex flex-col">
+<div className="   w-[70%] self-center  ">
+  <div className="flex justify-around">
+
+  <div className="w-2/4  p-11 ">
     <h1 className="world_header  ">Ride on the rhythm of life</h1>
   </div>
-  <div className="basis-1/2 flex flex-col justify-center gap-3">
+  <div className="w-2/4 p-11  gap-3">
     <p className="world_text">Live your life loud and vibrant at Pinkfish!
   </p>
 <p className="world_text">Get ready to ignite your spirit, join a tight-knit community, and embrace self-expression 
   in an explosion of music, arts, and dance; all blending into one melting pot of creativity
 </p>
   </div>
-  
+  </div>
 </div>
 
 {/* <img src='/hero_bottom_bg.png'/> */}

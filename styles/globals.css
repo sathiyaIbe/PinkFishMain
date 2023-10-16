@@ -65,7 +65,7 @@
 
 .desktop_navbar{
 
-@apply flex justify-between     ;
+/* @apply flex justify-between     ; */
 }
 
 .navbar_container_mob{
@@ -115,7 +115,7 @@
 } */
 
 .buy_ticket{
-  @apply bg-[#F33288] rounded-lg uppercase p-2  gap-2 text-white  text-[12px] md:text-[14px] leading-[14px] md:leading-[16px] font-[500] font-[Integral];
+  @apply bg-[#F33288] rounded-lg uppercase pt-2 p-2  gap-2 text-white h-fit text-[12px] md:text-[14px] leading-[14px] md:leading-[16px] font-[500] font-[Integral];
 
 }
 
