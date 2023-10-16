@@ -25,8 +25,8 @@ return (
         <Link href="/FunHub">
           <h1 className="menu_text ">FUN HUB</h1>
         </Link>
-        <Link href="/" className='w-fit'>
-        <img  src="/new_menu_logo.svg" className=" object-none w-[250px] " />
+        <Link href="/" className='flex'>
+        <img  src="/new_menu_logo.svg" className="  w-[200px] items-center" />
       </Link>
         <Link href="/News">
           <h1 className="menu_text ">News</h1>

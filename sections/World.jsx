@@ -39,22 +39,24 @@ return(
 
   </section>
   <section className="flex flex-col gap-11 w-[80%] self-center itmes-center">
-    <div className="flex justify-around ">
+    <div className="flex justify-around  mt-11 mb-11">
     <img src='/hero_logo_3.png' />
     <img src='/hero_logo_2.png' />
     <img src='/hero_logo_1.png' />
     </div>
     <div className="flex flex-col  self-center ">
-    <div className="flex gap-3 ">
-      <img src='/left_arrow_home.svg' alt='arrow'/>
+    <div className="flex  ">
+     
+      <img src='/left_arrow_home.svg' onClick={()=>{sideScroll("left",2,900,1900)}} className="" alt='arrow'/>
+     
       <div id='container' className=" flex  overflow-x-scroll gap-6">
-      {/* <span className="min-w-[100%]"> 
+      {/* <span className="min-w-[100%] relative"> 
       <img className="" src="/countdown_banner.png" />
       </span>
       <img className="" src="/countdown_banner.png" /> */}
       
-      <div className="container w-full  ">
-          <img className="object-cover" src="/countdown_banner.png" />
+      <div className="container flex flex-col min-w-[100%]  ">
+          <img className="object-none self-center" src="/countdown_banner.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
             
             <button className="event_tickets2 text-block self-center " alt="button">View More
@@ -63,15 +65,15 @@ return(
           </div>
         </div>
         
-      {/* <span className="container   ">
-          <img className="" src="/countdown_banner.png" />
-          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
+        <div className="container flex flex-col min-w-[100%]  ">
+          <img className="object-cover self-center" src="/countdown_banner_2.jpg" />
+          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
             <button className="event_tickets2 text-block self-center " alt="button">View More
              
               </button>
           </div>
-        </span> */}
+        </div>
        
       {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
       </div>
