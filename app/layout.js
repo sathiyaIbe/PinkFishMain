@@ -1,6 +1,6 @@
 import { Footer, Navbar } from '../components';
 import '../styles/globals.css';
-
+'use client'
 const RootLayout = ({ children }) => (
   <html lang="en">
     <head>
@@ -10,7 +10,7 @@ const RootLayout = ({ children }) => (
     </head>
     <body>
       <div className="min-h-screen bg-black ">
-      <Navbar />
+      {/* <Navbar /> */}
     
       <img className=' right-[0] top-[70%]  fixed  ' src='/fish.png' />
      

@@ -1,3 +1,4 @@
+'use client'
 import { PinkText, Events, Gallery, Hero, Banner,World } from '../sections';
 import '../styles/contact.css';
 

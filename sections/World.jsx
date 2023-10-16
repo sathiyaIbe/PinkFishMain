@@ -1,10 +1,10 @@
 "use client";
 const World = () => (
   <div className="flex flex-col max-w-[100vw]  gap-11">
-  <section className='hero_banner  text-white'>
-<div className="flex p-11 ">
+  <section className='hero_banner flex flex-col  text-white'>
+<div className="flex p-11 w-[80%] self-center ">
   <div className="basis-1/2 flex flex-col">
-    <h1 className="world_header w-3/4 self-end">Ride on the rhythm of life</h1>
+    <h1 className="world_header  ">Ride on the rhythm of life</h1>
   </div>
   <div className="basis-1/2 flex flex-col justify-center gap-3">
     <p className="world_text">Live your life loud and vibrant at Pinkfish!
@@ -19,7 +19,7 @@ const World = () => (
 {/* <img src='/hero_bottom_bg.png'/> */}
 
   </section>
-  <section className="flex flex-col gap-6 w-[80%] self-center itmes-center">
+  <section className="flex flex-col gap-11 w-[80%] self-center itmes-center">
     <div className="flex justify-around ">
     <img src='/hero_logo_1.png' />
     <img src='/hero_logo_2.png' />
