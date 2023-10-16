@@ -1,6 +1,6 @@
 import { Footer, NewNavbar } from '../components';
 import '../styles/globals.css';
-'use client'
+
 const RootLayout = ({ children }) => (
   <html lang="en">
     <head>
