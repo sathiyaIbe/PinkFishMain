@@ -135,7 +135,7 @@ firstRef.play()
   </div> */}
       {/* <div className='flex flex-col md:flex-row items-center md:justify-center md: p-4 md:w-[90%] ' onMouseMove={(e)=>tHandler(e)}> */}
     
-      <video src="/bg_video_1.mp4" ref={(el)=>firstRef=el} className='max-h-[100vh]  object-cover' id='videos' autoplay loop playsinline muted ></video>
+      <video src="/bg_video_1.mp4" ref={(el)=>firstRef=el} className='max-h-[100vh]  object-cover' id='videos' autoPlay loop playsInline muted ></video>
     
           <div className='flex flex-col justify-center h-full absolute self-center gap-6 mt-24'>
         <img className=' w-2/3  self-center '  data-value="-30"    src='/main_logo.png'/>
