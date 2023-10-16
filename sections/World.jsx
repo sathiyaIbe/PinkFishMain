@@ -2,7 +2,7 @@
 const World = () => (
   <div className="flex flex-col max-w-[100vw]  gap-11">
   <section className='hero_banner flex flex-col  text-white'>
-<div className="flex p-11 w-[80%] self-center ">
+<div className="flex p-11 w-[70%] self-center ">
   <div className="basis-1/2 flex flex-col">
     <h1 className="world_header  ">Ride on the rhythm of life</h1>
   </div>
