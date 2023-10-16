@@ -36,7 +36,7 @@
 }
 
 .icon_text{
-  @apply text-white text-[14px] leading-[22px]    font-[Sofia];
+  @apply text-white text-[20px] md:text-[14px] leading-[22px]    font-[Sofia];
   text-align: center;
 
 }
@@ -69,11 +69,11 @@
 }
 
 .navbar_container_mob{
-  @apply flex justify-end    w-[100%]  md:hidden ;
+  @apply    w-[100%]  md:hidden ;
 }
 
 .dropdown {
-  @apply   w-full  rounded-lg bg-black min-w-[210px] flex flex-col   items-center;
+  @apply   w-full  rounded-lg bg-black min-w-[210px] flex flex-col gap-4  items-center;
 }
 
 .dropdown_link {
@@ -82,7 +82,7 @@
 
 .menu_text_mob{
 
-  @apply w-fit  uppercase text-[white] font-[Integral] font-[700] text-[20px] leading-[24px] md:leading-[24px] tracking-[5px];
+  @apply w-fit self-center  uppercase text-[white] font-[Integral] font-[700] text-[20px] leading-[24px] md:leading-[24px] tracking-[5px];
 } 
 .menu_text{
 

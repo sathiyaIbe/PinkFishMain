@@ -26,6 +26,11 @@ contact_input:focus{
     @apply bg-[#F33288] rounded  text-center w-fit    p-2 flex justify-center text-[16px] leading-[24px] font-[Sofia] text-white font-[500] ;
 
 }
+.contact_text_header_mob{
+    @apply text-[32px] md:text-[48px] leading-[38px] md:leading-[52px] font-[900] font-[Integral] text-[#F33288]
+
+}
+
 .contact_text_header{
     @apply text-[32px] md:text-[48px] leading-[38px] md:leading-[52px] font-[900] font-[Integral] text-[#fff]
 
@@ -34,6 +39,11 @@ contact_input:focus{
     @apply text-[14px] md:text-[16px] leading-[16px] md:leading-[18px] font-[500] font-[Sofia] text-[#fff]
 
 }
+.contact_sub_text_mob {
+    @apply text-[14px] md:text-[16px] leading-[16px] md:leading-[18px] font-[500] font-[Sofia] text-[#F33288]
+
+}
+
 
 .fish_bottom_heading {
     @apply text-[14px] md:text-[16px] leading-[16px] md:leading-[20px] font-[700] font-[Sofia] text-[#fff]
@@ -69,9 +79,23 @@ contact_input:focus{
 }
 
 .contact_main_container{
-background-image: url("/contact_bg.png");
-background-repeat: no-repeat;
-background-size:contain;
+    background-image: url("/contact_bg.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    }
+    .contact_main_container_what{
+        background:  url("/what_bg_mob_1.png")   ;
+        background-repeat: no-repeat;
+        background-size:cover;
+        }
+@media screen and(min-width:768px) {
+
+        .contact_main_container_what{
+            background-image: url("/contact_bg.png");
+            background-repeat: no-repeat;
+            background-size:contain;
+            }
+    
 }
 
 .fan_main_container{

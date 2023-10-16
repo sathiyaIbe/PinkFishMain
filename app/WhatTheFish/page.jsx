@@ -7,14 +7,23 @@ import { Footer, Navbar } from '../../components';
 
 const WhatTheFish = () => {
   return (
-    <div className=" min-h-screen  text-white  pb-24 ">
-    <div className="contact_main_container min-h-[80vh]     ">
+    <div className=" min-h-screen  text-white  md:pb-24 ">
+    <div className="contact_main_container_what pd:mb-0 pb-6 md:min-h-[80vh]     ">
    
          <div className='flex flex-col gap-6 pt-11   '>
-            <div className='w-1/2 flex flex-col gap-6 self-center '>
+            <div className='w-[80%] md:w[50%] flex flex-col gap-6 self-center '>
+              <div className='md:block hidden'>
             <div className='flex justify-center gap-3 mt-11 items-center contact_text_header '>
            <h1 className='contact_text_header  text-center '>What The </h1>
            <img src='/fish.svg' className='mt-2' alt='fish'/> !
+           </div>
+           </div>
+           <div className='flex flex-col justify-center w-1/2 self-center gap-3 mt-11 items-center contact_text_header md:hidden'>
+           <h1 className='contact_text_header  text-center pl-6'>What </h1>
+           <div className='flex gap-2'>
+           The 
+           <img src='/fish.svg' className='' alt='fish'/> !
+           </div>
            </div>
            <div className='flex flex-col gap-6'>
                     <h1 className='contact_sub_text text-center'>Pinkfish celebrates the best of dance, urban pop, and live music acts, 
@@ -31,8 +40,8 @@ const WhatTheFish = () => {
         
        
          </div>
-         <div className=' flex flex-col'>
-            <div className='flex flex-col  gap-6 w-[50%] self-center'>
+         <div className=' flex flex-col md:mt-0 mt-11'>
+            <div className='flex flex-col  gap-6 md:w-[50%] w-[80%] self-center'>
               
                 <motion.h1 
                  variants={textVariant2}

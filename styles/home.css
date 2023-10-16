@@ -38,13 +38,18 @@
 }
 .text-block {
     position: absolute;
-    bottom: 45px;
     text-align: center;
     color: white;
     padding-left: 24px;
     padding-right: 20px;
+    @apply bottom-[0px] md:bottom-[30px]
 }
 
+.hero_banner_mob{
+    background-image: url('/bg_hero_bottom_mob.png');
+    background-size: contain;
+
+}
 
 @media screen and (max-width:768px) {
 .hero_container{

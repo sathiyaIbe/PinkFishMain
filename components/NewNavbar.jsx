@@ -49,9 +49,10 @@ return (
     </div>
     </div>
     <div className='navbar_container_mob  '>
-      <div className='w-[70%] self-center flex justify-between'>
+      <div className='flex'>
+      <div className='w-[90%] self-center flex justify-between'>
     <Link className='self-center' href="/">
-        <img src="/Logo.png" className="logo_img mb-3" />
+    <img  src="/new_menu_logo.svg" className="  w-[220px] items-center" />
       </Link>
       <button type='button' onClick={()=>{  setToggleDropdown(((prev)=>!prev)); changeToggle()}}>
       <svg clipPath='pt-6' width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,22 +61,25 @@ return (
 <path d="M24.4565 16.0756H0.978261C0.443478 16.0756 0 15.6129 0 15.055C0 14.4971 0.443478 14.0344 0.978261 14.0344H24.4565C24.9913 14.0344 25.4348 14.4971 25.4348 15.055C25.4348 15.6129 24.9913 16.0756 24.4565 16.0756Z" fill="#F33288"/>
 </svg>
 </button>
+
+</div> 
+</div>
 {toggleDropdown &&
-<div className="dropdown">
-<Link href="/" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>Home </Link>
-     <Link href="/Events" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>Events</Link>
+<div className="dropdown items-center ">
+<Link href="/WhatTheFish" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>What the fish! </Link>
+     <Link href="/FunHub" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>Fun Hub</Link>
+<Link href="/News" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>News </Link>
    
-    <Link href="/Contact" className="menu_text_mob mb-4" onClick={()=>setToggleDropdown(false)}>Contact</Link>
-    <Link href="/Contact" className='w-[40%]'  onClick={()=>setToggleDropdown(false)}>
-        <button className="buy_ticket   p-5 mb-6 flex " type="button">Tickets
-          <svg className="mt-2 md:mt-2  ml-1 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <Link href="/Contact" className="menu_text_mob mb-4" onClick={()=>setToggleDropdown(false)}>Contact us</Link>
+    <Link href="/Contact" className='w-[100%] flex flex-col'  onClick={()=>setToggleDropdown(false)}>
+        <button className="buy_ticket  self-center items-center p-5 mb-6 flex " type="button">Tickets
+          <svg className=" " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />
           </svg>
         </button>
       </Link>
     </div>
-}
-</div>  
+} 
     </div>
   </nav>
 );

@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
     <div className="bg-black min-h-screen flex flex-col gap-11  text-white   ">
     
-    <div className='flex flex-col gap-6 pt-11 pb-24'>
+    <div className='flex flex-col gap-6 pt-11 md:pb-24'>
       <h1 className='contact_text_header  self-center'>festival oasis</h1>
       <h1 className='contact_sub_text text-center w-[60%] self-center'>Catch a glimpse of yourself and other LAVAs in stills at Pinkfish events!</h1>
     </div>
@@ -23,7 +23,7 @@ const Gallery = () => {
 
     </div>
     {toogle?
-    <div className='self-center flex flex-col gap-4'>
+    <div className='self-center flex flex-col gap-4 md:w-[100%] w-[80%]'>
       <div className='flex gap-4'>
         <div className='image_11'>
         <img src='Gallery/new_gallery_1.png' alt='gallery'/>
@@ -79,7 +79,7 @@ const Gallery = () => {
         </div>
       </div>
     </div>:
-    <div className='self-center flex flex-col gap-4'>
+    <div className='self-center flex flex-col gap-4 md:w-[100%] w-[80%]'>
     <div className='flex gap-4'>
     <div className='image_11'>
         <img src='Gallery/new_gallery_12.png' alt='gallery'/>
@@ -135,7 +135,7 @@ const Gallery = () => {
     </div>
   </div>
 }
-<div className=''>
+<div className='hidden md:block'>
   <img className='galler_svg_1' src='Gallery/svg_1.svg'/>
   <img className='galler_svg_2' src='Gallery/svg_5.svg'/>
   <img className='galler_svg_3' src='Gallery/svg_4.svg'/>

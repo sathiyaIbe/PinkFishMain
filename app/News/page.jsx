@@ -195,7 +195,7 @@ const Event = () => {
       <h1 className='contact_sub_text text-center w-[60%] self-center'>Stay in the loop with Pinkfish's latest news here!</h1>
     </div>
     <div className='flex flex-col self-center w-[70%] gap-6'>
-      <div className='flex  gap-3'>
+      <div className='flex md:flex-row flex-col  gap-3'>
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
       <img src='/news_img_1.png' alt='news image' />
       <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
@@ -236,7 +236,7 @@ at the end of April will definitely be worth the hype!
     </div>
     </div>
       </div>
-      <div className='flex justify-center  gap-3'>
+      <div className='flex md:flex-row flex-col md:justify-center  gap-3'>
 
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
       <img src='/news_img_4.png' alt='news image' />

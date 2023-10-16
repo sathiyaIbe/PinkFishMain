@@ -10,13 +10,13 @@ const FanHub = () => {
     
          <div className='flex  flex-col gap-6 pt-11 pb-24'>
            <h1 className='contact_text_header  self-center'>FUN HUB</h1>
-           <h1 className='contact_sub_text text-center w-[60%] self-center'>Pinkfish is a magical celebration of 
+           <h1 className='contact_sub_text text-center w-[80%] md:w-[60%] self-center'>Pinkfish is a magical celebration of 
            community and lifestyle where we celebrate self-expression in a kaleidoscope of life where music, arts, 
            and culture collide into one under an open sky.</h1>
          </div>
          <div className='flex flex-col gap-6 '>
-            <div className='fan_box flex border border-white rounded w-[70%] self-center bg-black'>
-            <div className='basis-1/2   flex flex-col justify-center gap-4'>
+            <div className='fan_box flex md:flex-row flex-col border border-white rounded md:w-[70%] w-[90%] gap-6 self-center bg-black pb-6'>
+            <div className='basis-1/2 order-2 md:order-1  flex flex-col justify-center gap-4'>
                 <div className='flex flex-col self-center w-[80%] gap-6'>
                 <img src='/fan_box_logo_1.png' className='self-center' alt='pinkfish live logo'/>
                 <p className='fish_bottom_text text-center self-center'> <span className='fish_bottom_heading'> Pinkfish Live </span> provides revolutionary and international-level live shows electrifying stage setup and show production, mind-bending LED and sound setup for Malaysians.
@@ -33,12 +33,12 @@ hits and had them singing along.</p>
 
             </div>
             </div>
-            <div className='basis-1/2 flex justify-end'>
+            <div className='basis-1/2 order-1 md:order-2 flex justify-end'>
                 <img src='/fan_box_1.png' className='' alt='demo image'/>
                 </div>
             </div>
-            <div className='fan_box flex border border-white rounded w-[70%] self-center bg-black'>
-            <div className='basis-1/2   flex flex-col justify-center gap-4'>
+            <div className='fan_box flex flex md:flex-row flex-col border border-white rounded md:w-[70%]  gap-6 w-[90%] self-center bg-black pb-6'>
+            <div className='basis-1/2  order-2 md:order-1  flex flex-col justify-center gap-4'>
                 <div className='flex flex-col self-center w-[80%] gap-6'>
                 <img src='/fan_box_logo_2.png' className='self-center' alt='Pinkfish Music & Arts Festival logo'/>
                 <p className='fish_bottom_text text-center self-center'> <span className='fish_bottom_heading'> Pinkfish Music & Arts Festival </span> is a curated creative music & arts experience that featured live acts,
@@ -57,12 +57,12 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
 
             </div>
             </div>
-            <div className='basis-1/2 flex justify-end'>
-                <img src='/fan_box_2.png' alt='demo image'/>
+            <div className='basis-1/2 order-1 md:order-2 flex justify-end'>
+                <img  src='/fan_box_2.png' alt='demo image'/>
                 </div>
             </div>
-            <div className='fan_box flex border border-white rounded w-[70%] self-center bg-black'>
-            <div className='basis-1/2   flex flex-col justify-center gap-4'>
+            <div className='fan_box flex flex md:flex-row flex-col border border-white rounded md:w-[70%] w-[90%] gap-6 self-center pb-6 bg-black'>
+            <div className='basis-1/2 order-2 md:order-1  flex flex-col justify-center gap-4'>
                 <div className='flex flex-col self-center w-[80%] gap-6'>
                 <img src='/fan_box_logo_3.png' className='self-center' alt='Pinkfish Countdown logo'/>
                 <p className='fish_bottom_text text-center self-center'> <span className='fish_bottom_heading'> Pinkfish Countdown </span> is a curated experience of tight-knit celebration that features 
@@ -77,7 +77,7 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
 
             </div>
             </div>
-            <div className='basis-1/2 flex justify-end'>
+            <div className='basis-1/2 order-1 md:order-2 flex justify-end'>
                 <img src='/fan_box_3.png' alt='demo image'/>
                 </div>
             </div>
