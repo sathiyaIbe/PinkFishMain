@@ -197,10 +197,10 @@ Pinkfish Live
 
   </section>
   </div>
-  <div className=' md:hidden'>
-  <section className="hero_continer flex flex-col justify-center overflow-hidden "  >
+  <div className=' md:hidden mb-11'>
+  <section className="hero_continer flex flex-col justify-center  overflow-hidden "  >
 
-      <video src="/bg_video_1.mp4" ref={(el)=>firstRef=el} className=' object-cover' id='videos' autoplay loop playsinline muted ></video>
+      <video src="/bg_video_1.mp4" ref={(el)=>firstRef=el} className='  h-[100%]' id='videos' autoplay loop playsinline muted ></video>
     
           <div className='flex flex-col justify-center h-full absolute self-center gap-3 md:mb-3 mb-24  mt-24 '>
         <img className=' w-3/5  self-center '  data-value="-30"    src='/main_logo.png'/>
