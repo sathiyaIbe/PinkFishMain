@@ -165,7 +165,7 @@ return(
       </div>
       
     </div>
-    <div className="flex flex-col ">
+    <div className="flex flex-col logo_container md:mt-0 mt-11  ">
     <h1 className="home_bottom_header text-center mt-6  self-center">a curated adventure by</h1>
         <div className="flex gap-6 self-center ">
           <img className="hidden md:block" src='/home_bottom_logo_1.png'/>

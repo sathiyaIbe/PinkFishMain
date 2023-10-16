@@ -202,7 +202,7 @@ Pinkfish Live
 
       <video src="/bg_video_1.mp4" ref={(el)=>firstRef=el} className=' object-cover' id='videos' autoplay loop playsinline muted ></video>
     
-          <div className='flex flex-col justify-center h-full absolute self-center gap-3 mb-3 mt-24 '>
+          <div className='flex flex-col justify-center h-full absolute self-center gap-3 md:mb-3 mb-11  mt-24 '>
         <img className=' w-1/3  self-center '  data-value="-30"    src='/main_logo.png'/>
         
        <h1 className='hero_text_heading self-center'>more than just a festival</h1>
