@@ -4,14 +4,7 @@ const nextConfig = {
     appDir: true,
   },
 
-  async rewrites() {
-    return [
-      {
-        source: '/countdown',
-        destination: '/index.html',
-      },
-    ]
-  },
+  
 };
  
 module.exports = nextConfig;
