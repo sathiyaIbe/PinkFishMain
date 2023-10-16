@@ -42,7 +42,7 @@
     color: white;
     padding-left: 24px;
     padding-right: 20px;
-    @apply bottom-[0px] md:bottom-[30px]
+    @apply bottom-[5px] md:bottom-[30px]
 }
 
 .hero_banner_mob{
