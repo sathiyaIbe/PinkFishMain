@@ -15,28 +15,7 @@ const FanHub = () => {
            and culture collide into one under an open sky.</h1>
          </div>
          <div className='flex flex-col gap-6 '>
-            <div className='fan_box flex md:flex-row flex-col border border-white rounded md:w-[70%] w-[90%] gap-6 self-center bg-black pb-6'>
-            <div className='basis-1/2 order-2 md:order-1  flex flex-col justify-center gap-4'>
-                <div className='flex flex-col self-center w-[80%] gap-6'>
-                <img src='/fan_box_logo_1.png' className='self-center' alt='pinkfish live logo'/>
-                <p className='fish_bottom_text text-center self-center'> <span className='fish_bottom_heading'> Pinkfish Live </span> provides revolutionary and international-level live shows electrifying stage setup and show production, mind-bending LED and sound setup for Malaysians.
-Pinkfish Live brought these expertise together for Tyga’s show on the 9th August 2023, having
-concert-goers dancing the night away.</p>
-
-<p className='fish_bottom_text self-center text-center'>The adrenaline-filled night also featured an exciting lineup of
-local acts. DJ sets from Nahsyk, Naufal, and Bad M.O.B. set the tone for the night, with exhilarating performances by guest artists such as Saixse and Kidd Santhe, who performed their crowd-favourite
-hits and had them singing along.</p>
-
-<div className='fan_button self-center'>
-    <button className='' type='button'>Start Living Your Life</button>
-</div>
-
-            </div>
-            </div>
-            <div className='basis-1/2 order-1 md:order-2 flex justify-end'>
-                <img src='/fan_box_1.png' className='' alt='demo image'/>
-                </div>
-            </div>
+        
             <div className='fan_box flex flex md:flex-row flex-col border border-white rounded md:w-[70%]  gap-6 w-[90%] self-center bg-black pb-6'>
             <div className='basis-1/2  order-2 md:order-1  flex flex-col justify-center gap-4'>
                 <div className='flex flex-col self-center w-[80%] gap-6'>
@@ -61,7 +40,9 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
                 <img  src='/fan_box_2.png' alt='demo image'/>
                 </div>
             </div>
-            <div className='fan_box flex flex md:flex-row flex-col border border-white rounded md:w-[70%] w-[90%] gap-6 self-center pb-6 bg-black'>
+            
+         
+             <div className='fan_box flex flex md:flex-row flex-col border border-white rounded md:w-[70%] w-[90%] gap-6 self-center pb-6 bg-black'>
             <div className='basis-1/2 order-2 md:order-1  flex flex-col justify-center gap-4'>
                 <div className='flex flex-col self-center w-[80%] gap-6'>
                 <img src='/fan_box_logo_3.png' className='self-center' alt='Pinkfish Countdown logo'/>
@@ -80,6 +61,28 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
             </div>
             <div className='basis-1/2 order-1 md:order-2 flex justify-end'>
                 <img src='/fan_box_3.png' alt='demo image'/>
+                </div>
+            </div>
+            <div className='fan_box flex md:flex-row flex-col border border-white rounded md:w-[70%] w-[90%] gap-6 self-center bg-black pb-6'>
+            <div className='basis-1/2 order-2 md:order-1  flex flex-col justify-center gap-4'>
+                <div className='flex flex-col self-center w-[80%] gap-6'>
+                <img src='/fan_box_logo_1.png' className='self-center' alt='pinkfish live logo'/>
+                <p className='fish_bottom_text text-center self-center'> <span className='fish_bottom_heading'> Pinkfish Live </span> provides revolutionary and international-level live shows electrifying stage setup and show production, mind-bending LED and sound setup for Malaysians.
+Pinkfish Live brought these expertise together for Tyga’s show on the 9th August 2023, having
+concert-goers dancing the night away.</p>
+
+<p className='fish_bottom_text self-center text-center'>The adrenaline-filled night also featured an exciting lineup of
+local acts. DJ sets from Nahsyk, Naufal, and Bad M.O.B. set the tone for the night, with exhilarating performances by guest artists such as Saixse and Kidd Santhe, who performed their crowd-favourite
+hits and had them singing along.</p>
+
+<div className='fan_button self-center'>
+    <button className='' type='button'>Start Living Your Life</button>
+</div>
+
+            </div>
+            </div>
+            <div className='basis-1/2 order-1 md:order-2 flex justify-end'>
+                <img src='/fan_box_1.png' className='' alt='demo image'/>
                 </div>
             </div>
          </div>
