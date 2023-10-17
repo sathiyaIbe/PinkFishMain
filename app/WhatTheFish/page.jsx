@@ -7,7 +7,7 @@ import { Footer, Navbar } from '../../components';
 
 const WhatTheFish = () => {
   return (
-    <div className=" min-h-screen  text-white  md:pb-24 ">
+    <div className=" min-h-screen  text-white   ">
     <div className="contact_main_container_what flex flex-col justify-center pd:mb-0 pb-6 md:min-h-[80vh]     ">
    
          <div className='flex flex-col gap-6    '>
@@ -43,22 +43,24 @@ const WhatTheFish = () => {
          <div className=' flex flex-col md:mt-0 mt-11'>
             <div className='flex flex-col  gap-6 md:w-[50%] w-[80%] self-center'>
               
-                <motion.h1 
+                {/* <motion.h1 
                  variants={textVariant2}
                  initial="hidden"
                  whileInView="show"
                viewport={{ once: true }}
-                className='about_us_sub_header'>THE CURATORS</motion.h1>
+                className='about_us_sub_header'>THE CURATORS</motion.h1> */}
+                <h1 className='about_us_sub_header'>THE CURATORS</h1>
            
             <div className='flex flex-column   gap-6   mb-11  '>
            <div className='self-center flex md:flex-row gap-11 flex-col justify-center md:justify-between  '>
             <div className=' flex flex-col basis-1/2 gap-3 self-center md:self-start'>
-              <motion.img
+              {/* <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"
                 whileInView="show" 
                viewport={{ once: true }}
-              src='/aboutus_logo_1.svg' className=' ' alt="logo" />
+              src='/aboutus_logo_1.svg' className=' ' alt="logo" /> */}
+              <img src='/aboutus_logo_1.svg' className=' ' alt="logo" />
               <div className='flex flex-col'>
                 <h1 className='fish_bottom_heading'>Hitman Solutions</h1>
                 <p className='fish_bottom_text'>Established 13 years ago, Hitman Solutions is a subsidiary of Hitman Group</p>
@@ -72,12 +74,13 @@ const WhatTheFish = () => {
               
               </div>
               <div className=' flex flex-col basis-1/2 gap-3 self-center md:self-start'>
-              <motion.img
+              {/* <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"
                 whileInView="show" 
                viewport={{ once: true }}
-              src='/aboutus_logo_2.svg' className=' ' alt="logo" />
+              src='/aboutus_logo_2.svg' className=' ' alt="logo" /> */}
+              <img src='/aboutus_logo_2.svg' className=' ' alt="logo" />
               <div className='flex flex-col'>
                 <h1 className='fish_bottom_heading'>Happymoon</h1>
                 <p className='fish_bottom_text'>From humble beginnings to organising events and festivals across Malaysia and Southeast Asia, 

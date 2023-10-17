@@ -158,15 +158,30 @@ return(
           </a>
          
           <div className="flex gap-2">
-          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,450,'gallery')}} alt='arrow'/>
-          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,450 ,'gallery')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,470,'gallery')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,470 ,'gallery')}} alt='arrow'/>
           
           </div>
         </div>
         <div id='gallery' className="w-[100%] flex overflow-x-scroll gap-3 ">
-        <img src='/home_bottom_img_2.png' className=" w-[100%]" alt='gallery'/>
-        <img src='/home_bottom_img_2.png' className="object-none" alt='gallery'/>
-        <img src='/home_bottom_img_2.png' className="object-none" alt='gallery'/>
+        <img src='/home_bottom_img_1_1.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_2.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_3.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_4.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_5.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_6.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_7.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_8.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_9.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_10.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_11.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_12.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_13.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_14.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_15.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_16.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_17.png' className=" w-[100%]" alt='gallery'/>
+
 
         </div>
        
@@ -177,15 +192,19 @@ return(
           What’s bubblin’?
           </h1>
           <div className="flex gap-2">
-          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,450,'gallery1')}} alt='arrow'/>
-          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,450 ,'gallery1')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,470,'gallery1')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,470 ,'gallery1')}} alt='arrow'/>
           </div>
         </div>
         
         <div id='gallery1' className="w-[100%] flex overflow-x-scroll gap-3 ">
         <img src='/home_bottom_img_1.png' className=" w-[100%]" alt='gallery'/>
-        <img src='/home_bottom_img_1.png' className="object-none" alt='gallery'/>
-        <img src='/home_bottom_img_1.png' className="object-none" alt='gallery'/>
+        <img src='/home_bottom_img_2.png' className="object-none" alt='gallery'/>
+        <img src='/home_bottom_img_3.png' className="object-none" alt='gallery'/>
+        <img src='/home_bottom_img_4.png' className="object-none" alt='gallery'/>
+        <img src='/home_bottom_img_5.png' className="object-none" alt='gallery'/>
+        <img src='/home_bottom_img_6.png' className="object-none" alt='gallery'/>
+
 
         </div>
         
@@ -195,11 +214,10 @@ return(
     </div>
     <div className="flex flex-col logo_container md:mt-0 mt-11  ">
     <h1 className="home_bottom_header text-center mt-11 pt-6  self-center">a curated adventure by</h1>
-        <div className="flex gap-6 self-center mb-11 mt-6">
-          <img className="hidden md:block" src='/home_bottom_logo_1.png'/>
-          <img className="object-none hidden md:block" src='/home_bottom_logo_2.png'/>
-          <img className="md:hidden" src='/home_bottom_logo_1_mob.png'/>
-          <img className="object-none md:hidden" src='/home_bottom_logo_2_mob.png'/>
+        <div className="flex justify-center gap-6 self-center mb-11 mt-6">
+          <img className="" src='/home_bottom_logo_1.svg'/>
+          <img className="" src='/home_bottom_logo_2.svg'/>
+         
           </div>
 
         </div>
