@@ -56,10 +56,15 @@ return(
     
     <div className="flex justify-around  mt-11 mb-11">
     <img className="md:block hidden" src='/hero_logo_3.png' />
+    <a   href='/countdown.html'> 
     <img className="md:block hidden" src='/hero_logo_2.png' />
+    </a>
     <img className="md:block hidden" src='/hero_logo_1.png' />
     <img className="md:hidden" src='/hero_logo_mob_3.png' />
+    <a   href='/countdown.html'> 
+
     <img className="md:hidden" src='/hero_logo_mob_2.png' />
+    </a>
     <img className="md:hidden" src='/hero_logo_mob_1.png' />
     </div>
     <div className="hidden md:block">
@@ -75,9 +80,9 @@ return(
       <img className="" src="/countdown_banner.png" /> */}
       
       <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover w-[90%] self-center" src="/countdown_banner.png" />
+          <img className="object-cover w-[90%] self-center" src="/countdown_banner_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
-          <a  className="event_tickets2 text-block self-center " href='/countdown.html'>
+          <a  className="event_tickets2 text-block self-center " href=''>
             <button className=" " alt="button">View More
              
               </button>
@@ -86,12 +91,13 @@ return(
         </div>
         
         <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover self-center w-[90%]" src="/countdown_banner_2.png" />
+          <img className="object-cover self-center w-[90%]" src="/countdown_banner.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
-            
-            <button className="event_tickets2 text-block self-center " alt="button">View More
+          <a  className="event_tickets2 text-block self-center " href='/countdown.html'>
+            <button className=" " alt="button">View More
              
               </button>
+              </a>
           </div>
         </div>
        
@@ -109,9 +115,9 @@ return(
       <img className="" src="/countdown_banner.png" /> */}
       
       <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_1.png" />
+          <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
-           <a  className="event_tickets2 text-block self-center " href='/countdown.html'> 
+           <a  className="event_tickets2 text-block self-center " href=''> 
             <button  alt="button">View More
            
               </button>
@@ -120,12 +126,14 @@ return(
         </div>
         
         <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_2.png" />
+          <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
-            <button className="event_tickets2 text-block self-center " alt="button">View More
-             
+          <a  className="event_tickets2 text-block self-center " href='/countdown.html'> 
+            <button  alt="button">View More
+           
               </button>
+              </a>
           </div>
         </div>
        

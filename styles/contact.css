@@ -83,12 +83,16 @@ contact_input:focus{
     background-repeat: no-repeat;
     background-size:contain;
     }
+@media screen and (max-width:768px) {
+    
+
     .contact_main_container_what{
         background:  url("/what_bg_mob_1.png")   ;
         background-repeat: no-repeat;
         background-size:cover;
         }
-@media screen and(min-width:768px) {
+    }
+@media screen and (min-width:768px) {
 
         .contact_main_container_what{
             background-image: url("/contact_bg.png");

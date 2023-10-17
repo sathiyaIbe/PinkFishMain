@@ -71,9 +71,10 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
 
 <p className='fish_bottom_text self-center text-center'>Stay tuned for the promising line-up and future announcements!</p>
 
-<div className='fan_button self-center'>
+
+<a   href='/countdown.html' className='fan_button self-center'>
     <button className='' type='button'>You Only Live Once</button>
-</div>
+</a>
 
             </div>
             </div>

@@ -42,7 +42,7 @@
 }
 
 .logo_container{
-  background-color: #313131;
+  @apply bg-[#313131] md:bg-[#000];
 }
 
 /* NAVBAR */

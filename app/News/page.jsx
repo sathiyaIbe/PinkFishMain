@@ -209,7 +209,9 @@ const Event = () => {
 So if you’re raring to kick off the year right with an exciting art and music-filled festival, then this one taking place 
 at the end of April will definitely be worth the hype!
     </p>
+    <a href='https://worldofbuzz.com/what-the-fish-heres-how-pinkfish-is-serving-msias-hottest-music-arts-festival-in-2023/' target='_blank'>
     <button type='button' className='news_read_btn'>Read More</button>
+    </a>
     </div>
     </div>
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
@@ -218,8 +220,9 @@ at the end of April will definitely be worth the hype!
     <h1 className='news_card_header '>TYGA Gives Malaysian Fans A Taste On August 9 </h1>
 
     <p className='news_card_text'>The Compton rapper will turn Zepp Kuala Lumpur in Rack City.</p>
-    
+    <a href='https://liftedasia.com/article/tyga' target='_blank'>
     <button type='button' className='news_read_btn'>Read More</button>
+    </a>
     </div>
     </div>
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
@@ -231,8 +234,9 @@ at the end of April will definitely be worth the hype!
     stands for Thank You God Always, will be performing on 9 August at Zepp Kuala Lumpur.Known for hit songs 
     such as Taste (feat. Offset), Loco Contigo (feat. J. Balvin), Chosen (feat. Ty Dolla $ign), and Ayo, Tyga rose to fame in 
     the early 2000s, and gained success after the release of his debut studio album, Careless World: Rise of the Last King, in 2011.</p>
-    
+    <a href='https://says.com/my/entertainment/tyga-is-coming-to-malaysia-in-august' target='_blank'>
     <button type='button' className='news_read_btn'>Read More</button>
+    </a>
     </div>
     </div>
       </div>
@@ -252,7 +256,9 @@ at the end of April will definitely be worth the hype!
     Malaysians, get ready to “Go Loko” for Tyga Live in Kuala Lumpur, coming to you this 9 August in Zepp KL!
 
     </p>
+    <a href='https://worldofbuzz.com/get-a-taste-of-rapping-sensation-tyga-live-in-kl-this-august-heres-why-you-cant-miss-it/' target='_blank'>
     <button type='button' className='news_read_btn'>Read More</button>
+    </a>
     </div>
     </div>
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
@@ -264,8 +270,9 @@ at the end of April will definitely be worth the hype!
     August 2023. This will be the “Rise of the Last King” rapper’s first performance in Malaysia. After Pinkfish made its announcement, 
     Phase 1 and VVIP tickets were sold out within minutes.
 </p>
-   
+<a href='https://sg.style.yahoo.com/scream-merdeka-check-events-happening-080015810.html' target='_blank'>
     <button type='button' className='news_read_btn'>Read More</button>
+    </a>
     </div>
     </div>
       </div>

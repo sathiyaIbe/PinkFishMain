@@ -30,8 +30,8 @@ const Footer = () => (
 </a> 
         
         </div>
-       <div className='flex flex-col'>
-        <h1 className="home_bottom_header text-center mt-6">as seen on</h1>
+       <div className='flex flex-col gap-6'>
+        <h1 className="home_bottom_header  mt-6">as seen on</h1>
         <div className="flex gap-6 self-center">
           <img src='/home_bottom_logo_3.png'/>
           <img className="object-none" src='/home_bottom_logo_4.png'/>
@@ -47,7 +47,7 @@ const Footer = () => (
         </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5 md:items-start items-center ">
+      <div className="flex flex-col justify-center mt-11 gap-5 md:items-center items-center ">
       <img src='/logo_footer.png' alt='logo'/>
       </div>
       <div className="flex flex-col text-white md:items-start gap-2  ">

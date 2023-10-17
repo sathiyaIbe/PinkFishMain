@@ -8,12 +8,12 @@ import { Footer, Navbar } from '../../components';
 const WhatTheFish = () => {
   return (
     <div className=" min-h-screen  text-white  md:pb-24 ">
-    <div className="contact_main_container_what pd:mb-0 pb-6 md:min-h-[80vh]     ">
+    <div className="contact_main_container_what flex flex-col justify-center pd:mb-0 pb-6 md:min-h-[80vh]     ">
    
-         <div className='flex flex-col gap-6 pt-11   '>
-            <div className='w-[80%] md:w[50%] flex flex-col gap-6 self-center '>
-              <div className='md:block hidden'>
-            <div className='flex justify-center gap-3 mt-11 items-center contact_text_header '>
+         <div className='flex flex-col gap-6    '>
+            <div className='w-[80%] md:w[50%] flex flex-col justify-center gap-6 self-center  '>
+              <div className='md:block hidden '>
+            <div className='flex justify-center gap-3  items-center contact_text_header '>
            <h1 className='contact_text_header  text-center '>What The </h1>
            <img src='/fish.svg' className='mt-2' alt='fish'/> !
            </div>
