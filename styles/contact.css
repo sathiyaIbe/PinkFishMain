@@ -1,3 +1,4 @@
+/* eslint-disable */
 .contact_input{
     background-color: transparent;
     border: none;
@@ -50,7 +51,7 @@ contact_input:focus{
 
 }
 .fish_bottom_text {
-    @apply text-[10px] md:text-[12px] leading-[16px] md:leading-[20px] font-[500] font-[Sofia] text-[#fff]
+    @apply text-[10px] md:text-[14px] leading-[16px] md:leading-[20px] font-[500] font-[Sofia] text-[#fff]
 
 }
 .contact_header{
@@ -93,14 +94,16 @@ contact_input:focus{
         }
     }
 
-
-        .contact_main_container_what{
-            background-image: url("/contact_bg.png");
-            background-repeat: no-repeat;
-            background-size:contain;
-            }
+@media screen and (min-width:768px) {
     
 
+    .contact_main_container_what{
+        background-image: url("/contact_bg.png");
+        background-repeat: no-repeat;
+        background-size:contain;
+        }
+    
+    }
 
 .fan_main_container{
     background-image: url("/fan_bg.png");

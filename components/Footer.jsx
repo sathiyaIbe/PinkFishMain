@@ -53,16 +53,16 @@ const Footer = () => (
       </div>
       </div>
       <div className="flex flex-col   text-white md:items-start gap-2  ">
-      <Link className='flex flex-end ' href="/">
-        <p className="cursor-pointer icon_text  ">What The Fish</p>
-        </Link>
-        <Link className='flex justify-end w-full' href="/Events">
+      <a className='flex flex-end ' href="/WhatTheFish">
+        <p className="cursor-pointer icon_text  ">WhatTheFish</p>
+        </a>
+        <a className='flex justify-end w-full' href="/FunHub">
         <p className="cursor-pointer icon_text  ">Fun Hub</p>
-        </Link>
-        <Link className='flex justify-end w-full' href="/Terms&Condition">
+        </a>
+        <a className='flex justify-end w-full' href="/News">
         <p className="cursor-pointer icon_text  ">News</p>
-        </Link>
-        <Link className='flex justify-end w-full' href="/Contact">
+        </a>
+        <Link className='flex justify-end w-full' href="Contact">
         <p className="cursor-pointer icon_text  ">Contact Us </p>
         </Link>
        
@@ -74,13 +74,13 @@ const Footer = () => (
   <h1 className="footer_bottom_text ">Copyright © 2023. All rights reserved</h1>
 
   <div className='flex gap-2 text-white items-center' >
-  <Link href="/">
+  <Link href="Privacypolicy">
         <p className="cursor-pointer icon_text  ">Privacy Policy</p>
         </Link>
         |
-  <Link href="/Terms&Condition">
+  <a href="TermsCondition">
         <p className="cursor-pointer icon_text  ">Terms & Conditions</p>
-        </Link>
+        </a>
         
         </div>
   </div>
@@ -108,16 +108,16 @@ const Footer = () => (
         </div>
   <hr className="hr_line_footer w-[110%] self-center " />
   <div className="flex flex-col text-white mt-11  gap-1  ">
-      <Link className='flex justify-center' href="/">
+      <a className='flex justify-center' href="WhatTheFish">
         <p className="cursor-pointer icon_text  ">What The Fish</p>
-        </Link>
-        <Link className='flex justify-center w-full' href="/Events">
+        </a>
+        <a className='flex justify-center w-full' href="FunHub">
         <p className="cursor-pointer icon_text  ">Fun Hub</p>
-        </Link>
-        <Link className='flex justify-center w-full' href="/Terms&Condition">
+        </a>
+        <a className='flex justify-center w-full' href="News">
         <p className="cursor-pointer icon_text  ">News</p>
-        </Link>
-        <Link className='flex justify-center w-full' href="/Contact">
+        </a>
+        <Link className='flex justify-center w-full' href="Contact">
         <p className="cursor-pointer icon_text  ">Contact Us </p>
         </Link>
        
@@ -155,13 +155,13 @@ const Footer = () => (
    <h1 className="footer_bottom_text ">Copyright © 2023. All rights reserved</h1>
  
    <div className='flex gap-2 text-white items-center' >
-   <Link href="/">
+   <Link href="Privacypolicy">
          <p className="cursor-pointer footer_bottom_text  ">Privacy Policy</p>
          </Link>
          |
-   <Link href="/Terms&Condition">
+   <a href="TermsCondition">
          <p className="cursor-pointer footer_bottom_text ">Terms & Conditions</p>
-         </Link>
+         </a>
          
          </div>
    </div>

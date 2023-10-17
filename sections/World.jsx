@@ -153,7 +153,7 @@ return(
       <div className="flex flex-col md:flex-row self-center  w-[80%] gap-8   ">
       <div className="basis-1/2 flex flex-col gap-3">
         <div className="flex justify-between ">
-          <a href='/Gallery' className="home_bottom_header">
+          <a href='/' className="home_bottom_header">
           festival oasis
           </a>
          
@@ -166,7 +166,7 @@ return(
         <div id='gallery' className="w-[100%] flex overflow-x-scroll gap-3 ">
         <img src='/home_bottom_img_1_1.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_2.png' className=" w-[100%]" alt='gallery'/>
-        <img src='/home_bottom_img_1_3.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_1_3.png' className=" w-[100%] block" alt='gallery'/>
         <img src='/home_bottom_img_1_4.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_5.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_6.png' className=" w-[100%]" alt='gallery'/>
@@ -214,8 +214,8 @@ return(
     </div>
     <div className="flex flex-col logo_container md:mt-0 mt-11  ">
     <h1 className="home_bottom_header text-center mt-11 pt-6  self-center">a curated adventure by</h1>
-        <div className="flex justify-center gap-6 self-center mb-11 mt-6">
-          <img className="" src='/home_bottom_logo_1.svg'/>
+        <div className="flex flex-col md:flex-row justify-center gap-6 self-center mb-11 mt-6">
+          <img className=" " src='/home_bottom_logo_1.svg'/>
           <img className="" src='/home_bottom_logo_2.svg'/>
          
           </div>

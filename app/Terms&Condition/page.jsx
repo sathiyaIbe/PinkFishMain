@@ -1,6 +1,6 @@
-import { Footer, Navbar } from '../../components';
+
 import '../../styles/contact.css';  
-const Terms_Condition = () => {
+const page = () => {
   return (
     <div className='text-white  min-h-screen min-w-screen bg-[#000]  overflow-hidden   flex flex-col'>
        
@@ -59,4 +59,4 @@ const Terms_Condition = () => {
   )
 }
 
-export default Terms_Condition
+export default page

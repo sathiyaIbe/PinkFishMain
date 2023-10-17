@@ -5,7 +5,7 @@ import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
 import { Footer, Navbar } from '../../components';
 
-const WhatTheFish = () => {
+const page = () => {
   return (
     <div className=" min-h-screen  text-white   ">
     <div className="contact_main_container_what flex flex-col justify-center pd:mb-0 pb-6 md:min-h-[80vh]     ">
@@ -25,7 +25,7 @@ const WhatTheFish = () => {
            <img src='/fish.svg' className='' alt='fish'/> !
            </div>
            </div>
-           <div className='flex flex-col gap-6 md:w-[70%] self-center'>
+           <div className='flex flex-col gap-6 md:w-[50%] self-center'>
                     <h1 className='contact_sub_text text-center'>Pinkfish celebrates the best of dance, urban pop, and live music acts, 
                     all in one place. With a lineup of top-notch performers and artists, Pinkfish promises to be an unforgettable
                     experience for music and art lovers alike.</h1>
@@ -118,4 +118,4 @@ const WhatTheFish = () => {
   )
 }
 
-export default WhatTheFish
+export default page
