@@ -74,7 +74,7 @@ const Footer = () => (
   <h1 className="footer_bottom_text ">Copyright © 2023. All rights reserved</h1>
 
   <div className='flex gap-2 text-white items-center' >
-  <Link href="Privacypolicy">
+  <Link href="PrivacyPolicy">
         <p className="cursor-pointer icon_text  ">Privacy Policy</p>
         </Link>
         |
@@ -155,7 +155,7 @@ const Footer = () => (
    <h1 className="footer_bottom_text ">Copyright © 2023. All rights reserved</h1>
  
    <div className='flex gap-2 text-white items-center' >
-   <Link href="Privacypolicy">
+   <Link href="PrivacyPolicy">
          <p className="cursor-pointer footer_bottom_text  ">Privacy Policy</p>
          </Link>
          |
