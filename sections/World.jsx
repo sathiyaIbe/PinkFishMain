@@ -53,25 +53,34 @@ return(
     </div>
   </div>
   <section className="flex flex-col gap-11 w-[100%] md:w-[80%] self-center itmes-center">
-    
-    <div className="flex justify-around  mt-11 mb-11">
-    <img className="md:block hidden" src='/hero_logo_3.png' />
+    <div className="flex flex-col w-[80%] self-center  mt-11 mb-11">
+     
+        <div className="flex justify-between">
+        <a   href=''> 
+    <img className="md:block hidden " src='/hero_logo_3.png' />
+    </a>
     <a   href=''> 
     <img className="md:block hidden" src='/hero_logo_2.png' />
     </a>
+    <a   href=''> 
     <img className="md:block hidden" src='/hero_logo_1.png' />
+  </a>
+    </div>
+    <div className="flex justify-between">
     <img className="md:hidden" src='/hero_logo_mob_3.png' />
     <a   href=''> 
 
     <img className="md:hidden" src='/hero_logo_mob_2.png' />
     </a>
     <img className="md:hidden" src='/hero_logo_mob_1.png' />
+    
+    </div>
     </div>
     <div className="hidden md:block">
     <div className="flex flex-col  self-center ">
     <div className="flex  ">
      
-      <img src='/left_arrow_home.svg' onClick={()=>{sideScroll("left",2,900,1900, 'container')}} className="" alt='arrow'/>
+      <img src='/left_arrow_home.svg' onClick={()=>{sideScroll("left",2,900,1900, 'container')}} className="cursor-pointer" alt='arrow'/>
      
       <div id='container' className=" flex  overflow-x-scroll gap-6">
       {/* <span className="min-w-[100%] relative"> 
@@ -83,7 +92,7 @@ return(
           <img className="object-cover w-[90%] self-center" src="/countdown_banner_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
           <a  className="event_tickets2 text-block  self-center " target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '>
-            <button className=" " alt="button">Tickets
+            <button className=" " alt="button">Get Your Tickets Now
              
               </button>
               </a>
@@ -94,7 +103,7 @@ return(
           <img className="object-cover self-center w-[90%]" src="/countdown_banner.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
           <a  className="event_tickets2  text-block self-center " href=''>
-            <button className=" " alt="button">Tickets
+            <button className=" " alt="button">Get Your Tickets Now
              
               </button>
               </a>
@@ -103,7 +112,7 @@ return(
        
       {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
       </div>
-      <img src='/right_arrow_home.svg' onClick={()=>{sideScroll("right",2,900,1900,'container')}} alt='arrow'/>
+      <img className="cursor-pointer" src='/right_arrow_home.svg' onClick={()=>{sideScroll("right",2,900,1900,'container')}} alt='arrow'/>
       </div>
     </div>
     </div>
@@ -118,7 +127,7 @@ return(
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
            <a  className="event_tickets2 text-block self-center " href=''> 
-            <button  alt="button">Tickets
+            <button  alt="button">Get Your Tickets Now
            
               </button>
               </a>
@@ -130,7 +139,7 @@ return(
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
           <a  className="event_tickets2 text-block self-center " href=''> 
-            <button  alt="button">Tickets
+            <button  alt="button">Get Your Tickets Now
            
               </button>
               </a>
@@ -149,8 +158,8 @@ return(
           </a>
          
           <div className="flex gap-2">
-          <img src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,450,'gallery')}} alt='arrow'/>
-          <img src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,450 ,'gallery')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,450,'gallery')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,450 ,'gallery')}} alt='arrow'/>
           
           </div>
         </div>
@@ -168,13 +177,17 @@ return(
           What’s bubblin’?
           </h1>
           <div className="flex gap-2">
-          <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
-          <img src='/right_arrow_home_bottom.svg' alt='arrow'/>
+          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,450,'gallery1')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,450 ,'gallery1')}} alt='arrow'/>
           </div>
         </div>
         
+        <div id='gallery1' className="w-[100%] flex overflow-x-scroll gap-3 ">
+        <img src='/home_bottom_img_1.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1.png' className="object-none" alt='gallery'/>
-       
+        <img src='/home_bottom_img_1.png' className="object-none" alt='gallery'/>
+
+        </div>
         
        
       </div>
