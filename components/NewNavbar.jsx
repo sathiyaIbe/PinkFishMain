@@ -15,8 +15,8 @@ return (
   <nav className="navbar_main_container oveflow-hiden">
     <div className='hidden md:block'>
     <div className=' flex justify-center  '>
-    <div className="  flex justify-center  pb-2  w-[90%] ">
-      <div className=' w-[80%] flex justify-center   desktop_navbar  items-center'>
+    <div className="  flex justify-end  pb-2  w-[90%] ">
+      <div className=' w-[110%]  flex justify-center   desktop_navbar  items-center'>
       
       <div className="flex gap-6   items-center ">
       <Link href="/WhatTheFish">
@@ -37,11 +37,11 @@ return (
       </div>
      
     </div>
-    <Link className=' buy_ticket flex self-center items-center  '  href="/Contact">
+    <Link className=' buy_ticket flex self-center items-center  absolute '  href="/Contact">
         <button className="  " type="button">Tickets
          
         </button>
-        <svg className=" " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="self-center " width="13" height="12" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />
           </svg>
       </Link>

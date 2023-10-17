@@ -1,7 +1,7 @@
 "use client";
 const World = () =>{
-  function sideScroll(direction,speed,distance,step){
-        var element =   document.getElementById('container')
+  function sideScroll(direction,speed,distance,step,id){
+        var element =   document.getElementById(id)
        
          var scrollAmount = 0;
           var slideTimer = setInterval(function(){
@@ -56,12 +56,12 @@ return(
     
     <div className="flex justify-around  mt-11 mb-11">
     <img className="md:block hidden" src='/hero_logo_3.png' />
-    <a   href='/countdown.html'> 
+    <a   href=''> 
     <img className="md:block hidden" src='/hero_logo_2.png' />
     </a>
     <img className="md:block hidden" src='/hero_logo_1.png' />
     <img className="md:hidden" src='/hero_logo_mob_3.png' />
-    <a   href='/countdown.html'> 
+    <a   href=''> 
 
     <img className="md:hidden" src='/hero_logo_mob_2.png' />
     </a>
@@ -71,7 +71,7 @@ return(
     <div className="flex flex-col  self-center ">
     <div className="flex  ">
      
-      <img src='/left_arrow_home.svg' onClick={()=>{sideScroll("left",2,900,1900)}} className="" alt='arrow'/>
+      <img src='/left_arrow_home.svg' onClick={()=>{sideScroll("left",2,900,1900, 'container')}} className="" alt='arrow'/>
      
       <div id='container' className=" flex  overflow-x-scroll gap-6">
       {/* <span className="min-w-[100%] relative"> 
@@ -82,8 +82,8 @@ return(
       <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[90%] self-center" src="/countdown_banner_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
-          <a  className="event_tickets2 text-block self-center " href=''>
-            <button className=" " alt="button">View More
+          <a  className="event_tickets2 text-block  self-center " target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '>
+            <button className=" " alt="button">Tickets
              
               </button>
               </a>
@@ -93,8 +93,8 @@ return(
         <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover self-center w-[90%]" src="/countdown_banner.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
-          <a  className="event_tickets2 text-block self-center " href='/countdown.html'>
-            <button className=" " alt="button">View More
+          <a  className="event_tickets2  text-block self-center " href=''>
+            <button className=" " alt="button">Tickets
              
               </button>
               </a>
@@ -103,7 +103,7 @@ return(
        
       {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
       </div>
-      <img src='/right_arrow_home.svg' onClick={()=>{sideScroll("right",2,900,1900)}} alt='arrow'/>
+      <img src='/right_arrow_home.svg' onClick={()=>{sideScroll("right",2,900,1900,'container')}} alt='arrow'/>
       </div>
     </div>
     </div>
@@ -118,7 +118,7 @@ return(
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
            <a  className="event_tickets2 text-block self-center " href=''> 
-            <button  alt="button">View More
+            <button  alt="button">Tickets
            
               </button>
               </a>
@@ -129,8 +129,8 @@ return(
           <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
-          <a  className="event_tickets2 text-block self-center " href='/countdown.html'> 
-            <button  alt="button">View More
+          <a  className="event_tickets2 text-block self-center " href=''> 
+            <button  alt="button">Tickets
            
               </button>
               </a>
@@ -141,7 +141,7 @@ return(
       </div>
     </div>
     <div className="flex flex-col  text-white">
-      <div className="flex flex-col md:flex-row self-center   gap-6   ">
+      <div className="flex flex-col md:flex-row self-center  w-[80%] gap-8   ">
       <div className="basis-1/2 flex flex-col gap-3">
         <div className="flex justify-between ">
           <a href='/Gallery' className="home_bottom_header">
@@ -149,12 +149,17 @@ return(
           </a>
          
           <div className="flex gap-2">
-          <img src='/left_arrow_home_bottom.svg' alt='arrow'/>
-          <img src='/right_arrow_home_bottom.svg' alt='arrow'/>
+          <img src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,450,'gallery')}} alt='arrow'/>
+          <img src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,450 ,'gallery')}} alt='arrow'/>
+          
           </div>
         </div>
+        <div id='gallery' className="w-[100%] flex overflow-x-scroll gap-3 ">
+        <img src='/home_bottom_img_2.png' className=" w-[100%]" alt='gallery'/>
+        <img src='/home_bottom_img_2.png' className="object-none" alt='gallery'/>
         <img src='/home_bottom_img_2.png' className="object-none" alt='gallery'/>
 
+        </div>
        
       </div>
       <div className="basis-1/2 flex flex-col gap-3">

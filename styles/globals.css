@@ -41,6 +41,11 @@
 
 }
 
+.home_bottom_header{
+  @apply text-[12px] md:text-[16px] leading-[16px] md:leading-[20px] font-[Integral] text-white  font-[500]
+
+}
+
 .logo_container{
   @apply bg-[#313131] md:bg-[#000];
 }

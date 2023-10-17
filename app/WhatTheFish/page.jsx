@@ -25,7 +25,7 @@ const WhatTheFish = () => {
            <img src='/fish.svg' className='' alt='fish'/> !
            </div>
            </div>
-           <div className='flex flex-col gap-6'>
+           <div className='flex flex-col gap-6 md:w-[70%] self-center'>
                     <h1 className='contact_sub_text text-center'>Pinkfish celebrates the best of dance, urban pop, and live music acts, 
                     all in one place. With a lineup of top-notch performers and artists, Pinkfish promises to be an unforgettable
                     experience for music and art lovers alike.</h1>
@@ -58,7 +58,7 @@ const WhatTheFish = () => {
                 initial="hidden"
                 whileInView="show" 
                viewport={{ once: true }}
-              src='/aboutus_logo_2.png' className=' ' alt="logo" />
+              src='/aboutus_logo_1.svg' className=' ' alt="logo" />
               <div className='flex flex-col'>
                 <h1 className='fish_bottom_heading'>Hitman Solutions</h1>
                 <p className='fish_bottom_text'>Established 13 years ago, Hitman Solutions is a subsidiary of Hitman Group</p>
@@ -77,7 +77,7 @@ const WhatTheFish = () => {
                 initial="hidden"
                 whileInView="show" 
                viewport={{ once: true }}
-              src='/aboutus_logo_1.png' className=' ' alt="logo" />
+              src='/aboutus_logo_2.svg' className=' ' alt="logo" />
               <div className='flex flex-col'>
                 <h1 className='fish_bottom_heading'>Happymoon</h1>
                 <p className='fish_bottom_text'>From humble beginnings to organising events and festivals across Malaysia and Southeast Asia, 

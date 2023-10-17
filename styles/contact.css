@@ -36,7 +36,7 @@ contact_input:focus{
 
 }
 .contact_sub_text {
-    @apply text-[14px] md:text-[16px] leading-[16px] md:leading-[18px] font-[500] font-[Sofia] text-[#fff]
+    @apply text-[14px] md:text-[18px] leading-[16px] md:leading-[18px] font-[500] font-[Sofia] text-[#fff]
 
 }
 .contact_sub_text_mob {

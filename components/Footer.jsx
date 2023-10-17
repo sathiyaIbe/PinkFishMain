@@ -6,13 +6,14 @@ const Footer = () => (
   <div className="pb-11 mt-11 md:block hidden ">
   <hr className="hr_line_footer " />
   <div className="flex flex-col gap-11 mt-11 ">
-    <div className=" flex flex-col md:flex-row justify-between w-[90%] md:w-[80%] self-center  gap-11 ">
-    <div className="flex flex-col gap-5 md:items-start items-center ">
+    <div className=" flex flex-col md:flex-row justify-between  w-[90%] md:w-[80%] self-center  gap-11 ">
+      <div className='flex justify-between basis-3/5'>
+    <div className="flex flex-col  gap-5 md:items-start items-center ">
         <h1 className="address_title icon_text">Follow us</h1>
         <div className="flex items-center  gap-6 md:gap-3">
 
             <a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className="icon_text order-2 md:order-1">
-            <img src='/fb.svg'/>
+            <img className='' src='/fb.svg'/>
 
             </a>
         
@@ -33,25 +34,26 @@ const Footer = () => (
        <div className='flex flex-col gap-6'>
         <h1 className="home_bottom_header  mt-6">as seen on</h1>
         <div className="flex gap-6 self-center">
-          <img src='/home_bottom_logo_3.png'/>
-          <img className="object-none" src='/home_bottom_logo_4.png'/>
-          <img src='/home_bottom_logo_5.png'/>
-          <img className="object-none" src='/home_bottom_logo_6.png'/>
+          <img  src='/home_bottom_logo_mob_1.svg'/>
+          <img className="" src='/home_bottom_logo_mob_2.svg'/>
+          <img className='w-1/2' src='/home_bottom_logo_mob_3.svg'/>
+          <img className="object-none" src='/home_bottom_logo_mob_4.svg'/>
 
         </div>
         <div className="flex gap-6 self-center">
-          <img src='/home_bottom_logo_7.png'/>
-          <img className="object-none" src='/home_bottom_logo_8.png'/>
-          <img src='/home_bottom_logo_9.png'/>
+          <img src='/home_bottom_logo_mob_5.svg'/>
+          <img className="object-none" src='/home_bottom_logo_mob_6.svg'/>
+          <img src='/home_bottom_logo_mob_7.svg'/>
 
         </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center mt-11 gap-5 md:items-center items-center ">
+      <div className="flex flex-col   justify-center mt-11 gap-5 ">
       <img src='/logo_footer.png' alt='logo'/>
       </div>
-      <div className="flex flex-col text-white md:items-start gap-2  ">
-      <Link className='flex flex-end' href="/">
+      </div>
+      <div className="flex flex-col   text-white md:items-start gap-2  ">
+      <Link className='flex flex-end ' href="/">
         <p className="cursor-pointer icon_text  ">What The Fish</p>
         </Link>
         <Link className='flex justify-end w-full' href="/Events">
@@ -67,7 +69,7 @@ const Footer = () => (
       </div>
      
     </div>
-    <div className='flex flex-col md:flex-row justify-between  w-[90%] md:w-[80%] self-center  gap-11'>
+    <div className='flex flex-col  md:flex-row justify-between  w-[90%] md:w-[80%] self-center  gap-11'>
    
   <h1 className="footer_bottom_text ">Copyright © 2023. All rights reserved</h1>
 
