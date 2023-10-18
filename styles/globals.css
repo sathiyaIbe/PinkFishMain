@@ -101,7 +101,7 @@
 }
 
 .address_title{ 
-  @apply uppercase font-[Sofia] text-[#D9D9D9] text-[14px] md:text-[16px] leading-[16px] md:leading-[20px] tracking-[2.4px] md:tracking-[3.2px] font-[400]
+  @apply uppercase font-[Sofia] text-[#D9D9D9] text-[16px] md:text-[16px] leading-[20px] md:leading-[20px] tracking-[2.4px] md:tracking-[3.2px] font-[400]
 }
 
 .select{

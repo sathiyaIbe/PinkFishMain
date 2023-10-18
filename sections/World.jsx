@@ -1,14 +1,33 @@
 "use client";
+import gsap, { Linear } from "gsap";
+import { useRef } from "react";
+
 const World = () =>{
+  let iRef=useRef(null)
+  // function prevButtonClick() {
+
+  //     gsap.to(".box", 0.1, {
+  //       ease: Linear.easeNone,
+  //       xPercent: "-=100",
+  //       modifiers: {
+  //         xPercent: function(x) {
+  //            return `${wrap(parseInt(x), -100, 200)}`
+  //         }
+  //       }
+  //     });
+  //   }
   function sideScroll(direction,speed,distance,step,id){
         var element =   document.getElementById(id)
        
          var scrollAmount = 0;
           var slideTimer = setInterval(function(){
               if(direction == 'left'){
+                // gsap.to('.box',{left:"100%"})
                   element.scrollLeft -= step;
+              
               } else {
                   element.scrollLeft += step;
+                  // gsap.to('.box',{left:"-100%"})
               }
               scrollAmount += step;
               if(scrollAmount >= distance){
@@ -91,7 +110,7 @@ return(
       <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[90%] self-center" src="/countdown_banner_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
-          <a  className="event_tickets2 text-block  self-center " target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '>
+          <a  className="event_tickets2 text-block  self-center " target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl'>
             <button className=" " alt="button">Get Your Tickets Now
              
               </button>
@@ -125,8 +144,8 @@ return(
       
       <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
-          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
-           <a  className="event_tickets2 text-block self-center " href=''> 
+          <div className=" text-white flex flex-col justify-start gap-2 md:gap-4 ml-2 ">
+           <a  className="event_tickets2 text-block self-start "target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '> 
             <button  alt="button">Get Your Tickets Now
            
               </button>
@@ -138,7 +157,7 @@ return(
           <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
-          <a  className="event_tickets2 text-block self-center " href=''> 
+          <a  className="event_tickets2 text-block self-start ml-2" href=''> 
             <button  alt="button">Get Your Tickets Now
            
               </button>
@@ -158,18 +177,18 @@ return(
           </a>
          
           <div className="flex gap-2">
-          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,470,'gallery')}} alt='arrow'/>
-          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,470 ,'gallery')}} alt='arrow'/>
-          
+          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,420,'gallery')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,420 ,'gallery')}} alt='arrow'/>
+            
           </div>
         </div>
-        <div id='gallery' className="w-[100%] flex overflow-x-scroll gap-3 ">
-        <img src='/home_bottom_img_1_1.png' className=" w-[100%]" alt='gallery'/>
-        <img src='/home_bottom_img_1_2.png' className=" w-[100%]" alt='gallery'/>
-        <img src='/home_bottom_img_1_3.png' className=" w-[100%] block" alt='gallery'/>
+        <div id='gallery' className="gas flex overflow-x-scroll gap-3 ">
+        <img ref={(el)=>iRef=el}  src='/home_bottom_img_1_1.png' className=" w-[100%] box " alt='gallery'/>
+        <img ref={(el)=>iRef=el} src='/home_bottom_img_1_2.png' className=" w-[100%] box" alt='gallery'/>
+        <img  src='/home_bottom_img_1_3.png' className=" w-[100%] block box" alt='gallery'/>
         <img src='/home_bottom_img_1_4.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_5.png' className=" w-[100%]" alt='gallery'/>
-        <img src='/home_bottom_img_1_6.png' className=" w-[100%]" alt='gallery'/>
+        <img  src='/home_bottom_img_1_6.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_7.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_8.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_9.png' className=" w-[100%]" alt='gallery'/>
@@ -213,7 +232,7 @@ return(
       
     </div>
     <div className="flex flex-col logo_container md:mt-0 mt-11  ">
-    <h1 className="home_bottom_header text-center mt-11 pt-6  self-center">a curated adventure by</h1>
+    <h1 className="home_bottom_header_seen text-center mt-11 pt-6  self-center">a curated adventure by</h1>
         <div className="flex flex-col md:flex-row justify-center gap-6 self-center mb-11 mt-6 w-1/3">
           <img className="md:w-1/2 " src='/home_bottom_logo_1.svg'/>
           <img className="md:w-1/2" src='/home_bottom_logo_2.svg'/>

@@ -43,7 +43,7 @@
     color: white;
     padding-left: 24px;
     padding-right: 20px;
-    @apply bottom-[5px] md:bottom-[20px]
+    @apply bottom-[10px] md:bottom-[20px]
 }
 
 .hero_banner_mob{
@@ -242,6 +242,10 @@ div::-webkit-scrollbar {
 }
 .home_bottom_header{
     @apply text-[12px] md:text-[16px] leading-[16px] md:leading-[20px] font-[Integral] text-white  font-[500]
+
+}
+.home_bottom_header_seen{
+    @apply text-[16px] md:text-[16px] leading-[20px] md:leading-[20px] font-[Integral] text-white  font-[500]
 
 }
 .banner_header{

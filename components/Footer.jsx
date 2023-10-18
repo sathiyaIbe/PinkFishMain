@@ -91,7 +91,7 @@ const Footer = () => (
   <div className='flex flex-col mt-11 '>
   <div className='w-[80%] self-center flex flex-col gap-6'>
 <div className='flex flex-col gap-6 self-center mb-6'>
-        <h1 className="home_bottom_header text-center mt-6">as seen on</h1>
+        <h1 className="home_bottom_header_seen text-center mt-6">as seen on</h1>
         <div className="flex gap-6">
           <img src='/home_bottom_logo_mob_1.svg'/>
           <img className="object-none" src='/home_bottom_logo_mob_2.svg'/>
