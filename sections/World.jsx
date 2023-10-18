@@ -1,9 +1,25 @@
 "use client";
 import gsap, { Linear } from "gsap";
-import { useRef } from "react";
-
+import { useCallback, useRef } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation, Pagination } from 'swiper/modules';
 const World = () =>{
   let iRef=useRef(null)
+  const sliderRef = useRef(null);
+  const sliderRef1 = useRef(null);
+
+  function handlePrev (el) {
+    console.log('aaa')
+    if (!el.current) return;
+    el.current.swiper.slidePrev();
+  }
+
+  function handleNext(el)  {
+    if (!el.current) return;
+    el.current.swiper.slideNext();
+  }
   // function prevButtonClick() {
 
   //     gsap.to(".box", 0.1, {
@@ -37,6 +53,7 @@ const World = () =>{
       }
 return(
   <div className="flex flex-col max-w-[100vw]  gap-11">
+    
     <div className="md:block hidden">
   <section className='hero_banner flex flex-col  text-white'>
 <div className="   w-[70%] self-center  ">
@@ -71,6 +88,7 @@ return(
 </div>
     </div>
   </div>
+  
   <section className="flex flex-col gap-11 w-[100%] md:w-[80%] self-center itmes-center">
     <div className="flex flex-col w-[80%] self-center  mt-11 mb-11">
      
@@ -170,21 +188,24 @@ return(
     </div>
     <div className="flex flex-col  text-white">
       <div className="flex flex-col md:flex-row self-center  w-[80%] gap-8   ">
-      <div className="basis-1/2 flex flex-col gap-3">
+      <div className="md:w-1/2 flex flex-col gap-3">
         <div className="flex justify-between ">
           <a href='Gallery' className="home_bottom_header">
           festival oasis
           </a>
          
           <div className="flex gap-2">
-          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,420,'gallery')}} alt='arrow'/>
-          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,420 ,'gallery')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{handlePrev(sliderRef)}} alt='arrow'/>
+          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{handleNext(sliderRef)}} alt='arrow'/>
             
           </div>
         </div>
-        <div id='gallery' className="gas flex overflow-x-scroll gap-3 ">
-        <img ref={(el)=>iRef=el}  src='/home_bottom_img_1_1.png' className=" w-[100%] box " alt='gallery'/>
-        <img ref={(el)=>iRef=el} src='/home_bottom_img_1_2.png' className=" w-[100%] box" alt='gallery'/>
+        {/* <div id='gallery' className="gas flex overflow-x-scroll gap-3 ">
+       
+    
+    
+        <img   src='/home_bottom_img_1_1.png' className=" w-[100%] box " alt='gallery'/>
+        <img src='/home_bottom_img_1_2.png' className=" w-[100%] box" alt='gallery'/>
         <img  src='/home_bottom_img_1_3.png' className=" w-[100%] block box" alt='gallery'/>
         <img src='/home_bottom_img_1_4.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_1_5.png' className=" w-[100%]" alt='gallery'/>
@@ -202,21 +223,41 @@ return(
         <img src='/home_bottom_img_1_17.png' className=" w-[100%]" alt='gallery'/>
 
 
-        </div>
+        </div> */}
+      <Swiper ref={sliderRef} navigation={false} modules={[Navigation]}  className="mySwiper">
+        <SwiperSlide><img src="/home_bottom_img_1_1.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_2.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_3.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_4.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_5.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_6.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_7.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_8.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_9.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_10.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_11.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_12.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_13.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_14.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_15.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_16.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_17.png"/></SwiperSlide>
+      </Swiper>
+     
        
       </div>
-      <div className="basis-1/2 flex flex-col gap-3">
+      <div className="md:w-1/2 flex flex-col gap-3">
         <div className="flex justify-between">
           <h1 className="home_bottom_header">
           What’s bubblin’?
           </h1>
           <div className="flex gap-2">
-          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{sideScroll("left",2,900,470,'gallery1')}} alt='arrow'/>
-          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{sideScroll("right",2,900,470 ,'gallery1')}} alt='arrow'/>
+          <img className="cursor-pointer" src='/left_arrow_home_bottom.svg' onClick={()=>{handlePrev(sliderRef1)}} alt='arrow'/>
+          <img className="cursor-pointer" src='/right_arrow_home_bottom.svg' onClick={()=>{handleNext(sliderRef1)}} alt='arrow'/>
           </div>
         </div>
         
-        <div id='gallery1' className="w-[100%] flex overflow-x-scroll gap-3 ">
+        {/* <div id='gallery1' className="w-[100%] flex overflow-x-scroll gap-3 ">
         <img src='/home_bottom_img_1.png' className=" w-[100%]" alt='gallery'/>
         <img src='/home_bottom_img_2.png' className="object-none" alt='gallery'/>
         <img src='/home_bottom_img_3.png' className="object-none" alt='gallery'/>
@@ -225,8 +266,15 @@ return(
         <img src='/home_bottom_img_6.png' className="object-none" alt='gallery'/>
 
 
-        </div>
-        
+        </div> */}
+              <Swiper ref={sliderRef1} navigation={false} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide><img src="/home_bottom_img_1.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_2.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_3.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_4.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_5.png"/></SwiperSlide>
+
+        </Swiper>
        
       </div>
       
@@ -241,7 +289,26 @@ return(
 
         </div>
     </div>
-    
+    {/* <div className="flex flex-col   ">
+      <div className="flex justify-center ">
+        <div className="w-1/2">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide><img src="/home_bottom_img_1_1.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_1.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_1.png"/></SwiperSlide>
+      </Swiper>
+      </div>
+      <div className="w-1/2">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide><img src="/home_bottom_img_1_1.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_1.png"/></SwiperSlide>
+        <SwiperSlide><img src="/home_bottom_img_1_1.png"/></SwiperSlide>
+      </Swiper>
+      </div>
+      </div>
+      
+
+      </div> */}
   </section>
   </div>
 );

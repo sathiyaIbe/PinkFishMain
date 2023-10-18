@@ -236,6 +236,34 @@ div::-webkit-scrollbar {
 /* .img_cont{
     display: inline-block;
 } */
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 48px;
+    background: #000;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
 .gallery_main_container{
  @apply overflow-x-scroll overflow-hidden;
 
