@@ -21,13 +21,13 @@ return(
     <div className="md:block hidden">
   <section className='hero_banner flex flex-col  text-white'>
 <div className="   w-[70%] self-center  ">
-  <div className="flex justify-around">
+  <div className="flex justify-between">
 
-  <div className="w-2/4  p-11 ">
+  <div className="w-[50%]  p-11 ">
     <h1 className="world_header  ">Ride on the rhythm of life</h1>
   </div>
-  <div className="w-2/4 p-11  gap-3">
-    <p className="world_text">Live your life loud and vibrant at Pinkfish!
+  <div className="w-[60%] p-11 items-center self-center  gap-11">
+    <p className="world_text mb-5">Live your life loud and vibrant at Pinkfish!
   </p>
 <p className="world_text">Get ready to ignite your spirit, join a tight-knit community, and embrace self-expression 
   in an explosion of music, arts, and dance; all blending into one melting pot of creativity
@@ -153,7 +153,7 @@ return(
       <div className="flex flex-col md:flex-row self-center  w-[80%] gap-8   ">
       <div className="basis-1/2 flex flex-col gap-3">
         <div className="flex justify-between ">
-          <a href='/' className="home_bottom_header">
+          <a href='Gallery' className="home_bottom_header">
           festival oasis
           </a>
          
@@ -214,9 +214,9 @@ return(
     </div>
     <div className="flex flex-col logo_container md:mt-0 mt-11  ">
     <h1 className="home_bottom_header text-center mt-11 pt-6  self-center">a curated adventure by</h1>
-        <div className="flex flex-col md:flex-row justify-center gap-6 self-center mb-11 mt-6">
-          <img className=" " src='/home_bottom_logo_1.svg'/>
-          <img className="" src='/home_bottom_logo_2.svg'/>
+        <div className="flex flex-col md:flex-row justify-center gap-6 self-center mb-11 mt-6 w-1/3">
+          <img className="md:w-1/2 " src='/home_bottom_logo_1.svg'/>
+          <img className="md:w-1/2" src='/home_bottom_logo_2.svg'/>
          
           </div>
 

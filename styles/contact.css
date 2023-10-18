@@ -124,7 +124,7 @@ contact_input:focus{
         }
 
         .news_card_header{
-            @apply text-[12px] md:text-[16px] leading-[14px] md:leading-[20px]  font-[500] font-[Sofia] text-white
+            @apply text-[14px] md:text-[16px] leading-[14px] md:leading-[20px]  font-[500] font-[Sofia] text-white
  
         }
         .news_read_btn{

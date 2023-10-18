@@ -24,6 +24,7 @@
 .hero_banner{
     background-image: url('/hero_bottom_bg.png');
     background-size: contain;
+    background-repeat: repeat-x;
     
 
 }

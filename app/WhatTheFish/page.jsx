@@ -53,16 +53,16 @@ const page = () => {
            
             <div className='flex flex-column   gap-6   mb-11  '>
            <div className='self-center flex md:flex-row gap-11 flex-col justify-center md:justify-between  '>
-            <div className=' flex flex-col basis-1/2 gap-3 self-center md:self-start'>
+            <div className=' flex flex-col basis-1/2 gap-3'>
               {/* <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"
                 whileInView="show" 
                viewport={{ once: true }}
               src='/aboutus_logo_1.svg' className=' ' alt="logo" /> */}
-              <img src='/aboutus_logo_1.svg' className=' ' alt="logo" />
+              <img src='/aboutus_logo_1.svg' className='object-cover ' alt="logo" />
               <div className='flex flex-col'>
-                <h1 className='fish_bottom_heading'>Hitman Solutions</h1>
+                
                 <p className='fish_bottom_text'>Established 13 years ago, Hitman Solutions is a subsidiary of Hitman Group</p>
               </div>
               <p className='fish_bottom_text'>Hitman Solutions is our specialist that focuses on organising and promoting one of our 
@@ -80,9 +80,9 @@ const page = () => {
                 whileInView="show" 
                viewport={{ once: true }}
               src='/aboutus_logo_2.svg' className=' ' alt="logo" /> */}
-              <img src='/aboutus_logo_2.svg' className=' ' alt="logo" />
+              <img src='/aboutus_logo_2.svg' className='object-cover ' alt="logo" />
               <div className='flex flex-col'>
-                <h1 className='fish_bottom_heading'>Happymoon</h1>
+               
                 <p className='fish_bottom_text'>From humble beginnings to organising events and festivals across Malaysia and Southeast Asia, 
                 we have years of extensive experience in bringing the best live music events under our belt</p>
               </div>

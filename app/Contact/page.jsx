@@ -33,7 +33,7 @@ const Contact = () => (
         <div className="flex flex-col md:gap-6 gap-2 mt-6 ">
 <div className='flex gap-2 m items-center'>
         <img className=" md:w-6 w-8 " src='/email_contact.svg' />
-<p className="contact_text ">info@pinkfishfestival.com</p>
+<a className="contact_text"  href='mailto:info@pinkfishfestival.com'>info@pinkfishfestival.com</a>
 
 </div>
 <div className='flex gap-2  '>
@@ -46,7 +46,7 @@ const Contact = () => (
 <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
 
         <img className="md:w-6 w-8" src='/yt_contact.svg' />
-<p className="contact_text underline">Youtube</p>
+<p className="contact_text underline">YouTube</p>
 </a>
 </div>
 <div className='flex gap-2  items-center'>
@@ -59,7 +59,7 @@ const Contact = () => (
 <div className='flex gap-2 items-center'>
 <a href=' https://www.tiktok.com/@pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
         <img className="md:w-6 w-8" src='/tt_contact.svg' />
-<p className="contact_text underline">Tiktok </p>
+<p className="contact_text underline">TikTok </p>
 </a>
 </div>
         </div>
@@ -93,7 +93,7 @@ const Contact = () => (
            
 <div class="flex md:flex-row flex-col gap-3">
     <div class="flex items-center  ">
-        <input id="inline-checked-radio" checked type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
+        <input id="inline-checked-radio"  type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
         <label for="inline-checked-radio" class="ml-2  text-[12px] font-[Sofia] font-[400] text-[#F33288] ">General Inquiry</label>
     </div>
     <div class="flex items-center  ">
@@ -113,7 +113,7 @@ const Contact = () => (
             <label className="contact_label">Message</label>
             <input className="contact_input"  type="text" />
           </div>
-          <div className='contact_submit'>
+          <div className='contact_submit items-center'>
           <button className="flex " type="submit">Send Message
             <svg className="mt-2 ml-1 " width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.29806 5.73623L5.20055 1.63873L6.28069 0.558594L12.2222 6.50012L6.28069 12.4416L5.20055 11.3615L9.29806 7.26401H0V5.73623H9.29806Z" fill="white" />

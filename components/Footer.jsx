@@ -54,7 +54,7 @@ const Footer = () => (
       </div>
       <div className="flex flex-col   text-white md:items-start gap-2  ">
       <a className='flex flex-end ' href="/WhatTheFish">
-        <p className="cursor-pointer icon_text  ">WhatTheFish</p>
+        <p className="cursor-pointer icon_text  ">What The Fish</p>
         </a>
         <a className='flex justify-end w-full' href="/FunHub">
         <p className="cursor-pointer icon_text  ">Fun Hub</p>
@@ -78,7 +78,7 @@ const Footer = () => (
         <p className="cursor-pointer icon_text  ">Privacy Policy</p>
         </Link>
         |
-  <a href="TermsCondition">
+  <a href="Terms&Condition">
         <p className="cursor-pointer icon_text  ">Terms & Conditions</p>
         </a>
         
@@ -159,7 +159,7 @@ const Footer = () => (
          <p className="cursor-pointer footer_bottom_text  ">Privacy Policy</p>
          </Link>
          |
-   <a href="TermsCondition">
+   <a href="Terms&Condition">
          <p className="cursor-pointer footer_bottom_text ">Terms & Conditions</p>
          </a>
          
