@@ -25,8 +25,8 @@ return (
         <a href="FunHub">
           <h1 className="menu_text ">FUN HUB</h1>
         </a>
-        <a href="/" className='flex'>
-        <img  src="/new_menu_logo_1.svg" className="  w-[200px] items-center" />
+        <a href="/" className='flex mt-3 '>
+        <img  src="/new_menu_logo_2.svg" className=" items-center w-[150px] " />
       </a>
         <a href="News">
           <h1 className="menu_text ">News</h1>
@@ -52,7 +52,7 @@ return (
       <div className='flex'>
       <div className='w-[90%] self-center flex justify-between'>
     <a className='self-center' href="/">
-    <img  src="/new_menu_logo_1.svg" className="  w-[220px] p-2 items-center" />
+    <img  src="/new_menu_logo_2.svg" className="  w-[150px] p-2 items-center" />
       </a>
       <button type='button' onClick={()=>{  setToggleDropdown(((prev)=>!prev)); changeToggle()}}>
       <svg clipPath='pt-6' width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
