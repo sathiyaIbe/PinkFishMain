@@ -46,11 +46,12 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
             <div className='basis-1/2 order-2 md:order-1  flex flex-col justify-center gap-4'>
                 <div className='flex flex-col self-center w-[80%] gap-6'>
                 <img src='/fan_box_logo_3.png' className='self-center' alt='Pinkfish Countdown logo'/>
-                <p className='fish_bottom_text text-center self-center'> <span className='fish_bottom_heading'> Pinkfish Countdown </span> is a curated experience of tight-knit celebration that features 
-                both international and local live acts upon the ushering into the new year. This event brings together the creative and music-loving community this New Year’s Eve, 31st of December 2023 as 
-                we count down to 2024.</p>
+                <p className='fish_bottom_text text-center self-center'> <span className='fish_bottom_heading'> Pinkfish Countdown </span>
+                 is a curated experience of tight-knit celebration that features both international and local live acts as we usher 
+                 in the new year. This event brings together the creative and music-loving community this New Year’s Eve, 31st of December 2023 
+                 as we count down to 2024.</p>
 
-<p className='fish_bottom_text self-center text-center'>Stay tuned for the promising line-up and future announcements!</p>
+                <p className='fish_bottom_text self-center text-center'>Stay tuned for the promising line-up and future announcements!</p>
 
 
 <a   href='' className='fan_button self-center'>
