@@ -9,8 +9,8 @@ const Footer = () => (
     <div className=" flex flex-col md:flex-row justify-between  w-[90%] md:w-[80%] self-center  gap-11 ">
       <div className='flex justify-between basis-3/5'>
     <div className="flex flex-col  gap-5 md:items-start items-center ">
-        <h1 className="address_title icon_text">Follow us</h1>
-        <div className="flex items-center  gap-6 md:gap-3">
+        {/* <h1 className="address_title icon_text">Follow us</h1> */}
+        {/* <div className="flex items-center  gap-6 md:gap-3">
 
             <a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className="icon_text order-2 md:order-1">
             <img className='' src='/fb.svg'/>
@@ -30,9 +30,9 @@ const Footer = () => (
 
 </a> 
         
-        </div>
+        </div> */}
        <div className='flex flex-col gap-6'>
-        <h1 className="home_bottom_header  mt-6">as seen on</h1>
+        <h1 className="home_bottom_header ">as seen on</h1>
         <div className="flex gap-6 self-center">
           <img  src='/home_bottom_logo_mob_1.svg'/>
           <img className="" src='/home_bottom_logo_mob_2.svg'/>
@@ -107,7 +107,7 @@ const Footer = () => (
         </div>
         </div>
   <hr className="hr_line_footer w-[110%] self-center " />
-  <div className="flex flex-col text-white mt-11  gap-1  ">
+  <div className="flex flex-col text-white mt-11 mb-11  gap-1  ">
       <a className='flex justify-center' href="WhatTheFish">
         <p className="cursor-pointer icon_text  ">What The Fish</p>
         </a>
@@ -122,7 +122,7 @@ const Footer = () => (
         </Link>
        
       </div>
-      <div className="flex flex-col gap-5 md:items-start items-center mb-11 ">
+      {/* <div className="flex flex-col gap-5 md:items-start items-center mb-11 ">
         <h1 className="address_title icon_text">Follow us</h1>
         <div className="flex items-center  gap-6 md:gap-3">
 
@@ -145,7 +145,7 @@ const Footer = () => (
 </a> 
         
         </div>
-        </div>
+        </div> */}
         <hr className="hr_line_footer w-[110%] self-center  " />
         <div className="flex flex-col gap-5 md:items-start items-center mt-6">
       <img src='/logo_footer.png' className='w-1/2' alt='logo'/>

@@ -138,13 +138,13 @@ return(
         
         <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover self-center w-[90%]" src="/countdown_banner.png" />
-          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
+          {/* <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
           <a  className="event_tickets2  text-block self-center " href=''>
             <button className=" " alt="button">Get Your Tickets Now
              
               </button>
               </a>
-          </div>
+          </div> */}
         </div>
        
       {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
@@ -173,14 +173,14 @@ return(
         
         <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
-          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
+          {/* <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
           <a  className="event_tickets2 text-block self-start ml-2" href=''> 
             <button  alt="button">Get Your Tickets Now
            
               </button>
               </a>
-          </div>
+          </div> */}
         </div>
        
       {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
