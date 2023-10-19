@@ -268,11 +268,68 @@ return(
 
         </div> */}
               <Swiper ref={sliderRef1} navigation={false} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide><img src="/home_bottom_img_1.png"/></SwiperSlide>
-        <SwiperSlide><img src="/home_bottom_img_2.png"/></SwiperSlide>
-        <SwiperSlide><img src="/home_bottom_img_3.png"/></SwiperSlide>
-        <SwiperSlide><img src="/home_bottom_img_4.png"/></SwiperSlide>
-        <SwiperSlide><img src="/home_bottom_img_5.png"/></SwiperSlide>
+              <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_1.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1 p-2   w-full">
+            <h1 className="image_title opacity-1">TYGA Gives Malaysian Fans A Taste On August 9</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
+              <SwiperSlide>
+              <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_2.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1 p-2  w-full">
+            <h1 className="image_title opacity-1">“What the Fish?!” Here’s How Pinkfish is Serving M’sia’s HOTTEST Music & Arts Festival in 2023!</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+         </SwiperSlide>
+        
+        <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_3.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1 p-2  w-full">
+            <h1 className="image_title opacity-1">Scream “Merdeka” & check out these events happening in KL in August 2023</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_4.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1   w-full">
+            <h1 className="image_title opacity-1">US Rapper Tyga Is Coming To Malaysia For The First Time In August</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_5.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1   w-full">
+            <h1 className="image_title opacity-1">Rapping Sensation Tyga Live in KL This August! Here’s Why You Can’t Miss It</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
+       
 
         </Swiper>
        
