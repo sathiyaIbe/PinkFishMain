@@ -53,7 +53,7 @@ const page = () => {
            
             <div className='flex flex-column   gap-6   mb-11  '>
            <div className='self-center flex md:flex-row gap-11 flex-col justify-center md:justify-between  '>
-            <div className=' flex flex-col basis-1/2 gap-3'>
+            <div className=' flex flex-col md:w-1/2 gap-3'>
               {/* <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"
@@ -73,7 +73,7 @@ const page = () => {
             ingredients to turn any occasion into an unforgettable experience.</p>
               
               </div>
-              <div className=' flex flex-col basis-1/2 gap-3 self-center md:self-start'>
+              <div className=' flex flex-col md:w-1/2 gap-3 self-center md:self-start'>
               {/* <motion.img
                 variants={fadeIn("up", "tween",.1,1)}
                 initial="hidden"

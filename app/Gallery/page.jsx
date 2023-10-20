@@ -23,7 +23,7 @@ const Gallery = () => {
 
     </div>
     {toogle?
-    <div className='self-center flex flex-col  gap-4 md:w-fitw-[80%]'>
+    <div className='self-center flex flex-col  gap-4 md:w-fit w-[80%]'>
       <div className='flex gap-4'>
         <div className='image_11'>
         <img src='Gallery/new_gallery_1.png' alt='gallery'/>

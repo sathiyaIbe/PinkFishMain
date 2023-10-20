@@ -66,7 +66,7 @@ return(
     <p className="world_text mb-5">Live your life loud and vibrant at Pinkfish!
   </p>
 <p className="world_text">Get ready to ignite your spirit, join a tight-knit community, and embrace self-expression 
-  in an explosion of music, arts, and dance; all blending into one melting pot of creativity
+  in an explosion of music, arts, and dance; all blending into one melting pot of creativity.
 </p>
   </div>
   </div>
@@ -83,7 +83,7 @@ return(
     <p className="world_text">Live your life loud and vibrant at Pinkfish!
   </p>
 <p className="world_text pb-11">Get ready to ignite your spirit, join a tight-knit community, and embrace self-expression 
-  in an explosion of music, arts, and dance; all blending into one melting pot of creativity
+  in an explosion of music, arts, and dance; all blending into one melting pot of creativity.
 </p>
 </div>
     </div>

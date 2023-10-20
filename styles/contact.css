@@ -166,7 +166,7 @@ contact_input:focus{
 }
 
 .galler_svg_3{
-    @apply absolute top-[350%] left-[4%]
+    @apply absolute top-[300%] left-[10%]
 }
 
 .galler_svg_4{
@@ -178,7 +178,7 @@ contact_input:focus{
 }
 
 .galler_svg_6{
-    @apply absolute top-[290%] right-[18%]
+    @apply absolute top-[300%] right-[18%]
 }
 
 
