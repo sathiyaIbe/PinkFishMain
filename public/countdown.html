@@ -1,21 +1,19 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Mon Oct 16 2023 19:15:03 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Fri Oct 20 2023 03:32:32 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64d211e93d3d310007a3eb4e" data-wf-site="64d211e93d3d310007a3eb4b">
 <head>
   <meta charset="utf-8">
   <title>Pinkfish Countdown</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/pinkfish-countdown.webflow.css" rel="stylesheet" type="text/css">
-  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5b32b600-fbde-308f-d903-35b205d4d622"] {-webkit-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="5b32b600-fbde-308f-d903-35b205d4d626"] {-webkit-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}</style>
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/pinkfish-countdown.css" rel="stylesheet" type="text/css">
+  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5b32b600-fbde-308f-d903-35b205d4d622"] {-webkit-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="5b32b600-fbde-308f-d903-35b205d4d626"] {-webkit-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="00c55438-39c0-5b99-ba4a-ca4d72251f46"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ff60c20d-5715-af1e-26a7-d4eb4793be70"] {opacity:1;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abdffe"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe001"] {opacity:1;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe030"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe033"] {opacity:1;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="00c55438-39c0-5b99-ba4a-ca4d72251f46"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ff60c20d-5715-af1e-26a7-d4eb4793be70"] {opacity:1;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abdffe"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe001"] {opacity:1;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe030"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe033"] {opacity:1;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="00c55438-39c0-5b99-ba4a-ca4d72251f46"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="ff60c20d-5715-af1e-26a7-d4eb4793be70"] {opacity:1;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abdffe"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe001"] {opacity:1;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe030"] {-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d;}html.w-mod-js:not(.w-mod-ix) [data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe033"] {opacity:1;}}</style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700","IBM Plex Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic","Space Grotesk:300,regular,500,600,700","Bebas Neue:regular"]  }});</script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700","IBM Plex Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic","Space Grotesk:300,regular,500,600,700","Bebas Neue:regular","Sofia:regular","Poppins:regular"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <style>
@@ -53,34 +51,86 @@
   <div><img src="images/PF-Fish-Countdown-Side-Button-1.svg" loading="lazy" alt="" class="image-11"></div>
   <div id="home" class="hero-section">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left w-nav">
-      <div class="navbarcontainer w-container">
+      <div class="navbarcontainer desktop w-container">
         <a href="#" class="nav-home-left w-inline-block">
           <div class="logo"><img src="images/PFF-Fish-Logo.svg" loading="lazy" width="100" height="30" alt="" class="pf-logo-white-glow"></div>
         </a>
-        <div class="navbar-content">
+        <a href="#tickets" class="link-block-3 menu-version w-inline-block">
+          <div class="frame-155">
+            <div class="frame-156"><img src="images/Vectors-Wrapper.svg" loading="lazy" alt="">
+              <div class="text-3">BUY TICKETS</div>
+            </div>
+          </div>
+        </a>
+        <div class="navbar-content desktop">
           <nav role="navigation" class="navbar-menu w-nav-menu">
+            <a href="#" class="navbar-link hide w-nav-link">
+              <div class="text">what’s new</div>
+            </a>
+            <a href="https://pinkfishfestival.com/whatthefish" class="navbar-link w-nav-link">
+              <div class="text">what the fish!</div>
+            </a>
+            <a href="additional-perks.html" class="navbar-link w-nav-link">
+              <div class="text">additional perks</div>
+            </a>
+            <a href="#" class="navbar-link disable-menu-link w-nav-link">
+              <div class="text">fun hub</div>
+            </a>
+            <a href="countdown.html" aria-current="page" class="nav-home mobile w-inline-block w--current">
+              <div class="logo"><img src="images/PFF-Fish-Logo.svg" loading="lazy" width="120" alt="" class="pf-logo-white-glow"></div>
+            </a>
+            <a href="#gallery" class="navbar-link hide w-nav-link">
+              <div class="text">gallery</div>
+            </a>
+            <a href="#" class="navbar-link disable-menu-link w-nav-link">
+              <div class="text">news</div>
+            </a>
+            <a href="https://pinkfishfestival.com/contact" class="navbar-link w-nav-link">
+              <div class="text">contact us</div>
+            </a>
+            <a href="faq.html" class="navbar-link w-nav-link">
+              <div class="text">FAQ</div>
+            </a>
+          </nav>
+        </div>
+        <div class="menu-button w-nav-button">
+          <div class="div-block-2"><img src="images/menu.svg" loading="lazy" alt=""></div>
+        </div>
+      </div>
+      <div class="navbarcontainer mobile w-container">
+        <a href="countdown.html" aria-current="page" class="nav-home-left w-inline-block w--current">
+          <div class="logo"><img src="images/PFF-Fish-Logo.svg" loading="lazy" width="100" height="30" alt="" class="pf-logo-white-glow"></div>
+        </a>
+        <div class="navbar-content">
+          <nav role="navigation" class="navbar-menu mobile w-nav-menu">
             <a href="#" class="navbar-link hide w-nav-link">
               <div class="text">what’s new</div>
             </a>
             <a href="#" class="navbar-link w-nav-link">
               <div class="text">what the fish!</div>
             </a>
-            <a href="#" class="navbar-link w-nav-link">
+            <a href="additional-perks.html" class="navbar-link w-nav-link">
+              <div class="text">ADDITIONAL PERKS</div>
+            </a>
+            <a href="#" class="navbar-link disable-menu-link w-nav-link">
               <div class="text">fun hub</div>
             </a>
-            <a href="index.html" aria-current="page" class="nav-home mobile w-inline-block w--current">
+            <a href="countdown.html" aria-current="page" class="nav-home mobile w-inline-block w--current">
               <div class="logo"><img src="images/PFF-Fish-Logo.svg" loading="lazy" width="120" alt="" class="pf-logo-white-glow"></div>
             </a>
             <a href="#gallery" class="navbar-link hide w-nav-link">
               <div class="text">gallery</div>
             </a>
-            <a href="#" class="navbar-link w-nav-link">
+            <a href="#" class="navbar-link disable-menu-link w-nav-link">
               <div class="text">news</div>
             </a>
-            <a href="#" class="navbar-link w-nav-link">
+            <a href="https://pinkfishfestival.com/contact" class="navbar-link w-nav-link">
               <div class="text">contact us</div>
             </a>
-            <a href="#tickets" class="link-block-3 w-inline-block">
+            <a href="faq.html" class="navbar-link w-nav-link">
+              <div class="text">FAQ</div>
+            </a>
+            <a href="#tickets" class="link-block-3 menu-version mobile w-inline-block">
               <div class="frame-155">
                 <div class="frame-156"><img src="images/Vectors-Wrapper.svg" loading="lazy" alt="">
                   <div class="text-3">BUY TICKETS</div>
@@ -94,10 +144,10 @@
         </div>
       </div>
     </div>
-    <div class="hero"><img src="images/firework-left.png" loading="lazy" sizes="100vw" srcset="images/firework-left-p-500.png 500w, images/firework-left.png 669w" alt="" class="image-8"><img src="images/Top-Design.png" loading="lazy" sizes="100vw" srcset="images/Top-Design-p-500.png 500w, images/Top-Design-p-800.png 800w, images/Top-Design-p-1080.png 1080w, images/Top-Design.png 1440w" alt="" class="image-8 topdesign"><img src="images/firework-right.png" loading="lazy" alt="" class="image-8 firework2">
+    <div class="hero"><img src="images/firework-left.png" loading="lazy" sizes="(max-width: 767px) 100vw, 837.28125px" srcset="images/firework-left-p-500.png 500w, images/firework-left.png 669w" alt="" class="image-8"><img src="images/Top-Design.png" loading="lazy" sizes="100vw" srcset="images/Top-Design-p-500.png 500w, images/Top-Design-p-800.png 800w, images/Top-Design-p-1080.png 1080w, images/Top-Design.png 1440w" alt="" class="image-8 topdesign"><img src="images/firework-right.png" loading="lazy" alt="" class="image-8 firework2">
       <div class="hero-content">
         <div class="_5-columns">
-          <div class="column hero-logo"><img src="images/PinkFish-Countdown-Logo-Updated.png" loading="lazy" width="705" height="252" alt="" srcset="images/PinkFish-Countdown-Logo-Updated-p-500.png 500w, images/PinkFish-Countdown-Logo-Updated-p-800.png 800w, images/PinkFish-Countdown-Logo-Updated-p-1080.png 1080w, images/PinkFish-Countdown-Logo-Updated-p-1600.png 1600w, images/PinkFish-Countdown-Logo-Updated-p-2000.png 2000w, images/PinkFish-Countdown-Logo-Updated.png 2212w" sizes="(max-width: 479px) 90vw, (max-width: 991px) 87vw, 705.0000610351562px" class="pf-logo-white-glow hero-title"></div>
+          <div class="column hero-logo"><img src="images/PinkFish-Countdown-Logo-Updated.png" loading="lazy" width="705" height="252" alt="" srcset="images/PinkFish-Countdown-Logo-Updated-p-500.png 500w, images/PinkFish-Countdown-Logo-Updated-p-800.png 800w, images/PinkFish-Countdown-Logo-Updated-p-1080.png 1080w, images/PinkFish-Countdown-Logo-Updated-p-1600.png 1600w, images/PinkFish-Countdown-Logo-Updated-p-2000.png 2000w, images/PinkFish-Countdown-Logo-Updated.png 2212w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 87vw, (max-width: 991px) 88vw, 705px" class="pf-logo-white-glow hero-title"></div>
           <div class="column-2 desc">
             <h2 class="hero-desc">31st december 2023 • NEW YEAR’S EVE<br>SURF BEACH at SUNWAY LAGOON</h2>
             <h2 class="hero-desc mobile">31st december 2023 <br>NEW YEAR’S EVE<br>SUNWAY LAGOON SURF BEACH</h2>
@@ -207,41 +257,9 @@
           <div class="swiper-slide swiper-slide-active">
             <div class="slide">
               <div class="slide-content">
-                <h2 class="heading-2 swiper-slide-active">W&amp;W</h2>
-              </div>
-              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/WW.jpg" sizes="100vw, 138px" srcset="images/WW-p-500.jpg 500w, images/WW.jpg 600w" class="slide-img">
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <div class="slide">
-              <div class="slide-content">
-                <h2 class="heading-2 swiper-slide-active">Jeffrey<br>Sutorius</h2>
-              </div>
-              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Jeffrey.jpg" sizes="100vw, 138px" srcset="images/Jeffrey-p-500.jpg 500w, images/Jeffrey.jpg 600w" class="slide-img">
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <div class="slide">
-              <div class="slide-content">
-                <h2 class="heading-2 swiper-slide-active">Coone</h2>
-              </div>
-              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Coone.jpg" sizes="100vw, 138px" srcset="images/Coone-p-500.jpg 500w, images/Coone.jpg 600w" class="slide-img">
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <div class="slide">
-              <div class="slide-content">
                 <h2 class="heading-2 swiper-slide-active">Andrew<br>Rayel</h2>
               </div>
-              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Andrew-Rayel.jpg" sizes="100vw, 138px" srcset="images/Andrew-Rayel-p-500.jpg 500w, images/Andrew-Rayel.jpg 600w" class="slide-img">
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-active">
-            <div class="slide">
-              <div class="slide-content">
-                <h2 class="heading-2 swiper-slide-active">Ummet<br>Ozcan</h2>
-              </div>
-              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Ummet-Ozcan.jpg" sizes="100vw, 138px" srcset="images/Ummet-Ozcan-p-500.jpg 500w, images/Ummet-Ozcan.jpg 600w" class="slide-img">
+              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Andrew-Rayel.jpg" sizes="(max-width: 479px) 20vw, 220px" srcset="images/Andrew-Rayel-p-500.jpg 500w, images/Andrew-Rayel.jpg 600w" class="slide-img">
             </div>
           </div>
           <div class="swiper-slide swiper-slide-active">
@@ -249,7 +267,31 @@
               <div class="slide-content">
                 <h2 class="heading-2 swiper-slide-active">Blasterjaxx</h2>
               </div>
-              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Blasterjaxx.jpg" sizes="100vw, 138px" srcset="images/Blasterjaxx-p-500.jpg 500w, images/Blasterjaxx.jpg 600w" class="slide-img">
+              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Blasterjaxx.jpg" sizes="(max-width: 479px) 20vw, 220px" srcset="images/Blasterjaxx-p-500.jpg 500w, images/Blasterjaxx.jpg 600w" class="slide-img">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active">
+            <div class="slide">
+              <div class="slide-content">
+                <h2 class="heading-2 swiper-slide-active">Coone</h2>
+              </div>
+              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Coone.jpg" sizes="(max-width: 479px) 20vw, 220px" srcset="images/Coone-p-500.jpg 500w, images/Coone.jpg 600w" class="slide-img">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active">
+            <div class="slide">
+              <div class="slide-content">
+                <h2 class="heading-2 swiper-slide-active">Jeffrey<br>Sutorius</h2>
+              </div>
+              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Jeffrey.jpg" sizes="(max-width: 479px) 20vw, 220px" srcset="images/Jeffrey-p-500.jpg 500w, images/Jeffrey.jpg 600w" class="slide-img">
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-active">
+            <div class="slide">
+              <div class="slide-content">
+                <h2 class="heading-2 swiper-slide-active">Ummet<br>Ozcan</h2>
+              </div>
+              <div class="slide-img-overlay"></div><img loading="lazy" width="300" height="450" alt="" src="images/Ummet-Ozcan.jpg" sizes="(max-width: 479px) 20vw, 220px" srcset="images/Ummet-Ozcan-p-500.jpg 500w, images/Ummet-Ozcan.jpg 600w" class="slide-img">
             </div>
           </div>
         </div>
@@ -396,24 +438,24 @@
         </div>
       </div>
       <div class="w-layout-blockcontainer container-10 desktop w-container">
-        <div class="card_component">
-          <div data-w-id="00c55438-39c0-5b99-ba4a-ca4d72251f46" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+        <div data-w-id="00c55438-39c0-5b99-ba4a-ca4d72251f45" class="card_component">
+          <div data-w-id="00c55438-39c0-5b99-ba4a-ca4d72251f46" class="card_wrapper desktop">
             <div class="card_side is-front">
               <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">pre-sale<br>25th oct</div>
+                <div data-w-id="ff60c20d-5715-af1e-26a7-d4eb4793be70" class="price-wrapper">
+                  <div class="price-desc">pre-sale 25th oct</div>
                   <div class="divider-bar"></div>
                   <div class="price">RM98</div>
                 </div>
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">LAVA saver<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category depan">LAVA saver<span class="display-block"></span></h2>
                 </div>
                 <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
               </div>
               <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
               </div>
             </div>
             <div class="card_side is-back">
@@ -431,31 +473,31 @@
             </div>
           </a>
         </div>
-        <div class="card_component">
+        <div data-w-id="9f16c92d-7b01-3afc-32f2-4131dc2ca205" class="card_component">
           <div data-w-id="9f16c92d-7b01-3afc-32f2-4131dc2ca206" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
             <div class="card_side is-front">
               <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">available from<br>26th oct</div>
+                <div data-w-id="9f16c92d-7b01-3afc-32f2-4131dc2ca208" style="opacity:1" class="price-wrapper">
+                  <div class="price-desc">available from 26th oct</div>
                   <div class="divider-bar"></div>
                   <div class="price">RM148</div>
                 </div>
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">phase 1<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category depan">phase 1<span class="display-block"></span></h2>
                 </div>
                 <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
               </div>
               <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
               </div>
             </div>
             <div class="card_side is-back">
               <div class="card_main-text">
                 <h2 class="heading-5 ticket-category">Phase 1<br>for GA<span class="display-block"></span></h2>
               </div>
-              <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
+              <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
             </div>
           </div>
           <a href="#" class="ticket-button w-inline-block">
@@ -466,24 +508,25 @@
             </div>
           </a>
         </div>
-        <div class="card_component">
-          <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abdffe" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+        <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abdffd" class="card_component">
+          <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abdffe" class="card_wrapper desktop">
             <div class="card_side is-front">
+              <div class="div-block-9"></div>
               <div class="front-card-info">
-                <div class="price-wrapper">
+                <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe001" class="price-wrapper">
                   <div class="price-desc">TBA</div>
                   <div class="divider-bar"></div>
                   <div class="price">RM198</div>
                 </div>
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">PHASE 2<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category depan">PHASE 2<span class="display-block"></span></h2>
                 </div>
                 <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
               </div>
               <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
               </div>
             </div>
             <div class="card_side is-back">
@@ -501,24 +544,25 @@
             </div>
           </a>
         </div>
-        <div class="card_component">
-          <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe030" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+        <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe02f" class="card_component">
+          <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe030" class="card_wrapper desktop">
             <div class="card_side is-front">
+              <div class="div-block-9"></div>
               <div class="front-card-info">
-                <div class="price-wrapper">
+                <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe033" class="price-wrapper">
                   <div class="price-desc">TBA</div>
                   <div class="divider-bar"></div>
                   <div class="price">RM248</div>
                 </div>
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">phase 3<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category depan">phase 3<span class="display-block"></span></h2>
                 </div>
                 <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
               </div>
               <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
               </div>
             </div>
             <div class="card_side is-back">
@@ -538,31 +582,33 @@
         </div>
       </div>
       <div class="w-layout-blockcontainer container-10 mobile w-container">
-        <div class="card_component">
-          <div data-w-id="f621b658-6816-ca0d-982d-50322ce54eac" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
-            <div class="card_side is-front">
-              <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">pre-sale<br>25th oct</div>
-                  <div class="divider-bar"></div>
-                  <div class="price">RM98</div>
+        <div class="card-container">
+          <div data-w-id="f621b658-6816-ca0d-982d-50322ce54eab" class="card_component">
+            <div data-w-id="f621b658-6816-ca0d-982d-50322ce54eac" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+              <div class="card_side is-front">
+                <div class="front-card-info">
+                  <div data-w-id="f621b658-6816-ca0d-982d-50322ce54eaf" style="opacity:0" class="price-wrapper">
+                    <div class="price-desc">pre-sale 25th oct</div>
+                    <div class="divider-bar"></div>
+                    <div class="price">RM98</div>
+                  </div>
+                  <div class="card_main-text">
+                    <h2 class="heading-5 ticket-category front">LAVA saver<span class="display-block"></span></h2>
+                  </div>
+                  <h1 class="ticket-type">ga<span class="display-block"></span></h1>
+                  <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
                 </div>
+                <div class="div-block-6">
+                  <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                  <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                </div>
+              </div>
+              <div class="card_side is-back">
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">LAVA saver<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category">Lava Saver | for GA<span class="display-block"></span></h2>
                 </div>
-                <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase only on the 25th of Oct 2023.</h3>
               </div>
-              <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
-              </div>
-            </div>
-            <div class="card_side is-back">
-              <div class="card_main-text">
-                <h2 class="heading-5 ticket-category">Lava Saver <br>for GA<span class="display-block"></span></h2>
-              </div>
-              <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase only on the 25th of Oct 2023.</h3>
             </div>
           </div>
           <a href="#" class="ticket-button w-inline-block">
@@ -573,31 +619,33 @@
             </div>
           </a>
         </div>
-        <div class="card_component">
-          <div data-w-id="f621b658-6816-ca0d-982d-50322ce54ede" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
-            <div class="card_side is-front">
-              <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">available from<br>26th oct</div>
-                  <div class="divider-bar"></div>
-                  <div class="price">RM148</div>
+        <div class="card-container">
+          <div data-w-id="f621b658-6816-ca0d-982d-50322ce54edd" class="card_component">
+            <div data-w-id="f621b658-6816-ca0d-982d-50322ce54ede" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+              <div class="card_side is-front">
+                <div class="front-card-info">
+                  <div data-w-id="f621b658-6816-ca0d-982d-50322ce54ee1" style="opacity:0" class="price-wrapper">
+                    <div class="price-desc">available from 26th oct</div>
+                    <div class="divider-bar"></div>
+                    <div class="price">RM148</div>
+                  </div>
+                  <div class="card_main-text">
+                    <h2 class="heading-5 ticket-category front">phase 1<span class="display-block"></span></h2>
+                  </div>
+                  <h1 class="ticket-type">ga<span class="display-block"></span></h1>
+                  <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
                 </div>
+                <div class="div-block-6">
+                  <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                  <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                </div>
+              </div>
+              <div class="card_side is-back">
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">phase 1<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category">Phase 1 | for GA<span class="display-block"></span></h2>
                 </div>
-                <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
               </div>
-              <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
-              </div>
-            </div>
-            <div class="card_side is-back">
-              <div class="card_main-text">
-                <h2 class="heading-5 ticket-category">Phase 1<br>for GA<span class="display-block"></span></h2>
-              </div>
-              <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
             </div>
           </div>
           <a href="#" class="ticket-button w-inline-block">
@@ -610,31 +658,34 @@
         </div>
       </div>
       <div class="w-layout-blockcontainer container-10 mobile w-container">
-        <div class="card_component">
-          <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d0df" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
-            <div class="card_side is-front">
-              <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">TBA</div>
-                  <div class="divider-bar"></div>
-                  <div class="price">RM198</div>
+        <div class="card-container">
+          <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d0de" class="card_component">
+            <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d0df" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+              <div class="card_side is-front">
+                <div class="div-block-9 mobile"></div>
+                <div class="front-card-info">
+                  <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d0e2" style="opacity:0" class="price-wrapper">
+                    <div class="price-desc">TBA</div>
+                    <div class="divider-bar"></div>
+                    <div class="price">RM198</div>
+                  </div>
+                  <div class="card_main-text">
+                    <h2 class="heading-5 ticket-category front">PHASE 2<span class="display-block"></span></h2>
+                  </div>
+                  <h1 class="ticket-type">ga<span class="display-block"></span></h1>
+                  <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
                 </div>
+                <div class="div-block-6">
+                  <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                  <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                </div>
+              </div>
+              <div class="card_side is-back">
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">PHASE 2<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category">PHASE 2 | for GA<span class="display-block"></span></h2>
                 </div>
-                <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
               </div>
-              <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
-              </div>
-            </div>
-            <div class="card_side is-back">
-              <div class="card_main-text">
-                <h2 class="heading-5 ticket-category">PHASE 2<br>for GA<span class="display-block"></span></h2>
-              </div>
-              <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
             </div>
           </div>
           <a href="#" class="ticket-button w-inline-block">
@@ -645,31 +696,34 @@
             </div>
           </a>
         </div>
-        <div class="card_component">
-          <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d10f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
-            <div class="card_side is-front">
-              <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">TBA</div>
-                  <div class="divider-bar"></div>
-                  <div class="price">RM248</div>
+        <div class="card-container">
+          <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d10e" class="card_component">
+            <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d10f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+              <div class="card_side is-front">
+                <div class="div-block-9 mobile"></div>
+                <div class="front-card-info">
+                  <div data-w-id="ee0fce3b-995a-9cb6-30ff-eebb29a8d112" style="opacity:0" class="price-wrapper">
+                    <div class="price-desc">TBA</div>
+                    <div class="divider-bar"></div>
+                    <div class="price">RM248</div>
+                  </div>
+                  <div class="card_main-text">
+                    <h2 class="heading-5 ticket-category front">phase 3<span class="display-block"></span></h2>
+                  </div>
+                  <h1 class="ticket-type">ga<span class="display-block"></span></h1>
+                  <h3 class="ticket-category">general admission<span class="display-block"></span></h3>
                 </div>
+                <div class="div-block-6">
+                  <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                  <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                </div>
+              </div>
+              <div class="card_side is-back">
                 <div class="card_main-text">
-                  <h2 class="heading-5 ticket-category">phase 3<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category">Phase 3 | for GA<span class="display-block"></span></h2>
                 </div>
-                <h1 class="ticket-type">ga<span class="display-block"></span></h1>
-                <h3 class="ticket-category">general<br>admission<span class="display-block"></span></h3>
+                <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
               </div>
-              <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
-              </div>
-            </div>
-            <div class="card_side is-back">
-              <div class="card_main-text">
-                <h2 class="heading-5 ticket-category">Phase 3<br>for GA<span class="display-block"></span></h2>
-              </div>
-              <h3 class="ga-info">General Admission (GA) tickets allow entry to the General Admission area on the festival day only.<br><br>Tickets will be available for purchase on any date until the festival sells out.</h3>
             </div>
           </div>
           <a href="#" class="ticket-button w-inline-block">
@@ -682,29 +736,29 @@
         </div>
       </div>
       <div class="w-layout-blockcontainer container-10 desktop w-container">
-        <div class="card_component">
+        <div data-w-id="9ad7d8be-7659-569a-dab1-eb6e4491d507" class="card_component">
           <div data-w-id="9ad7d8be-7659-569a-dab1-eb6e4491d508" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
             <div class="card_side is-front vip">
               <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">available from<br>26th oct</div>
+                <div data-w-id="9ad7d8be-7659-569a-dab1-eb6e4491d50a" style="opacity:1" class="price-wrapper">
+                  <div class="price-desc">available from 26th oct</div>
                   <div class="divider-bar"></div>
                   <div class="price">RM298</div>
                 </div>
                 <div class="card_main-text vip-line">
-                  <h2 class="heading-5 ticket-category">phase 1<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category depan">phase 1<span class="display-block"></span></h2>
                 </div>
                 <h1 class="ticket-type">VIP<span class="display-block"></span></h1>
-                <h3 class="ticket-category">premium<br>admission<span class="display-block"></span></h3>
+                <h3 class="ticket-category">premium admission<span class="display-block"></span></h3>
               </div>
               <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
               </div>
             </div>
             <div class="card_side is-back vip">
               <div class="card_main-text vip-line">
-                <h2 class="heading-5 ticket-category">PHASE 1<br>FOR VIP<span class="display-block"></span></h2>
+                <h2 class="heading-5 ticket-category">PHASE 1 | FOR VIP<span class="display-block"></span></h2>
               </div>
               <h3 class="ga-info">VIP ticket holders will enjoy exclusive perks such as designated VIP entrances, access to VIP space with amenities and exclusive viewing areas of the main stage. <br><br>VIP tickets are limited in quantity and will be available on a first-come-first-served basis.</h3>
             </div>
@@ -717,29 +771,30 @@
             </div>
           </a>
         </div>
-        <div class="card_component">
+        <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe061" class="card_component">
           <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe062" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
             <div class="card_side is-front vip">
+              <div class="div-block-9"></div>
               <div class="front-card-info">
-                <div class="price-wrapper">
+                <div data-w-id="44f3e36e-9efc-7d11-8b7b-e5f8f6abe065" style="opacity:1" class="price-wrapper">
                   <div class="price-desc">TBA</div>
                   <div class="divider-bar"></div>
                   <div class="price">RM348</div>
                 </div>
                 <div class="card_main-text vip-line">
-                  <h2 class="heading-5 ticket-category">phase 2<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category depan">phase 2<span class="display-block"></span></h2>
                 </div>
                 <h1 class="ticket-type">VIP<span class="display-block"></span></h1>
-                <h3 class="ticket-category">premium<br>admission<span class="display-block"></span></h3>
+                <h3 class="ticket-category">premium admission<span class="display-block"></span></h3>
               </div>
               <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 100vw, 60px" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
               </div>
             </div>
             <div class="card_side is-back vip">
               <div class="card_main-text vip-line">
-                <h2 class="heading-5 ticket-category">PHASE 2<br>FOR VIP</h2>
+                <h2 class="heading-5 ticket-category">PHASE 2 | FOR VIP</h2>
               </div>
               <h3 class="ga-info">VIP ticket holders will enjoy exclusive perks such as designated VIP entrances, access to VIP space with amenities and exclusive viewing areas of the main stage. <br><br>VIP tickets are limited in quantity and will be available on a first-come-first-served basis.</h3>
             </div>
@@ -754,31 +809,33 @@
         </div>
       </div>
       <div class="w-layout-blockcontainer container-10 mobile w-container">
-        <div class="card_component">
-          <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61c73" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
-            <div class="card_side is-front vip">
-              <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">available from<br>26th oct</div>
-                  <div class="divider-bar"></div>
-                  <div class="price">RM298</div>
+        <div class="card-container">
+          <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61c72" class="card_component">
+            <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61c73" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+              <div class="card_side is-front vip">
+                <div class="front-card-info">
+                  <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61c76" style="opacity:0" class="price-wrapper">
+                    <div class="price-desc">available from<br>26th oct</div>
+                    <div class="divider-bar"></div>
+                    <div class="price">RM298</div>
+                  </div>
+                  <div class="card_main-text vip-line">
+                    <h2 class="heading-5 ticket-category">phase 1<span class="display-block"></span></h2>
+                  </div>
+                  <h1 class="ticket-type">VIP<span class="display-block"></span></h1>
+                  <h3 class="ticket-category">premium admission<span class="display-block"></span></h3>
                 </div>
+                <div class="div-block-6">
+                  <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                  <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                </div>
+              </div>
+              <div class="card_side is-back vip">
                 <div class="card_main-text vip-line">
-                  <h2 class="heading-5 ticket-category">phase 1<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category">PHASE 1 | FOR VIP<span class="display-block"></span></h2>
                 </div>
-                <h1 class="ticket-type">VIP<span class="display-block"></span></h1>
-                <h3 class="ticket-category">premium<br>admission<span class="display-block"></span></h3>
+                <h3 class="ga-info">VIP ticket holders will enjoy exclusive perks such as designated VIP entrances, access to VIP space with amenities and exclusive viewing areas of the main stage. <br><br>VIP tickets are limited in quantity and will be available on a first-come-first-served basis.</h3>
               </div>
-              <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
-              </div>
-            </div>
-            <div class="card_side is-back vip">
-              <div class="card_main-text vip-line">
-                <h2 class="heading-5 ticket-category">PHASE 1<br>FOR VIP<span class="display-block"></span></h2>
-              </div>
-              <h3 class="ga-info">VIP ticket holders will enjoy exclusive perks such as designated VIP entrances, access to VIP space with amenities and exclusive viewing areas of the main stage. <br><br>VIP tickets are limited in quantity and will be available on a first-come-first-served basis.</h3>
             </div>
           </div>
           <a href="#" class="ticket-button w-inline-block">
@@ -789,31 +846,34 @@
             </div>
           </a>
         </div>
-        <div class="card_component">
-          <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61ca5" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
-            <div class="card_side is-front vip">
-              <div class="front-card-info">
-                <div class="price-wrapper">
-                  <div class="price-desc">TBA</div>
-                  <div class="divider-bar"></div>
-                  <div class="price">RM348</div>
+        <div class="card-container">
+          <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61ca4" class="card_component">
+            <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61ca5" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(180deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="card_wrapper desktop">
+              <div class="card_side is-front vip">
+                <div class="div-block-9 mobile"></div>
+                <div class="front-card-info">
+                  <div data-w-id="113445ac-6ab6-3a94-dac9-b8f1ebe61ca8" style="opacity:0" class="price-wrapper">
+                    <div class="price-desc">TBA</div>
+                    <div class="divider-bar"></div>
+                    <div class="price">RM348</div>
+                  </div>
+                  <div class="card_main-text vip-line">
+                    <h2 class="heading-5 ticket-category">phase 2<span class="display-block"></span></h2>
+                  </div>
+                  <h1 class="ticket-type">VIP<span class="display-block"></span></h1>
+                  <h3 class="ticket-category">premium admission<span class="display-block"></span></h3>
                 </div>
+                <div class="div-block-6">
+                  <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
+                  <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="(max-width: 991px) 60px, 100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
+                </div>
+              </div>
+              <div class="card_side is-back vip">
                 <div class="card_main-text vip-line">
-                  <h2 class="heading-5 ticket-category">phase 2<span class="display-block"></span></h2>
+                  <h2 class="heading-5 ticket-category">PHASE 2 | FOR VIP</h2>
                 </div>
-                <h1 class="ticket-type">VIP<span class="display-block"></span></h1>
-                <h3 class="ticket-category">premium<br>admission<span class="display-block"></span></h3>
+                <h3 class="ga-info">VIP ticket holders will enjoy exclusive perks such as designated VIP entrances, access to VIP space with amenities and exclusive viewing areas of the main stage. <br><br>VIP tickets are limited in quantity and will be available on a first-come-first-served basis.</h3>
               </div>
-              <div class="div-block-6">
-                <div class="trees-wrapper left"><img src="images/coconut-tree-01.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-p-500.png 500w, images/coconut-tree-01-p-800.png 800w, images/coconut-tree-01-p-1080.png 1080w, images/coconut-tree-01.png 1202w" alt=""></div>
-                <div class="trees-wrapper right"><img src="images/coconut-tree-01-flipped.png" loading="lazy" sizes="100vw" srcset="images/coconut-tree-01-flipped-p-500.png 500w, images/coconut-tree-01-flipped-p-800.png 800w, images/coconut-tree-01-flipped-p-1080.png 1080w, images/coconut-tree-01-flipped.png 1202w" alt=""></div>
-              </div>
-            </div>
-            <div class="card_side is-back vip">
-              <div class="card_main-text vip-line">
-                <h2 class="heading-5 ticket-category">PHASE 2<br>FOR VIP</h2>
-              </div>
-              <h3 class="ga-info">VIP ticket holders will enjoy exclusive perks such as designated VIP entrances, access to VIP space with amenities and exclusive viewing areas of the main stage. <br><br>VIP tickets are limited in quantity and will be available on a first-come-first-served basis.</h3>
             </div>
           </div>
           <a href="#" class="ticket-button w-inline-block">
@@ -904,7 +964,7 @@ a {
           <div class="frame-34235">
             <div class="div-block-7">
               <h3 class="h3 lava-lounge">elevate your experience</h3>
-              <div class="paragraph">Email: info@pinkfishfestival.com<br>Contact: +6012-2655783</div>
+              <div class="paragraph lava-lounge-body">Email: info@pinkfishfestival.com<br>Contact: +6012-2655783</div>
             </div>
             <a href="https://forms.gle/vHaJhf6jvKrMCwqJ8" target="_blank" class="vvip-button w-inline-block">
               <div class="frame-155 vvip-btn">
@@ -1063,7 +1123,6 @@ box-shadow: 0px 12px 16px -4px rgba(281, 92, 58, 0.08), 0px 4px 6px -2px rgba(28
                           <h3 class="card-heading"></h3>
                         </div>
                       </div>
-                      <p class="paragraph-2"></p>
                     </div>
                   </a>
                 </div>
@@ -1079,11 +1138,11 @@ box-shadow: 0px 12px 16px -4px rgba(281, 92, 58, 0.08), 0px 4px 6px -2px rgba(28
   </div>
   <div class="follow-us">
     <div class="container-5">
-      <div class="_2-columns-4">
+      <div class="_2-columns-4 desktop">
         <div class="column-8">
           <div class="frame-23">
             <div class="text-5">
-              <div class="text-5 text-5"><span class="the-pinkfish-countdown-1">FOllow us on our social media</span></div>
+              <div class="text-5 text-5"><span class="the-pinkfish-countdown-1">FOllow us on our <br>social media</span></div>
             </div>
           </div>
         </div>
@@ -1109,40 +1168,61 @@ box-shadow: 0px 12px 16px -4px rgba(281, 92, 58, 0.08), 0px 4px 6px -2px rgba(28
     </div>
   </div>
   <section class="footer-dark">
-    <div class="container-6">
-      <div class="footer-wrapper">
+    <div class="columns desktop w-row">
+      <div class="w-col w-col-4">
+        <div id="w-node-_3bd10c62-5986-7013-befa-0332b74b8489-b74b8472" class="footer-block left">
+          <a href="#" class="footer-link hide">Privacy policy</a>
+          <div class="text-block-3">AS SEEN ON</div><img src="images/Media-Logos.svg" loading="lazy" alt="" class="image-12">
+        </div>
+      </div>
+      <div class="column-11 w-col w-col-4">
         <a href="#" class="footer-brand w-inline-block"><img src="images/Pinkfish.svg" loading="lazy" alt="" class="image-2"></a>
+      </div>
+      <div class="column-12 w-col w-col-4">
         <div class="footer-content">
           <div id="w-node-_3bd10c62-5986-7013-befa-0332b74b8478-b74b8472" class="footer-block">
-            <a href="index.html" aria-current="page" class="footer-link w--current">Home</a>
-            <a href="faq.html" class="footer-link">FAQ</a>
-            <a href="#countdown" class="footer-link hide">Countdown</a>
-          </div>
-          <div id="w-node-_3bd10c62-5986-7013-befa-0332b74b847f-b74b8472" class="footer-block">
-            <a href="index.html" aria-current="page" class="footer-link w--current">Tickets</a>
-            <a href="#" class="footer-link hide">What&#x27;s New</a>
-            <a href="index.html" aria-current="page" class="footer-link w--current">Past Events</a>
-          </div>
-          <div id="w-node-_3bd10c62-5986-7013-befa-0332b74b8486-b74b8472" class="footer-block">
-            <a href="terms-condition.html" class="footer-link">Terms &amp; Conditions</a>
-          </div>
-          <div id="w-node-_3bd10c62-5986-7013-befa-0332b74b8489-b74b8472" class="footer-block">
-            <a href="#" class="footer-link hide">Privacy policy</a>
-            <div class="footer-social-block">
-              <a href="https://www.instagram.com/pinkfishfestival/" target="_blank" class="footer-social-link w-inline-block"><img src="images/instagram-1.svg" loading="lazy" alt="" class="image-3"></a>
-              <a href="https://www.facebook.com/pinkfishfestival" target="_blank" class="footer-social-link w-inline-block"><img src="images/facebook.svg" loading="lazy" alt="" class="image-5"></a>
-              <a href="https://www.youtube.com/@Pinkfishfestival" target="_blank" class="footer-social-link w-inline-block"><img src="images/youtube.svg" loading="lazy" alt="" class="image-5"></a>
-              <a href="https://www.tiktok.com/@pinkfishfestival" target="_blank" class="footer-social-link w-inline-block"><img src="images/Tiktok.svg" loading="lazy" alt="" class="image-5"></a>
-            </div>
+            <a href="https://pinkfishfestival.com/whatthefish" class="footer-link top">What The Fish</a>
+            <a href="https://pinkfishfestival.com/funhub" class="footer-link">Fun Hub</a>
+            <a href="https://pinkfishfestival.com/gallery" class="footer-link">Festival Oasis</a>
+            <a href="https://pinkfishfestival.com/news" class="footer-link">News</a>
+            <a href="https://pinkfishfestival.com/contact" class="footer-link">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-divider"></div>
-    <div class="footer-copyright-center">Copyright © 2023 Pinkfish</div>
+    <div class="columns mobile w-row">
+      <div class="w-col w-col-4">
+        <div id="w-node-cd6aab13-4934-6872-4e1e-6d412ea62071-b74b8472" class="footer-block left mobile">
+          <a href="#" class="footer-link hide">Privacy policy</a>
+          <div class="text-block-3">AS SEEN ON</div><img src="images/Media-Logos.svg" loading="lazy" alt="" class="image-12">
+        </div>
+      </div>
+      <div class="column-11 mobile w-col w-col-4">
+        <div class="footer-content mobile">
+          <div id="w-node-cd6aab13-4934-6872-4e1e-6d412ea62085-b74b8472" class="footer-block">
+            <a href="https://pinkfishfestival.com/whatthefish" class="footer-link top mobile menu">What The Fish</a>
+            <a href="#" class="footer-link mobile menuje">Fun Hub</a>
+            <a href="https://pinkfishfestival.com/gallery" class="footer-link mobile menuje">Festival Oasis</a>
+            <a href="https://pinkfishfestival.com/news" class="footer-link menuje">News</a>
+            <a href="https://pinkfishfestival.com/contact" class="footer-link menuje">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="column-12 mobile w-col w-col-4">
+        <a href="#" class="footer-brand mobile w-inline-block"><img src="images/Pinkfish.svg" loading="lazy" alt="" class="image-2"></a>
+        <div class="container-6 mobile">
+          <div class="div-block-10">
+            <a href="https://pinkfishfestival.com/PrivacyPolicy" class="footer-link mobile">Privacy Policy</a>
+            <div class="div-block-11"></div>
+            <a href="https://pinkfishfestival.com/terms&amp;condition" class="footer-link">Terms &amp; Conditions</a>
+          </div>
+          <div class="footer-link mobile">Copyright © 2023 Pinkfish. Alll rights reserved</div>
+        </div>
+      </div>
+    </div>
   </section>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64d211e93d3d310007a3eb4b" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="js/pinkfish-countdown.js" type="text/javascript"></script>
   <script>
 // Countdown Timer
 window.addEventListener('DOMContentLoaded', (event) => {

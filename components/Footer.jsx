@@ -59,12 +59,13 @@ const Footer = () => (
         <a className='flex justify-end w-full' href="/FunHub">
         <p className="cursor-pointer icon_text  ">Fun Hub</p>
         </a>
-        <a className='flex justify-end w-full' href="/News">
-        <p className="cursor-pointer icon_text  ">News</p>
-        </a>
         <a className='flex justify-center w-full' href="Gallery">
         <p className="cursor-pointer icon_text  ">Festival Oasis</p>
         </a>
+        <a className='flex justify-end w-full' href="/News">
+        <p className="cursor-pointer icon_text  ">News</p>
+        </a>
+       
         <Link className='flex justify-end w-full' href="Contact">
         <p className="cursor-pointer icon_text  ">Contact Us </p>
         </Link>
