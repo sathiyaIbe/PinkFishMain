@@ -3,9 +3,12 @@
 import '../../styles/contact.css';
 import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
+import { Footer, NewNavbar } from '../../components';
 
 const FanHub = () => {
   return (
+    <>
+    <NewNavbar />
     <div className="fan_main_container min-h-screen  text-white   ">
     
          <div className='flex  flex-col gap-6 pt-11 pb-24'>
@@ -90,6 +93,9 @@ hits and had them singing along.</p>
          
   
  </div>
+ <Footer />
+ <img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
+ </>
   )
 }
 

@@ -10,12 +10,12 @@ const RootLayout = ({ children }) => (
     </head>
     <body>
       <div className="min-h-screen bg-black ">
-      <NewNavbar />
+      {/* <NewNavbar /> */}
     
-      <img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
+    
      
        {children}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </body>
   </html>

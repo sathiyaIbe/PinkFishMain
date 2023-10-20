@@ -1,16 +1,18 @@
-import { Footer } from "../components";
-import "../styles/home.css"
-import PartyBanner from "./PartyBanner";
+import "../styles/live.css"
 const Banner = () => (
-  <div className='bg_home_footer flex flex-col  '>
-                <PartyBanner  />
-                <div className='mt-11 mb-0 items-center flex self-center gap-6' >
-                <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img  className='h-6' src='/fb_icon.svg'/></a>
-                <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank">  <img  className=' w-8 h-8' src='/yt_icon.svg'/> </a>
-                <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img className='h-6' src='/ig_icon.svg'/></a>
-                <a href='https://www.tiktok.com/@pinkfishfestival' target="_blank">  <img className='h-6' src='/tt_icon.svg'/></a>
-                </div>
-                
-              </div>
+  <section className="text-white flex justify-center mt-11 pb-11 bg-black">
+    <div className="banner_container_live p-6 w-5/6 pt-6 md:pt-24 pb-6 md:pb-24 flex flex-col self-center relative ">
+      <img className="absolute banner_img_1_live hidden md:block" src="Live/Banner/over_banner_1.png" />
+      <img className="absolute banner_img_2_live hidden md:block" src="Live/Banner/over_banner_2.png" />
+      <img className="absolute banner_img_3_live hidden md:block" src="Live/Banner/over_banner_3.png" />
+      <img className="absolute banner_img_4_live hidden md:block" src="Live/Banner/over_banner_4.png" />
+      <h1 className="banner_header_live self-center mb-4 mt-4">stay updated</h1>
+      <p className="banner_text_live text-center self-center">Follow us on our social media pages</p>
+      <div className="flex gap-4 pt-4 self-center">
+      <a href='https://www.instagram.com/pinkfishfestival/' target="_blank"> <img src="Live/Banner/instagram 1.png" /></a>
+        <a href='https://www.facebook.com/pinkfishfestival/' target="_blank"> <img src="Live/Banner/fb.png" /></a>
+      </div>
+    </div>
+  </section>
 );
 export default Banner;

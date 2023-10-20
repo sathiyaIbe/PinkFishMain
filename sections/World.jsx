@@ -93,24 +93,26 @@ return(
     <div className="flex flex-col w-[80%] self-center  mt-11 mb-11">
      
         <div className="flex justify-between">
-        <a   href=''> 
+        <a   href='/'> 
     <img className="md:block hidden " src='/hero_logo_3.png' />
     </a>
-    <a   href=''> 
+    <a   href='/'> 
     <img className="md:block hidden" src='/hero_logo_2.png' />
     </a>
-    <a   href=''> 
+    <a href='/Live'> 
     <img className="md:block hidden" src='/hero_logo_1.png' />
   </a>
     </div>
     <div className="flex justify-between">
+      <a href="/">
     <img className="md:hidden" src='/hero_logo_mob_3.png' />
+    </a>
     <a   href=''> 
-
     <img className="md:hidden" src='/hero_logo_mob_2.png' />
     </a>
+    <a href="/Live">
     <img className="md:hidden" src='/hero_logo_mob_1.png' />
-    
+    </a>
     </div>
     </div>
     <div className="hidden md:block">

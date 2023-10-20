@@ -1,7 +1,11 @@
 
 import '../../styles/contact.css';  
+import { Footer, NewNavbar } from '../../components';
+
 const page = () => {
   return (
+    <>
+     <NewNavbar />
     <div className='text-white  min-h-screen min-w-screen bg-[#000]  overflow-hidden   flex flex-col'>
        
 <h1 className='contact_text_header w-[40%] self-center text-center mt-11'>terms & Conditions</h1>
@@ -56,6 +60,9 @@ const page = () => {
 
 
     </div>
+    <Footer />
+    <img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
+    </>
   )
 }
 

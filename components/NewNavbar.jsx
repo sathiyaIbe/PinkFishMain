@@ -2,17 +2,24 @@
 /* eslint-disable */
 'use client'
 import Link from 'next/link';
-import { useState } from 'react';
-
+import { useEffect, useState } from 'react';
+import Navbar from '../sections/Navbar'
 const NewNavbar = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false)
+  const [checkUrl,setCheckUrl]=useState(Boolean)
+
+
   function changeToggle(){  
     console.log(toggleDropdown)
    
   }
+
   
 return (
+
   <nav className="navbar_main_container oveflow-hiden">
+   
+
     <div className='hidden md:block'>
     <div className=' flex justify-center  '>
     <div className="  flex justify-end  pb-2  w-[90%] ">
@@ -81,7 +88,9 @@ return (
     </div>
 } 
     </div>
+    
   </nav>
+
 );
   }
 export default NewNavbar;

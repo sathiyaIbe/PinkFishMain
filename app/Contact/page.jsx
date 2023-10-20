@@ -3,7 +3,7 @@
 import '../../styles/contact.css';
 import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
-import { Footer, Navbar } from '../../components';
+import { Footer, NewNavbar } from '../../components';
 import { useRef } from 'react';
 const Contact = () => {
 let popupOverlayRef=useRef(null)
@@ -38,6 +38,8 @@ function closePopup() {
 // closePopupButton.addEventListener("click", closePopup);
 
   return(
+    <>
+    <NewNavbar />
   <div className="contact_main_container min-h-screen  text-white   ">
      {/* <div className='flex flex-col gap-6  pb-11 pt-6 header_container_aboutus border-b-[1px] border-white w-full '>
               
@@ -169,6 +171,9 @@ function closePopup() {
   </div>
    
   </div>
+  <img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
+  <Footer />
+  </>
 );
           }
 export default Contact;

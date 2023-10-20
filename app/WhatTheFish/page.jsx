@@ -3,10 +3,12 @@
 import '../../styles/contact.css';
 import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
-import { Footer, Navbar } from '../../components';
+import { Footer, NewNavbar } from '../../components';
 
 const page = () => {
   return (
+    <>
+    <NewNavbar />
     <div className=" min-h-screen  text-white   ">
     <div className="contact_main_container_what flex flex-col justify-center pd:mb-0 pb-6 md:min-h-[80vh]     ">
    
@@ -119,6 +121,9 @@ const page = () => {
               </div>
  </div>
  </div>
+ <Footer />
+ <img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
+ </>
   )
 }
 

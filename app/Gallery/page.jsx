@@ -5,11 +5,14 @@ import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
 import { useState } from 'react';
 import { scrollTop } from '../../components/jsfile';
+import { Footer, NewNavbar } from '../../components';
 
 
 const Gallery = () => {
   const [toogle,setToogle]=useState(true)
   return (
+    <>
+    <NewNavbar />
     <div className="bg-black min-h-screen flex flex-col gap-11  text-white   ">
     
     <div className='flex flex-col gap-6 pt-11 '>
@@ -151,6 +154,9 @@ const Gallery = () => {
       </button>
       </div>
 </div>
+<Footer />
+<img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
+</>
   )
 }
 

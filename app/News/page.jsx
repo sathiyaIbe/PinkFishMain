@@ -3,10 +3,11 @@
 import '../../styles/contact.css';
 import { scrollTop } from '../../components/jsfile';
 import Link from 'next/link';
-import { Footer, Navbar } from '../../components';
 import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2, zoomIn } from "../../utils/motion";
 import PartyBanner from '../../sections/PartyBanner';
+import { Footer, NewNavbar } from '../../components';
+
 const Event = () => {
   return (
     // <div className='event_main_container text-white  min-h-screen min-w-screen  overflow-hidden'>
@@ -188,6 +189,8 @@ const Event = () => {
     //             <Footer />
     //           </div>    
     // </div>
+    <>
+ <NewNavbar />
     <div className="news_main_container min-h-screen flex flex-col  text-white   ">
     
     <div className='flex flex-col gap-6 pt-11 pb-24'>
@@ -281,6 +284,9 @@ at the end of April will definitely be worth the hype!
     
 
 </div>
+<Footer/>
+<img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
+</>
   )
 }
 

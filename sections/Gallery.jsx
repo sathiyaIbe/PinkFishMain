@@ -1,261 +1,228 @@
 'use client'
-import "../styles/home.css"
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion";
-import FsLightbox from "fslightbox-react";
 import { useState } from "react";
-const Gallery = () => {
-     const [active, setActive] = useState(false);
+import "../styles/live.css"
+import gsap from "gsap";
+import FsLightbox from "fslightbox-react";
+const Gallery = () =>{
+  const [active, setActive] = useState(false);
 
-     const [toggler, setToggler] = useState(false);
-     const [slide,setSlide]=useState()
-     const [slideMob,setSlideMob]=useState()
-     return (
-          <section className="mt-24">
-         <h1 className="gallery_header text-center  mb-6">Gallery</h1>
-               <div id="container" className="flex md:hidden overflow-x-scroll overflow-hidden">
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(1)}}
-                         className="w-full object-none" src="/Gallery/new_gallery_1.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }}
-                         onClick={() => {setActive(!active), setSlideMob(2)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_2.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }}
-                         onClick={() => {setActive(!active), setSlideMob(3)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_3.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }}
-                         onClick={() => {setActive(!active), setSlideMob(4)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_4.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(5)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_5.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(6)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_6.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(7)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_7.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(8)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_8.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(9)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_9.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(10)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_10.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(11)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_11.png" />
-                    <motion.img
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }} 
-                         onClick={() => {setActive(!active), setSlideMob(12)}}
-                         className="w-full object-none" src="/Gallery/pinkfish/gallery_lg_12.png" />
-               </div>
+  const [toggler, setToggler] = useState(false);
+  const [slide,setSlide]=useState()
+  const [slideMob,setSlideMob]=useState()
+  function sideScroll(element,direction,speed,distance,step){
+   
+     var scrollAmount = 0;
+      var slideTimer = setInterval(function(){
+          if(direction == 'left'){
+              element.scrollLeft -= step;
+          } else {
+              element.scrollLeft += step;
+          }
+          scrollAmount += step;
+          if(scrollAmount >= distance){
+              window.clearInterval(slideTimer);
+          }
+      }, speed);
+  }
 
-               <div className=" hidden md:block  flex flex-col overflow-hidden  pt-4 pb-4">
-                    <div className="flex flex-col ">
-                         <div className="  flex self-center gap-4 mt-11 ">
-                              <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
+  function mouseOut(e){
+    var tl = gsap.timeline();
+    tl.to(e, {scale: 1, duration: .5, ease: "power1.inOut"});
+  }
 
-                                   className="image_11">
-                                   <img onClick={() => {setToggler(!toggler), setSlide(1)}} className=" object-none" src="Gallery/new_gallery_1.png" />
-                              </motion.div>
-                              <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                                   <img onClick={() => {setToggler(!toggler), setSlide(2)}} className="object-none image_12 " src="Gallery/new_gallery_2.png" />
-                              </motion.div>
-                         </div>
-                         <div className="flex self-center gap-4  mt-4">
-                         <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                              <img onClick={() => {setToggler(!toggler), setSlide(3)}} className=" object-none " src="Gallery/new_gallery_3.png" />
-                                   </motion.div>
-                                   <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                              <img onClick={() => {setToggler(!toggler), setSlide(4)}} className=" object-none image_14" src="Gallery/new_gallery_4.png" />
-                              </motion.div>
-                         </div>
-                         <motion.div
-                         variants={fadeIn("up", "tween", .1, 1)}
-                         initial="hidden"
-                         whileInView="show"
-                         viewport={{ once: true }}
-                         className="flex self-center gap-4 image_11 mt-4">
-                              <img onClick={() => {setToggler(!toggler), setSlide(5)}} className="object-none image_15" src="/Gallery/pinkfish/gallery_lg_5.png" />
-                         </motion.div>
-                         <div className="flex self-center gap-4 mt-4 ">
-                         <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                              <img onClick={() => {setToggler(!toggler), setSlide(6)}} className="object-none image_16" src="/Gallery/pinkfish/gallery_lg_6.png" />
-                              </motion.div>
-                              <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                              <img onClick={() => {setToggler(!toggler), setSlide(7)}} className="object-none image_17" src="/Gallery/pinkfish/gallery_lg_7.png" />
-                              </motion.div>
-                         </div>
-                         <div className="flex self-center gap-4 mt-4 ">
-                         <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                              <img onClick={() => {setToggler(!toggler), setSlide(8)}} className=" object-none image_18" src="/Gallery/pinkfish/gallery_lg_8.png" />
-                              </motion.div>
-                              <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                              <img onClick={() => {setToggler(!toggler), setSlide(9)}} className="object-none image_19" src="/Gallery/pinkfish/gallery_lg_9.png" />
-                              </motion.div>
-                         </div>
-                         <div className="flex self-center gap-4 mt-4 ">
-                         <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                              <img onClick={() => {setToggler(!toggler), setSlide(10)}} className=" object-none image_20" src="/Gallery/pinkfish/gallery_lg_10.png" />
-                              </motion.div>
-                              <div className="w-3/5 flex flex-col gap-4">
-                              <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                                   <img onClick={() => {setToggler(!toggler), setSlide(11)}} className="object-none image_21" src="/Gallery/pinkfish/gallery_lg_11.png" />
-                                   </motion.div>
-                              <motion.div
-                                   variants={fadeIn("up", "tween", .1, 1)}
-                                   initial="hidden"
-                                   whileInView="show"
-                                   viewport={{ once: true }}
-                                   className="image_11">
-                                   <img onClick={() => {setToggler(!toggler), setSlide(12)}} className="object-none image_22" src="/Gallery/pinkfish/gallery_lg_12.png" />
-                                   </motion.div>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-               <div className='hidden md:block'>
-		
-          <FsLightbox
-           toggler={toggler}
-           sources={[
-             '/Gallery/pinkfish/gallery_lg_1.png',
-             '/Gallery/pinkfish/gallery_lg_2.png',
-             '/Gallery/pinkfish/gallery_lg_3.png',
-             '/Gallery/pinkfish/gallery_lg_4.png',
-             '/Gallery/pinkfish/gallery_lg_5.png',
-             '/Gallery/pinkfish/gallery_lg_6.png',
-             '/Gallery/pinkfish/gallery_lg_7.png',
-             '/Gallery/pinkfish/gallery_lg_8.png',
-             '/Gallery/pinkfish/gallery_lg_9.png',
-             '/Gallery/pinkfish/gallery_lg_10.png',
-             '/Gallery/pinkfish/gallery_lg_11.png',
-             '/Gallery/pinkfish/gallery_lg_12.png',
-           ]}
-           slide={slide}
-         />
+
+
+function mouseDowns (e) {
+
+  var tl = gsap.timeline();
+  tl.to(e, {scale: 1.05, duration: .5, ease: "power1.inOut"});
+}
+var dragged = false
+var oldX = 0;
+function mouseDown (e) {
+    oldX = e.pageX;
+    dragged = false 
+  }
+ function mouseMove() {
+   dragged = true 
+  }
+
+function mouseUp(e) {
+var divOverlay =   document.getElementById('container')
+        if (dragged == true && e?.pageX < oldX) {
+            sideScroll(divOverlay,'right',25,300,900);
+        } else if (dragged == true && e?.pageX > oldX) {
+            sideScroll(divOverlay,'left',25,100, 900);          
+        }    
+}
+
+function selectImage(e){
+  setActive(true)
+  setUrl(e)
+}
+
+
+  
+return(
+  <section className="mt-24">
+
+    <div id="container" onMouseMove={()=>mouseMove()}  onMouseDown={(e)=>mouseDown(e)} onMouseUp={(e)=>mouseUp(e)}  className="flex gallery_main_container_live gap-4 hidden md:block">
+      <div className="flex gap-8 ">
+      <div className="flex flex-col gap-8 ">
+        <div className="image_11_live">
+        <img onClick={() => {setToggler(!toggler), setSlide(1)}} draggable="false" className="min-w-[400px] h-[260px] image_1" src="Live/Gallery/gallery_1.png" />
         </div>
-        <div className=' md:hidden'>
-       
-       <FsLightbox
-        toggler={active}
-        sources={[
-          '/Gallery/pinkfish/gallery_lg_1.png',
-          '/Gallery/pinkfish/gallery_lg_2.png',
-          '/Gallery/pinkfish/gallery_lg_3.png',
-          '/Gallery/pinkfish/gallery_lg_4.png',
-          '/Gallery/pinkfish/gallery_lg_5.png',
-          '/Gallery/pinkfish/gallery_lg_6.png',
-          '/Gallery/pinkfish/gallery_lg_7.png',
-          '/Gallery/pinkfish/gallery_lg_8.png',
-          '/Gallery/pinkfish/gallery_lg_9.png',
-          '/Gallery/pinkfish/gallery_lg_10.png',
-          '/Gallery/pinkfish/gallery_lg_11.png',
-          '/Gallery/pinkfish/gallery_lg_12.png',
-        ]}
-        slide={slideMob}
-      />
+        <div className="image_11_live">
+        <img  onClick={() => {setToggler(!toggler), setSlide(2)}} draggable="false" className="w-[400px] h-[400px] image_2" src="Live/Gallery/gallery_2.png" />
+        </div>
       </div>
-          </section>
-     );
+      <div className="flex flex-col gap-8  ">
+        <div className="flex flex-col gap-8  gallery_container_live text-white p-4 ">
+          <div className="gap-8 flex w-[400px] h-[275px] flex-col">
+          <h1 className="gallery_header_live w-1/2 mt-11 ">Gallery</h1>
+          <p className="gallery_text_live">Step into our Gallery and let the music do the talking! Get a glimpse
+            of the epic performances and wild moments that make concerts with us an unforgettable ride.</p>
+         
+            </div>
+        </div>
+       
+        <div className="image_11_live">
+        <img onClick={() => {setToggler(!toggler), setSlide(3)}} draggable="false" className="w-[440px] h-[354px] image_3" src="/Live/Gallery/gallery_3.png" />
+      </div>
+      </div>
+     
+    <div className="flex flex-col gap-8 ">
+        <div className="flex gap-8">
+        <div className="image_11_live">
+        <img  onClick={() => {setToggler(!toggler), setSlide(4)}} draggable="false"  src="/Live/Gallery/gallery_5.png" />
+        </div>
+        <div className="image_11_live">
+        <img onClick={() => {setToggler(!toggler), setSlide(5)}} draggable="false" src="/Live/Gallery/gallery_6.png" />
+        </div>
+        </div>
+        <div className="w-[840px] h-[308px] ">
+        <div className="image_11_live">
+        <img onClick={() => {setToggler(!toggler), setSlide(6)}} draggable="false" className="object-contain " src="/Live/Gallery/gallery_7.png"/>
+        </div>
+        </div>
+      </div> 
+      <div className="flex flex-col gap-8 ">
+      <div className="image_11_live">
+      
+        <img onClick={() => {setToggler(!toggler), setSlide(7)}}  className="image_8" draggable="false" src="/Live/Gallery/gallery_8.png" />
+        </div>
+        <div className="w-[400px] h-[400px] image_11_live">
+
+        <img  onClick={() => {setToggler(!toggler), setSlide(8)}} draggable="false" className="image_9 object-contain" src="/Live/Gallery/gallery_9.png"/>
+        </div>
+      </div> 
+      <div className="flex flex-col gap-8 ">
+      
+    
+   
+      <div className="w-[400px] image_11_live">
+
+      <img onClick={() => {setToggler(!toggler), setSlide(9)}} draggable="false" className=" h-[690px] image_10" src="/Live/Gallery/gallery_10.png"/>
+      </div>
+    </div> 
+    <div className="flex flex-col gap-8 ">
+       
+        <div className="w-[840px] image_11_live">
+
+        <img onClick={() => {setToggler(!toggler), setSlide(10)}} draggable="false" className="object-contain " src="/Live/Gallery/gallery_11.png"/>
+        </div>
+        <div className="flex gap-8  ">
+        <div className="image_11_live">
+        <img onClick={() => {setToggler(!toggler), setSlide(11)}} draggable="false" className="image_12" src="/Live/Gallery/gallery_12.png" />
+        </div>
+        <div className="image_11_live">
+        <img  onClick={() => {setToggler(!toggler), setSlide(12)}} draggable="false" className="image_13" src="/Live/Gallery/gallery_13.png" />
+        </div>
+        </div>
+      </div> 
+ 
+</div>
+
+</div>
+
+    <div className="md:hidden gallery_container_mob_live px-4 pt-4 pb-4">
+    <div className="flex flex-col gap-4  text-white mb-4 ">
+          <h1 className="gallery_header_live">Gallery</h1>
+          <p className="gallery_text_live">Step into our Gallery and let the music do the talking! Get a glimpse
+            of the epic performances and wild moments that make concerts with us an unforgettable ride.</p>
+        
+        </div>
+        <div className="flex gap-4 mx-2">
+          <div className="flex flex-col gap-4 basis-1/2">
+          <div className="image_11_live">
+          <img onClick={() => {setActive(!active), setSlideMob(1)}} className=" w-full h-full image_14" src="/Live/Gallery/gallery_1_mob.png" />
+          </div>
+          <div className="image_11_live">
+          <img onClick={() => {setActive(!active), setSlideMob(2)}} className=" w-full h-full" src="/Live/Gallery/gallery_3_mob.png" />
+          </div>
+          </div>
+          <div className="flex flex-col gap-4 basis-1/2">
+          <div className="image_11_live">
+          <img  onClick={() => {setActive(!active), setSlideMob(3)}} className="  w-full h-full" src="/Live/Gallery/gallery_2_mob.png" />
+          </div>
+          <div className="image_11_live">
+          <img onClick={() => {setActive(!active), setSlideMob(4)}} className="  w-full h-full " src="/Live/Gallery/gallery_4_mob.png" />
+          </div>
+          </div>
+         
+        </div>
+        
+        <div className="image_11_live">
+        <img onClick={() => {setActive(!active), setSlideMob(5)}} className=" w-full h-full mx-2 my-4 pr-3  mt-4 mb-4" src="/Live/Gallery/gallery_5_mob.png"/>
+        </div>
+        <div className="flex gap-4 mx-2 w-full ">
+          <div className="basis-1/2 image_11_live">
+        <img onClick={() => {setActive(!active), setSlideMob(6)}} className="object-cover w-full h-full rounded" src="/Live/Gallery/gallery_6_mob.png" />
+        </div>
+        <div className="basis-1/2 mr-3 image_11_live ">
+          <img onClick={() => {setActive(!active), setSlideMob(7)}} className="w-full h-full " src="/Live/Gallery/gallery_7_mob.png" />
+        </div>
+        </div>
+       
+    </div>
+    <div className='hidden md:block'>
+		
+    <FsLightbox
+     toggler={toggler}
+     sources={[
+       '/Live/Gallery/gallery_1.png',
+       '/Live/Gallery/gallery_2.png',
+       '/Live/Gallery/gallery_3.png',
+       '/Live/Gallery/gallery_5.png',
+       '/Live/Gallery/gallery_6.png',
+       '/Live/Gallery/gallery_7.png',
+       '/Live/Gallery/gallery_8.png',
+       '/Live/Gallery/gallery_9.png',
+       '/Live/Gallery/gallery_10.png',
+       '/Live/Gallery/gallery_11.png',
+       '/Live/Gallery/gallery_12.png',
+       '/Live/Gallery/gallery_13.png',
+     ]}
+     slide={slide}
+   />
+  </div>
+  <div className=' md:hidden'>
+ 
+ <FsLightbox
+  toggler={active}
+  sources={[
+    '/Live/Gallery/gallery_1_mob_full.jpg',
+       '/Live/Gallery/gallery_3_mob_full.jpg',
+       '/Live/Gallery/gallery_2_mob_full.jpg',
+       '/Live/Gallery/gallery_4_mob_full.jpg',
+       '/Live/Gallery/gallery_5_mob_full.jpg',
+       '/Live/Gallery/gallery_6_mob_full.jpg',
+       '/Live/Gallery/gallery_7_mob_full.jpg',
+  ]}
+  slide={slideMob}
+/>
+</div>
+  </section>
+);
 }
 export default Gallery;
