@@ -44,7 +44,7 @@ const Footer = () => (
           <Link href="/Live/Contact">
           <p className="cursor-pointer icon_text_live  mt-2">Contact </p>
           </Link>
-          <a href="https://master--comforting-cuchufli-1c59c6.netlify.app/" target='_blank'>
+          <a href="/" >
           <p className="cursor-pointer icon_text_live  mt-2">Pinkfish </p>
           </a>
         </div>
