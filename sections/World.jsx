@@ -4,11 +4,13 @@ import { useCallback, useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 const World = () =>{
   let iRef=useRef(null)
   const sliderRef = useRef(null);
   const sliderRef1 = useRef(null);
+  const BannerRef = useRef(null);
+
 
   function handlePrev (el) {
     console.log('aaa')
@@ -117,16 +119,17 @@ return(
     </div>
     <div className="hidden md:block">
     <div className="flex flex-col  self-center ">
-    <div className="flex  ">
+    <div className="flex gap-4 ">
      
-      <img src='/left_arrow_home.svg' onClick={()=>{sideScroll("left",2,900,1900, 'container')}} className="cursor-pointer" alt='arrow'/>
+      <img src='/left_arrow_home.svg'  onClick={()=>{handlePrev(BannerRef)}} className="cursor-pointer" alt='arrow'/>
      
-      <div id='container' className=" flex  overflow-x-scroll gap-6">
+      {/* <div id='container' className=" flex  overflow-x-scroll gap-6"> */}
       {/* <span className="min-w-[100%] relative"> 
       <img className="" src="/countdown_banner.png" />
       </span>
       <img className="" src="/countdown_banner.png" /> */}
-      
+       <Swiper ref={BannerRef} navigation={false} autoplay={true} modules={[Navigation,Autoplay]}   className="mySwiper">
+       <SwiperSlide>
       <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[90%] self-center" src="/countdown_banner_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
@@ -137,7 +140,9 @@ return(
               </a>
           </div>
         </div>
-        
+        </SwiperSlide>
+       <SwiperSlide>
+
         <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover self-center w-[90%]" src="/countdown_banner.png" />
           {/* <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
@@ -148,21 +153,19 @@ return(
               </a>
           </div> */}
         </div>
-       
+        </SwiperSlide>
+        </Swiper>
       {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
-      </div>
-      <img className="cursor-pointer" src='/right_arrow_home.svg' onClick={()=>{sideScroll("right",2,900,1900,'container')}} alt='arrow'/>
+      {/* </div> */}
+      <img className="cursor-pointer" src='/right_arrow_home.svg'   onClick={()=>{handleNext(BannerRef)}} alt='arrow'/>
       </div>
     </div>
     </div>
     <div className="md:hidden">
-    <div id='container' className=" flex  overflow-x-scroll gap-6">
-      {/* <span className="min-w-[100%] relative"> 
-      <img className="" src="/countdown_banner.png" />
-      </span>
-      <img className="" src="/countdown_banner.png" /> */}
-      
-      <div className="container flex flex-col min-w-[100%]  ">
+    
+      <Swiper ref={BannerRef} navigation={false} autoplay={true} modules={[Navigation,Autoplay]}   className="mySwiper">
+       <SwiperSlide>
+       <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
           <div className=" text-white flex flex-col justify-start gap-2 md:gap-4 ml-2 ">
            <a  className="event_tickets2 text-block self-start "target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '> 
@@ -172,8 +175,10 @@ return(
               </a>
           </div>
         </div>
-        
-        <div className="container flex flex-col min-w-[100%]  ">
+        </SwiperSlide>
+       <SwiperSlide>
+
+       <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
           {/* <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
@@ -184,9 +189,8 @@ return(
               </a>
           </div> */}
         </div>
-       
-      {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
-      </div>
+        </SwiperSlide>
+        </Swiper>
     </div>
     <div className="flex flex-col  text-white">
       <div className="flex flex-col md:flex-row self-center  w-[80%] gap-8   ">

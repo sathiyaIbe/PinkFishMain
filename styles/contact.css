@@ -158,27 +158,28 @@ contact_input:focus{
 }
 
 .galler_svg_1{
-    @apply absolute top-[90%] left-[13%]
+    @apply absolute left-[10%] hidden md:block
 }
 
 .galler_svg_2{
-    @apply absolute top-[205%] left-[5%]
-}
+    @apply absolute   left-[5%] hidden md:block
+
+} 
 
 .galler_svg_3{
-    @apply absolute top-[300%] left-[10%]
+    @apply absolute   left-[10%] hidden md:block
 }
 
 .galler_svg_4{
-    @apply absolute top-[130%] right-[13%]
+    @apply absolute  right-[13%] hidden md:block
 }
 
 .galler_svg_5{
-    @apply absolute top-[250%] right-[7%]
+    @apply absolute  right-[7%] hidden md:block
 }
 
 .galler_svg_6{
-    @apply absolute top-[300%] right-[18%]
+    @apply absolute  right-[18%] hidden md:block
 }
 
 

@@ -13,7 +13,7 @@ const Page = () => (
     <Gallery />
     <Banner />
   </div>
-  {/* <FooterLive /> */}
+  <FooterLive />
   </>
 );
 export default Page;

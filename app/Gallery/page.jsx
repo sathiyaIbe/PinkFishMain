@@ -29,6 +29,9 @@ const Gallery = () => {
     <div className='self-center flex flex-col  gap-4 md:w-fit w-[80%]'>
       <div className='flex gap-4'>
         <div className='image_11'>
+          <div className='flex'>
+        <img className='galler_svg_1' src='Gallery/svg_1.svg'/>
+        </div>
         <img src='Gallery/new_gallery_1.png' alt='gallery'/>
         </div>
         <div className='image_11'>
@@ -43,10 +46,15 @@ const Gallery = () => {
         <div className='image_11'>
         <img src='Gallery/new_gallery_4.png' alt='gallery'/>
         </div>
-
+        <div className='flex'>
+        <img className='galler_svg_4' src='Gallery/svg_3.svg'/>
+        </div>
       </div>
       <div className='image_11'>
         <img src='Gallery/new_gallery_5.png' alt='gallery'/>
+        <div className='flex'>
+        <img className='galler_svg_2' src='Gallery/svg_5.svg'/>
+        </div>
         </div>
       <div className='flex gap-4'>
       <div className='image_11'>
@@ -55,7 +63,7 @@ const Gallery = () => {
         <div className='image_11'>
         <img src='Gallery/new_gallery_7.png' alt='gallery'/>
         </div>
-
+       
       </div>
       <div className='flex gap-4'>
       <div className='image_11'>
@@ -64,7 +72,12 @@ const Gallery = () => {
         <div className='image_11'>
         <img src='Gallery/new_gallery_08.png' alt='gallery'/>
         </div>
-
+        <div className='flex'>
+        <img className='galler_svg_5' src='Gallery/svg_2.svg'/>
+        </div>
+        <div className='flex'>
+        <img className='galler_svg_3' src='Gallery/svg_4.svg'/>
+        </div>
       </div>
       <div className='flex  gap-4'>
       <div className='image_11'>
@@ -73,79 +86,103 @@ const Gallery = () => {
        
 
       <div className='flex flex-col gap-4'>
+      
       <div className='image_11'>
         <img src='Gallery/new_gallery_10.png' alt='gallery'/>
         </div>
+        
         <div className='image_11'>
         <img src='Gallery/new_gallery_11.png' alt='gallery'/>
+        </div>
+        <div className='flex'>
+        <img className='galler_svg_5' src='Gallery/svg_6.svg'/>
         </div>
         </div>
       </div>
     </div>:
-    <div className='self-center flex flex-col gap-4 md:w-fit w-[80%]'>
+    <div className='self-center flex flex-col  gap-4 md:w-fit w-[80%]'>
     <div className='flex gap-4'>
-    <div className='image_11'>
-        <img src='Gallery/new_gallery_12.png' alt='gallery'/>
-        </div>
-        <div className='image_11'>
-        <img src='Gallery/new_gallery_13.png' alt='gallery'/>
-        </div>
-
+      <div className='image_11'>
+        <div className='flex'>
+      <img className='galler_svg_1' src='Gallery/svg_1.svg'/>
+      </div>
+      <img src='Gallery/new_gallery_12.png' alt='gallery'/>
+      </div>
+      <div className='image_11'>
+      <img src='Gallery/new_gallery_13.png' alt='gallery'/>
+      </div>
+     
     </div>
     <div className='flex gap-4'>
     <div className='image_11'>
-        <img src='Gallery/new_gallery_14.png' alt='gallery'/>
-        </div>
-        <div className='image_11'>
-        <img src='Gallery/new_gallery_15.png' alt='gallery'/>
-        </div>
-
+      <img src='Gallery/new_gallery_14.png' alt='gallery'/>
+      </div>
+      <div className='image_11'>
+      <img src='Gallery/new_gallery_15.png' alt='gallery'/>
+      </div>
+      <div className='flex'>
+      <img className='galler_svg_4' src='Gallery/svg_3.svg'/>
+      </div>
     </div>
     <div className='image_11'>
-        <img src='Gallery/new_gallery_16.png' alt='gallery'/>
-        </div>
+      <img src='Gallery/new_gallery_16.png' alt='gallery'/>
+      <div className='flex'>
+      <img className='galler_svg_2' src='Gallery/svg_5.svg'/>
+      </div>
+      </div>
     <div className='flex gap-4'>
     <div className='image_11'>
-        <img src='Gallery/new_gallery_17.png' alt='gallery'/>
-        </div>
-        <div className='image_11'>
-        <img src='Gallery/new_gallery_18.png' alt='gallery'/>
-        </div>
-
+      <img src='Gallery/new_gallery_17.png' alt='gallery'/>
+      </div>
+      <div className='image_11'>
+      <img src='Gallery/new_gallery_18.png' alt='gallery'/>
+      </div>
+     
     </div>
     <div className='flex gap-4'>
     <div className='image_11'>
-        <img src='Gallery/new_gallery_19.png' alt='gallery'/>
-        </div>
-        <div className='image_11'>
-        <img src='Gallery/new_gallery_20.png' alt='gallery'/>
-        </div>
-
+      <img src='Gallery/new_gallery_19.png' alt='gallery'/>
+      </div>
+      <div className='image_11'>
+      <img src='Gallery/new_gallery_20.png' alt='gallery'/>
+      </div>
+      <div className='flex'>
+      <img className='galler_svg_5' src='Gallery/svg_2.svg'/>
+      </div>
+      <div className='flex'>
+      <img className='galler_svg_3' src='Gallery/svg_4.svg'/>
+      </div>
     </div>
     <div className='flex  gap-4'>
     <div className='image_11'>
-        <img src='Gallery/new_gallery_21.png' alt='gallery'/>
-        </div>
+      <img src='Gallery/new_gallery_21.png' alt='gallery'/>
+      </div>
+     
 
     <div className='flex flex-col gap-4'>
+    
     <div className='image_11'>
-        <img src='Gallery/new_gallery_22.png' alt='gallery'/>
-        </div>
-        <div className='image_11'>
-        <img src='Gallery/new_gallery_23.png' alt='gallery'/>
-        </div>
+      <img src='Gallery/new_gallery_22.png' alt='gallery'/>
+      </div>
+      
+      <div className='image_11'>
+      <img src='Gallery/new_gallery_23.png' alt='gallery'/>
+      </div>
+      <div className='flex'>
+      <img className='galler_svg_5' src='Gallery/svg_24.svg'/>
+      </div>
       </div>
     </div>
   </div>
 }
-<div className='hidden md:block'>
+{/* <div className='hidden md:block'>
   <img className='galler_svg_1' src='Gallery/svg_1.svg'/>
   <img className='galler_svg_2' src='Gallery/svg_5.svg'/>
   <img className='galler_svg_3' src='Gallery/svg_4.svg'/>
   <img className='galler_svg_4' src='Gallery/svg_3.svg'/>
   <img className='galler_svg_5' src='Gallery/svg_2.svg'/>
   <img className='galler_svg_6' src='Gallery/svg_6.svg'/>
-</div>
+</div> */}
 <div className='flex justify-center'>
         <button onClick={()=>{scrollTop()}} className='top_btn flex  self-center mt-11 mb-11 '>
       back to top 
