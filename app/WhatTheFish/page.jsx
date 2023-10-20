@@ -60,7 +60,9 @@ const page = () => {
                 whileInView="show" 
                viewport={{ once: true }}
               src='/aboutus_logo_1.svg' className=' ' alt="logo" /> */}
+              <div className='w-[70%] self-center'>
               <img src='/aboutus_logo_1.svg' className='object-cover ' alt="logo" />
+              </div>
               <div className='flex flex-col'>
                 
                 <p className='fish_bottom_text'>Established 13 years ago, Hitman Solutions is a subsidiary of Hitman Group</p>
@@ -80,7 +82,9 @@ const page = () => {
                 whileInView="show" 
                viewport={{ once: true }}
               src='/aboutus_logo_2.svg' className=' ' alt="logo" /> */}
+               <div className='w-[70%] self-center'>
               <img src='/aboutus_logo_2.svg' className='object-cover ' alt="logo" />
+              </div>
               <div className='flex flex-col'>
                
                 <p className='fish_bottom_text'>From humble beginnings to organising events and festivals across Malaysia and Southeast Asia, 

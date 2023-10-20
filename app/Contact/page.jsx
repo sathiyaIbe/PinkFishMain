@@ -4,7 +4,40 @@ import '../../styles/contact.css';
 import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
 import { Footer, Navbar } from '../../components';
-const Contact = () => (
+import { useRef } from 'react';
+const Contact = () => {
+let popupOverlayRef=useRef(null)
+let popupContainerRef=useRef(null)
+let closePopupButtonRef=useRef(null)
+
+
+//   const popupOverlay = document.querySelector(".popup-overlay");
+// const popupContainer = document.querySelector(".popup-container");
+// const closePopupButton = document.getElementById("close-popup");
+
+function openPopup(e) {
+  e.preventDefault()
+  popupOverlayRef.current.style.display = "flex";
+  setTimeout(() => {
+    popupContainerRef.current.style.opacity = "1";
+    popupContainerRef.current.style.transform = "scale(1)";
+  }, 100);
+}
+
+function closePopup() {
+  popupContainerRef.current.style.opacity = "0";
+  popupContainerRef.current.style.transform = "scale(0.8)";
+  setTimeout(() => {
+    popupOverlayRef.current.style.display = "none";
+  }, 300);
+}
+
+// Automatically open the popup when the page loads
+//window.addEventListener("load", openPopup);
+
+// closePopupButton.addEventListener("click", closePopup);
+
+  return(
   <div className="contact_main_container min-h-screen  text-white   ">
      {/* <div className='flex flex-col gap-6  pb-11 pt-6 header_container_aboutus border-b-[1px] border-white w-full '>
               
@@ -67,7 +100,7 @@ const Contact = () => (
       </div>
 
       <div className="flex flex-col w-[90%]  md:w-[100%] mt-11 md:mt-0 ">
-        <form className="flex flex-col  self-center   gap-8">
+        <form onSubmit={openPopup} className="flex flex-col  self-center   gap-8">
           <div className='flex md:flex-row  flex-col gap-6'>
           <div className="flex flex-col md:w-[50%] ">
             <label className="contact_label">First Name</label>
@@ -125,8 +158,17 @@ const Contact = () => (
       
     </div>
     </div>
+    <div ref={popupOverlayRef} class="popup-overlay">
+    <div ref={popupContainerRef}  class="popup-container">
+      <div class="popup-card mt-6">
+       
+        <p className='thanks_text mb-6'>Thank you for reaching out. We will contact you soon</p>
+        <button id="close-popup" onClick={()=>closePopup()}>Close</button>
+      </div>
+    </div>
+  </div>
    
   </div>
 );
-
+          }
 export default Contact;
