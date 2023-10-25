@@ -13,7 +13,6 @@ const World = () =>{
 
 
   function handlePrev (el) {
-    console.log('aaa')
     if (!el.current) return;
     el.current.swiper.slidePrev();
   }
@@ -195,7 +194,7 @@ return(
     </div>
     <div className="flex flex-col  text-white">
       <div className="flex flex-col md:flex-row self-center  w-[80%]    ">
-      <div className="md:w-1/2 flex flex-col gap-3 pr-4">
+      <div className="md:w-1/2 flex flex-col gap-3 md:pr-4">
         <div className="flex justify-between ">
           <a href='Gallery' className="home_bottom_header">
           festival oasis
@@ -253,7 +252,7 @@ return(
      
        
       </div>
-      <div className="md:w-1/2 flex flex-col gap-3 pl-4">
+      <div className="md:w-1/2 flex flex-col gap-3 md:pl-4">
         <div className="flex justify-between">
           <h1 className="home_bottom_header">
           What’s bubblin’?

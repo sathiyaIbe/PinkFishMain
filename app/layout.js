@@ -5,7 +5,7 @@ import '../styles/globals.css';
 const RootLayout = ({ children }) => (
   <html lang="en">
     <head>
-    <Script
+     <Script
   strategy="lazyOnload"
   src={`https://www.googletagmanager.com/gtag/js?id=GTM-K6TW6MF`}
 />
