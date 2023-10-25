@@ -5,6 +5,7 @@ import '../styles/contact.css';
 
 const Page = () => (
   <div className="bg-black min-h-[100vh]">
+     
     <NewNavbar />
     <Hero />
      {/* <Gallery/> */}

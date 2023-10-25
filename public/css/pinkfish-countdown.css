@@ -233,6 +233,7 @@ strong {
   padding-top: 20px;
   padding-bottom: 64px;
   display: flex;
+  overflow: hidden;
 }
 
 .hero.not-hero {
@@ -1595,7 +1596,7 @@ strong {
 }
 
 .card-item {
-  width: 100%;
+  width: 320px;
   height: 18rem;
   border-radius: .25rem;
   position: relative;
@@ -1670,7 +1671,7 @@ strong {
 }
 
 .card-heading {
-  height: 2rem;
+  height: 2.8rem;
   color: #f5f5f7;
   letter-spacing: .5px;
   text-transform: uppercase;
@@ -1683,7 +1684,7 @@ strong {
   margin-bottom: 0;
   padding-top: .125rem;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 0;
   font-family: Bebas Neue, sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
@@ -1739,7 +1740,7 @@ strong {
   flex-direction: column;
   justify-content: flex-start;
   margin-top: -4rem;
-  padding: 1rem 5% 1.25rem;
+  padding: 1rem 5%;
   font-size: .875rem;
   display: flex;
   position: relative;
@@ -2452,7 +2453,7 @@ strong {
   width: 100vw;
   height: auto;
   opacity: .28;
-  display: block;
+  display: none;
   top: -5%;
   bottom: auto;
   left: 0%;
@@ -2474,6 +2475,7 @@ strong {
 
 .image-8.hide {
   opacity: 1;
+  left: 0%;
 }
 
 .body {
@@ -4032,6 +4034,23 @@ strong {
   top: -76px;
 }
 
+.grid {
+  grid-template-rows: auto;
+}
+
+.h3-card-heading {
+  color: #fff;
+  letter-spacing: .5px;
+  border: 0 #000;
+  border-left-width: 40px;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 1.4rem;
+}
+
+.fireworks-div {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 1920px) {
   .navbarcontainer.mobile {
     display: none;
@@ -5296,12 +5315,16 @@ strong {
   }
 
   .column-7 {
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
 
   .card-item {
+    width: 100%;
     height: 12rem;
   }
 
@@ -5355,7 +5378,7 @@ strong {
   }
 
   .follow-us.perks {
-    height: 100%;
+    height: auto;
     margin-top: 60px;
     padding-top: 0;
     overflow: hidden;
@@ -6023,18 +6046,22 @@ strong {
     font-size: 80px;
     line-height: .9;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-#w-node-_5b32b600-fbde-308f-d903-35b205d4d620-766b02b1 {
+#w-node-_5b32b600-fbde-308f-d903-35b205d4d620-7df9ae66 {
   align-self: center;
   justify-self: end;
 }
 
-#w-node-b8b91059-bdb5-7348-f6f4-75660ae71258-766b02b1 {
+#w-node-b8b91059-bdb5-7348-f6f4-75660ae71258-7df9ae66 {
   justify-self: start;
 }
 
-#w-node-_3bd10c62-5986-7013-befa-0332b74b8489-b74b8472, #w-node-_3bd10c62-5986-7013-befa-0332b74b8478-b74b8472, #w-node-cd6aab13-4934-6872-4e1e-6d412ea62071-b74b8472, #w-node-cd6aab13-4934-6872-4e1e-6d412ea62085-b74b8472 {
+#w-node-_658bddcd-a940-358c-af7b-bbf460627657-7df9ae66, #w-node-_8365f5ff-a10e-5049-6b14-e3bc2663c129-7df9ae66, #w-node-_3bd10c62-5986-7013-befa-0332b74b8489-b74b8472, #w-node-_3bd10c62-5986-7013-befa-0332b74b8478-b74b8472, #w-node-cd6aab13-4934-6872-4e1e-6d412ea62071-b74b8472, #w-node-cd6aab13-4934-6872-4e1e-6d412ea62085-b74b8472 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 

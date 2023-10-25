@@ -65,38 +65,39 @@ function closePopup() {
         <h1 className='contact_text_header_mob md:hidden '>contact us</h1>
             <h1 className='contact_sub_text_mob self-center md:hidden'>Get in touch with us now for any inquiries and issues! Sit tight as we get back to you.</h1>
         
-        <div className="flex flex-col md:gap-6 gap-2 mt-6 ">
-<div className='flex gap-2 m items-center'>
-        <img className=" md:w-6 w-8 " src='/email_contact.svg' />
-<a className="contact_text"  href='mailto:info@pinkfishfestival.com'>info@pinkfishfestival.com</a>
+        <div className="flex flex-row  md:gap-3 gap-4 mt-6 ">
 
-</div>
-<div className='flex gap-2  '>
+       
+<a   href='mailto:info@pinkfishfestival.com'> 
+<img className=" md:w-8  " src='/email_contact.svg' /></a>
+
+
+
 <a href='https://www.instagram.com/pinkfishfestival/' target="_blank" className='flex gap-2 items-center'>
-        <img className="md:w-6 w-8" src='/ig_contact.svg' />
-<p className="contact_text underline">Instagram</p>
+        <img className="md:w-6 " src='/ig_contact.svg' />
+
 </a>
-</div>
-<div className='flex gap-2  items-center'>
+
+
 <a href='https://www.youtube.com/@Pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
 
         <img className="md:w-6 w-8" src='/yt_contact.svg' />
-<p className="contact_text underline">YouTube</p>
+
 </a>
-</div>
-<div className='flex gap-2  items-center'>
+
+
 <a href='https://www.facebook.com/pinkfishfestival/' target="_blank" className='flex gap-2 items-center'>
 
         <img className="md:w-6 w-8" src='/fb_contact.svg' />
-<p className="contact_text underline">Facebook</p>
+
 </a>
-</div>
-<div className='flex gap-2 items-center'>
+
+
 <a href=' https://www.tiktok.com/@pinkfishfestival' target="_blank" className='flex gap-2 items-center'>
         <img className="md:w-6 w-8" src='/tt_contact.svg' />
-<p className="contact_text underline">TikTok </p>
+
 </a>
-</div>
+
         </div>
         </div>
       </div>
