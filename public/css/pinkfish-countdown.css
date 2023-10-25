@@ -4986,8 +4986,8 @@ strong {
     align-items: center;
     margin-top: 18px;
     margin-bottom: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .frame-155.faq-btn {
@@ -5010,7 +5010,15 @@ strong {
   }
 
   .frame-156 {
-    padding-right: 10px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-right: 0;
+    font-size: 15px;
+  }
+
+  .text-3 {
+    width: 100%;
+    font-size: 18px;
   }
 
   .frame-157 {
@@ -5539,7 +5547,7 @@ strong {
     display: block;
     top: 8%;
     bottom: auto;
-    left: -41%;
+    left: -15%;
     right: auto;
     overflow: hidden;
   }
@@ -5550,15 +5558,17 @@ strong {
 
   .image-8.firework2.left {
     height: 29%;
-    top: 19%;
-    left: 58%;
+    top: 0%;
+    bottom: auto;
+    left: auto;
+    right: 0%;
   }
 
   .image-8.firework2._3 {
     height: 12%;
     display: block;
     top: 37%;
-    left: -27%;
+    left: -10%;
   }
 
   .image-8.topdesign {

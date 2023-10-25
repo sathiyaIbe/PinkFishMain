@@ -19,7 +19,8 @@ const RootLayout = ({ children }) => (
         `}}>
  
 </script>
-
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
       <link rel="preconnect" href="https://stijndv.com" />
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
      

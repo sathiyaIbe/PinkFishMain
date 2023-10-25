@@ -32,6 +32,22 @@ function closePopup() {
   }, 300);
 }
 
+function formSubmit(e){
+e.preventDefault()
+Email.send({
+  Host : "smtp.gmail.com",
+  Username : "sathiyaibe@gmail.com",
+  Password : "Password07@#",
+  To : 'sathiyibe@gmail.com',
+  From : "sathiyasanka0107@gmail.com",
+  Subject : "This is the subject",
+  Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+}
+
 // Automatically open the popup when the page loads
 //window.addEventListener("load", openPopup);
 
@@ -103,7 +119,7 @@ function closePopup() {
       </div>
 
       <div className="flex flex-col w-[90%]  md:w-[100%] mt-11 md:mt-0 ">
-        <form onSubmit={openPopup} className="flex flex-col  self-center   gap-8">
+        <form onSubmit={(e)=> formSubmit(e)} className="flex flex-col  self-center   gap-8">
           <div className='flex md:flex-row  flex-col gap-6'>
           <div className="flex flex-col md:w-[50%] ">
             <label className="contact_label">First Name</label>
