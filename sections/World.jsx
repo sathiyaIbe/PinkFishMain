@@ -163,12 +163,12 @@ return(
     </div>
     <div className="md:hidden">
     
-      <Swiper ref={BannerRef} navigation={false} autoplay={true} modules={[Navigation,Autoplay]}   className="mySwiper">
+      <Swiper  navigation={false} autoplay={true} modules={[Navigation,Autoplay]}   className="mySwiper">
        <SwiperSlide>
        <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
-          <div className=" text-white flex flex-col justify-start gap-2 md:gap-4 ml-2 ">
-           <a  className="event_tickets2 text-block self-start "target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '> 
+          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ml-2 ">
+           <a  className="event_tickets2 text-block_1 self-center "target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '> 
             <button  alt="button">Get Your Tickets Now
            
               </button>
@@ -315,7 +315,7 @@ return(
           <div className="container flex flex-col min-w-[100%]  ">
               <img src="/home_bottom_img_4.png"/>
           <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
-            <div className="text-block_1   w-full">
+            <div className="text-block_1 p-2  w-full">
             <h1 className="image_title opacity-1">US Rapper Tyga Is Coming To Malaysia For The First Time In August</h1>
             {/* <p className="image_description">description</p> */}
             </div>
@@ -327,7 +327,7 @@ return(
           <div className="container flex flex-col min-w-[100%]  ">
               <img src="/home_bottom_img_5.png"/>
           <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
-            <div className="text-block_1   w-full">
+            <div className="text-block_1 p-2  w-full">
             <h1 className="image_title opacity-1">Rapping Sensation Tyga Live in KL This August! Here’s Why You Can’t Miss It</h1>
             {/* <p className="image_description">description</p> */}
             </div>
@@ -335,8 +335,54 @@ return(
           </div>
         </div>
         </SwiperSlide>
-       
-
+        <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_6.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1 p-2   w-full">
+            <h1 className="image_title opacity-1">Tyga is set to perform in Kuala Lumpur for the first time this August 2023.</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_7.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1 p-2  w-full">
+            <h1 className="image_title opacity-1">PINKFISH FESTIVAL: ALL-NEW MUSIC & ARTS FESTIVAL IN M’SIA (30 APR 23)</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_8.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1  p-2 w-full">
+            <h1 className="image_title opacity-1">Get Hooked On The Beat: Pinkfish Festival Makes A Splash With DJ Snake And More!</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="container flex flex-col min-w-[100%]  ">
+              <img src="/home_bottom_img_9.png"/>
+          <div className=" text-white flex flex-col  justify-center gap-2 md:gap-4 ">
+            <div className="text-block_1  p-2 w-full">
+            <h1 className="image_title opacity-1">Pinkfish Festival, Malaysia, April 2023</h1>
+            {/* <p className="image_description">description</p> */}
+            </div>
+         
+          </div>
+        </div>
+        </SwiperSlide>
         </Swiper>
        
       </div>

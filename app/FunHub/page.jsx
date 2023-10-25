@@ -4,6 +4,7 @@ import '../../styles/contact.css';
 import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
 import { Footer, NewNavbar } from '../../components';
+import Link from 'next/link';
 
 const FanHub = () => {
   return (
@@ -33,9 +34,11 @@ Surf Beach.</p>
 festival. Headliners included DJ Snake, Yellow Claw, Meduza & Dash Berlin, and we also invited
 regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
 
-<div className='fan_button self-center'>
+
+    <Link className='fan_button self-center' href='/'>
     <button className='' type='button'>Make Memories</button>
-</div>
+    </Link>
+
 
             </div>
             </div>
@@ -57,9 +60,9 @@ regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
                 <p className='fish_bottom_text self-center text-center'>Stay tuned for the promising line-up and future announcements!</p>
 
 
-<a   href='' className='fan_button self-center'>
+<Link   href='/' className='fan_button self-center'>
     <button className='' type='button'>You Only Live Once</button>
-</a>
+</Link>
 
             </div>
             </div>
@@ -79,9 +82,9 @@ concert-goers dancing the night away.</p>
 local acts. DJ sets from Nahsyk, Naufal, and Bad M.O.B. set the tone for the night, with exhilarating performances by guest artists such as Saixse and Kidd Santhe, who performed their crowd-favourite
 hits and had them singing along.</p>
 
-<div className='fan_button self-center'>
+<Link href='/Live' className='fan_button self-center'>
     <button className='' type='button'>Start Living Your Life</button>
-</div>
+</Link>
 
             </div>
             </div>

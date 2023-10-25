@@ -59,7 +59,7 @@ return (
       <div className='flex'>
       <div className='w-[90%] self-center flex justify-between'>
     <a className='self-center' href="/">
-    <img  src="/new_menu_logo_2.svg" className="  w-[150px] p-2 items-center" />
+    <img  src="/new_menu_logo_2.svg" className="  w-[140px] p-2 items-center" />
       </a>
       <button type='button' onClick={()=>{  setToggleDropdown(((prev)=>!prev)); changeToggle()}}>
       <svg clipPath='pt-6' width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +72,7 @@ return (
 </div> 
 </div>
 {toggleDropdown &&
-<div className="dropdown items-center ">
+<div className="dropdown items-center mt-6 ">
 <a href="WhatTheFish" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>What the fish! </a>
      <a href="FunHub" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>Fun Hub</a>
 <a href="News" className="menu_text_mob" onClick={()=>setToggleDropdown(false)}>News </a>

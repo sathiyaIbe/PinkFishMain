@@ -278,7 +278,74 @@ at the end of April will definitely be worth the hype!
     </a>
     </div>
     </div>
+    <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
+      <img src='/news_img_6.png' alt='news image' />
+      <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
+    <h1 className='news_card_header '>Tyga is set to perform in Kuala Lumpur for the first time this August 2023.</h1>
+
+    <p className='news_card_text'>Tyga, the talented rapper hailing from Compton, California, is set to make his debut in 
+    Malaysia with an electrifying performance in August 2023 at the prestigious Zepp Kuala Lumpur. This will be the first
+     time ever that the rapper and songwriter, whose real name is Michael Ray Stevenson, will be performing in Malaysia, 
+    and fans are in for a treat as they get to witness the rapper’s unique style and high energy trap and hip-hop hits.
+</p>
+<a href='https://www.lifestyleasia.com/kl/whats-on/events-whats-on/all-you-need-to-know-about-tyga-concert-in-kuala-lumpur/' target='_blank'>
+    <button type='button' className='news_read_btn'>Read More</button>
+    </a>
+    </div>
+    </div>
       </div>
+      <div className='flex md:flex-row flex-col md:justify-center  gap-3'>
+
+<div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
+  <img src='/news_img_7.png' alt='news image' />
+  <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
+<h1 className='news_card_header '>PINKFISH FESTIVAL: ALL-NEW MUSIC & ARTS FESTIVAL IN M’SIA (30 APR 23)</h1>
+
+<p className='news_card_text'>Pinkfish Festival is a brand new festival that’ll be taking place on 30th April 2023 at 
+the spectacular Surf Beach at Sunway Lagoon.
+
+
+</p>
+<p className='news_card_text'>
+Aiming to encapsulate the vibrant arts and music scene in Malaysia, Pinkfish Festival also celebrates creativity, 
+expression and community in new and exciting ways!
+
+</p>
+<a href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjllJOYzvyBAxV2RmwGHUm1BsUQFnoECBoQAQ&url=https%3A%2F%2Funcoverasia.com%2Fpinkfish-festival-malaysia%2F&usg=AOvVaw0MGdA37wdQCViK8zbbw2Oi&opi=89978449 ' target='_blank'>
+<button type='button' className='news_read_btn'>Read More</button>
+</a>
+</div>
+</div>
+<div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
+  <img src='/news_img_8.png' alt='news image' />
+  <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
+<h1 className='news_card_header '>Get Hooked On The Beat: Pinkfish Festival Makes A Splash With DJ Snake And More!</h1>
+
+<p className='news_card_text'>Get ready to ride the wave of creativity and music at the brand new Pinkfish Festival 
+this Sunday! Happening on April 30th, 2023 at the stunning Surf Beach in Sunway Lagoon,
+ this festival is all about celebrating the vibrant arts and music scene in Malaysia in a fresh and exciting way.
+</p>
+<a href='https://risemalaysia.com.my/pinkfish-festival-2023-sunway/' target='_blank'>
+<button type='button' className='news_read_btn'>Read More</button>
+</a>
+</div>
+</div>
+<div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
+  <img src='/news_img_9.png' alt='news image' />
+  <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
+<h1 className='news_card_header '>Pinkfish Festival, Malaysia, April 2023</h1>
+
+<p className='news_card_text'>On Labour Day Weekend, Hitman Solutions and Happymoon hosted the Pinkfish Music & Arts 
+Festival, a curated creative music and arts experience that gave Malaysians and visitors from other parts of the region 
+an absolutely unforgettable experience. The highly charged day featured live performances from both local and 
+foreign artists as well as art installations created by a variety of multi-talented artists at Surf Beach in Sunway Lagoon.
+</p>
+<a href='https://destina.my/pinkfish-festival-malaysia-april-2023/' target='_blank'>
+<button type='button' className='news_read_btn'>Read More</button>
+</a>
+</div>
+</div>
+  </div>
     </div>
     
     

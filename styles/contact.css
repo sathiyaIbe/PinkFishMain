@@ -131,6 +131,15 @@ contact_input:focus{
             @apply cursor-pointer text-[10px] md:text-[12px] leading-[12px] md:leading-[14px] p-2 font-[500] font-[Sofia] text-white border border-white rounded w-fit
 
         }
+        .home_bottom_header{
+            @apply text-[12px] md:text-[16px] leading-[16px] md:leading-[20px] font-[Integral] text-white  font-[500]
+          
+          }
+
+          .home_bottom_header_seen{
+            @apply text-[16px] md:text-[16px] leading-[20px] md:leading-[20px] font-[Integral] text-white  font-[500]
+        
+        }
 
 .pink_btn{
     @apply p-4 bg-[#F33288] pl-6 pr-6

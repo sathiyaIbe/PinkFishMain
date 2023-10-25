@@ -54,7 +54,7 @@ const Terms_Condition = () => {
     </li>
     <li className='flex flex-col gap-2'>
         <h1 className='.tnc_text_header_live'>8. Lost or Stolen Items  </h1>
-        <p className='tnc_text_live'>8.1. The Organiser shall not be responsible for loss or damage of property or belongings. Please keep all items at your own risk.  </p>
+        <p className='tnc_text_live'>The Organiser shall not be responsible for loss or damage of property or belongings. Please keep all items at your own risk.  </p>
     </li>
     <li className='flex flex-col gap-2'>
         <h1 className='.tnc_text_header_live'>9. Health and Medical</h1>

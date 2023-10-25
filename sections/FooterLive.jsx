@@ -32,8 +32,8 @@ const Footer = () => (
           </div>
         </div>
         <div className="flex flex-col text-white md:items-start  items-center">
-        <Link href="/Live">
-          <p className="cursor-pointer icon_text_live  mt-3">Home</p>
+        <Link href="/">
+          <p className="cursor-pointer icon_text_live  mt-3">Main Main</p>
           </Link>
           <Link href="/Live/Events">
           <p className="cursor-pointer icon_text_live  mt-2">Events</p>
@@ -44,9 +44,7 @@ const Footer = () => (
           <Link href="/Live/Contact">
           <p className="cursor-pointer icon_text_live  mt-2">Contact </p>
           </Link>
-          <a href="/" >
-          <p className="cursor-pointer icon_text_live  mt-2">Pinkfish </p>
-          </a>
+          
         </div>
         <div className="flex flex-col gap-5 md:items-start items-center ">
           <h1 className="address_title icon_text_live">Follow us</h1>

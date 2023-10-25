@@ -8,7 +8,7 @@ const page = () => {
      <NewNavbar />
     <div className='text-white  min-h-screen min-w-screen bg-[#000]  overflow-hidden   flex flex-col'>
        
-<h1 className='contact_text_header w-[40%] self-center text-center mt-11'>terms & Conditions</h1>
+<h1 className='contact_text_header md:w-[40%] w-[80%] self-center text-center mt-11'>terms & Conditions</h1>
 <div className=' flex justify-center pb-24'>
 <ul className='text_tnc_container  '>
     <li className='flex flex-col gap-2'>
@@ -48,7 +48,7 @@ const page = () => {
     </li>
     <li className='flex flex-col gap-2'>
         <h1 className='tnc_text_header'>8. Governing Law  </h1>
-        <p className='tnc_text'>8.1. The Organiser shall not be responsible for loss or damage of property or belongings. Please keep all items at your own risk.  </p>
+        <p className='tnc_text'>The Organiser shall not be responsible for loss or damage of property or belongings. Please keep all items at your own risk.  </p>
     </li>
 
     <li className='tnc_text '>If you have any questions about these Terms and Conditions, please contact us at info@pinkfishfestival.com</li>

@@ -34,8 +34,8 @@ const Footer = () => (
        <div className='flex flex-col gap-6'>
         <h1 className="home_bottom_header ">as seen on</h1>
         <div className="flex gap-6 self-center">
-          <img  src='/home_bottom_logo_mob_1.svg'/>
-          <img className="" src='/home_bottom_logo_mob_2.svg'/>
+          {/* <img  src='/home_bottom_logo_mob_1.svg'/> */}
+          <img className="w-[140px]" src='/home_bottom_logo_mob_2.svg'/>
           <img className='w-1/2' src='/home_bottom_logo_mob_3.svg'/>
           <img className="object-none" src='/home_bottom_logo_mob_4.svg'/>
 
@@ -97,8 +97,8 @@ const Footer = () => (
 <div className='flex flex-col gap-6 self-center mb-6'>
         <h1 className="home_bottom_header_seen text-center mt-6">as seen on</h1>
         <div className="flex gap-6">
-          <img src='/home_bottom_logo_mob_1.svg'/>
-          <img className="object-none" src='/home_bottom_logo_mob_2.svg'/>
+          {/* <img src='/home_bottom_logo_mob_1.svg'/> */}
+          <img className="w-[140px]" src='/home_bottom_logo_mob_2.svg'/>
           <img src='/home_bottom_logo_mob_3.svg'/>
           <img className="object-none" src='/home_bottom_logo_mob_4.svg'/>
 

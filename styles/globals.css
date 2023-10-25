@@ -48,7 +48,7 @@
 }
 
 .logo_container{
-  @apply bg-[#313131] md:bg-[#000];
+  @apply bg-[#00] md:bg-[#000];
 }
 
 /* NAVBAR */
@@ -82,7 +82,7 @@
 }
 
 .dropdown {
-  @apply   w-full  rounded-lg bg-black min-w-[210px] flex flex-col gap-4  items-center;
+  @apply   w-full  rounded-lg bg-black min-w-[210px] flex flex-col gap-3  items-center;
 }
 
 .dropdown_link {
@@ -91,7 +91,7 @@
 
 .menu_text_mob{
 
-  @apply w-fit self-center  uppercase text-[white] font-[Integral] font-[700] text-[20px] leading-[24px] md:leading-[24px] tracking-[5px];
+  @apply w-fit self-center  uppercase text-[white] font-[Integral] font-[100] text-[14px] leading-[24px] md:leading-[24px] tracking-[5px];
 } 
 .menu_text{
 
