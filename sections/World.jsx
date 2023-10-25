@@ -98,7 +98,7 @@ return(
         <a   href='/'> 
     <img className="md:block hidden " src='/hero_logo_3.png' />
     </a>
-    <a   href='/'> 
+    <a   href='/countdown.html'> 
     <img className="md:block hidden" src='/hero_logo_2.png' />
     </a>
     <a href='/Live'> 
@@ -109,7 +109,7 @@ return(
       <a href="/">
     <img className="md:hidden" src='/hero_logo_mob_3.png' />
     </a>
-    <a   href=''> 
+    <a   href='/countdown.html'> 
     <img className="md:hidden" src='/hero_logo_mob_2.png' />
     </a>
     <a href="/Live">
@@ -117,21 +117,34 @@ return(
     </a>
     </div>
     </div>
-    <div className="hidden md:block">
-    <div className="flex flex-col  self-center ">
-    <div className="flex gap-4 ">
+    <div className="hidden md:block ">
+    <div className="flex flex-col     ">
+      <div className="w-[100%] self-center">
+    <div className="flex gap-4   ">
      
       <img src='/left_arrow_home.svg'  onClick={()=>{handlePrev(BannerRef)}} className="cursor-pointer" alt='arrow'/>
      
-      {/* <div id='container' className=" flex  overflow-x-scroll gap-6"> */}
-      {/* <span className="min-w-[100%] relative"> 
-      <img className="" src="/countdown_banner.png" />
-      </span>
-      <img className="" src="/countdown_banner.png" /> */}
-       <Swiper ref={BannerRef} navigation={false} autoplay={true} modules={[Navigation,Autoplay]}   className="mySwiper">
+     
+       <Swiper ref={BannerRef} navigation={false} autoplay={false} modules={[Navigation,Autoplay]}   className="mySwiper">
+      
        <SwiperSlide>
+
+        <div className="container flex flex-col  ">
+          <div className="self-center w-[90%] ">
+          <img className="object-cover self-center " src="/countdown_banner.png" />
+          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
+          <a  className="event_tickets2  text-block self-center " href='/countdown.html'>
+            <button className=" " alt="button">Get Your Tickets Now
+             
+              </button>
+              </a>
+              </div>
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
       <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover w-[90%] self-center" src="/countdown_banner_2.png" />
+          <img className="object-cover w-[80%] self-center" src="/countdown_banner_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
           <a  className="event_tickets2 text-block  self-center " target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl'>
             <button className=" " alt="button">Get Your Tickets Now
@@ -141,30 +154,32 @@ return(
           </div>
         </div>
         </SwiperSlide>
-       <SwiperSlide>
-
-        <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover self-center w-[90%]" src="/countdown_banner.png" />
-          {/* <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
-          <a  className="event_tickets2  text-block self-center " href=''>
-            <button className=" " alt="button">Get Your Tickets Now
-             
-              </button>
-              </a>
-          </div> */}
-        </div>
-        </SwiperSlide>
         </Swiper>
-      {/* <img className="" src='/countdown_banner.png' alt='arrow'/> */}
-      {/* </div> */}
+  
       <img className="cursor-pointer" src='/right_arrow_home.svg'   onClick={()=>{handleNext(BannerRef)}} alt='arrow'/>
+      </div>
       </div>
     </div>
     </div>
     <div className="md:hidden">
     
       <Swiper  navigation={false} autoplay={true} modules={[Navigation,Autoplay]}   className="mySwiper">
+      
        <SwiperSlide>
+
+       <div className="container flex flex-col min-w-[100%]  ">
+          <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
+          <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
+            
+          <a  className="event_tickets2 text-block_1 self-center ml-2" href='/countdown.html'> 
+            <button  alt="button">Get Your Tickets Now
+           
+              </button>
+              </a>
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
        <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ml-2 ">
@@ -176,25 +191,11 @@ return(
           </div>
         </div>
         </SwiperSlide>
-       <SwiperSlide>
-
-       <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
-          {/* <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
-            
-          <a  className="event_tickets2 text-block self-start ml-2" href=''> 
-            <button  alt="button">Get Your Tickets Now
-           
-              </button>
-              </a>
-          </div> */}
-        </div>
-        </SwiperSlide>
         </Swiper>
     </div>
     <div className="flex flex-col  text-white">
-      <div className="flex flex-col md:flex-row self-center  w-[80%] gap-8   ">
-      <div className="md:w-1/2 flex flex-col gap-3">
+      <div className="flex flex-col md:flex-row self-center  w-[80%]    ">
+      <div className="md:w-1/2 flex flex-col gap-3 pr-4">
         <div className="flex justify-between ">
           <a href='Gallery' className="home_bottom_header">
           festival oasis
@@ -252,7 +253,7 @@ return(
      
        
       </div>
-      <div className="md:w-1/2 flex flex-col gap-3">
+      <div className="md:w-1/2 flex flex-col gap-3 pl-4">
         <div className="flex justify-between">
           <h1 className="home_bottom_header">
           What’s bubblin’?
