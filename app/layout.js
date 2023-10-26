@@ -5,9 +5,9 @@ import '../styles/globals.css';
 import TagManager from 'react-gtm-module';
 import { useEffect } from 'react';
 const RootLayout = ({ children }) => {
-  useEffect(() => {
-    TagManager.initialize({ gtmId: process.env.GOOGLE_ANALYTICS });
-}, []);
+//   useEffect(() => {
+//     TagManager.initialize({ gtmId: process.env.GOOGLE_ANALYTICS });
+// }, []);
   return(
   <html lang="en">
     <head>
