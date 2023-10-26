@@ -32,8 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K6TW6MF');</script> */}
 {/* <script>{initializeGoogleTagManager()}</script> */}
 
-{/* <script src="https://smtpjs.com/v3/smtp.js">
-</script>  */}
+<script src="https://smtpjs.com/v3/smtp.js">
+</script> 
       <link rel="preconnect" href="https://stijndv.com" />
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
      

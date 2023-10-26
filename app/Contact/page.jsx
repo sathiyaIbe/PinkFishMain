@@ -5,19 +5,25 @@ import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
 import { Footer, NewNavbar } from '../../components';
 import { useRef, useState } from 'react';
-
+import emailjs from "@emailjs/browser"
 const Contact = () => {
 let popupOverlayRef=useRef(null)
 let popupContainerRef=useRef(null)
 let closePopupButtonRef=useRef(null)
-
+const [firstName,setFirstName]=useState()
+const [lastName,setLastName]=useState()
+const [email, setEmail]=useState()
+const[phone,setPhone]=useState()
+const [subject, setSubject]=useState()
+const [message,setMessage]=useState()
+const [otherText, setOtherText]=useState()
+const form=useRef()
 
 //   const popupOverlay = document.querySelector(".popup-overlay");
 // const popupContainer = document.querySelector(".popup-container");
 // const closePopupButton = document.getElementById("close-popup");
 
 function openPopup(e) {
-  e.preventDefault()
   popupOverlayRef.current.style.display = "flex";
   setTimeout(() => {
     popupContainerRef.current.style.opacity = "1";
@@ -35,19 +41,38 @@ function closePopup() {
 
 function formSubmit(e){
 e.preventDefault()
+emailjs.init('uXJJBD_QfTm7Q0FGK')
 // Email.send({
 //   Host : "smtp.gmail.com",
 //   Username : "sathiyaibe@gmail.com",
 //   Password : "Password07@#",
-//   To : 'sathiyibe@gmail.com',
+//   To : 'sathiyasanka0107@gmail.com',
 //   From : "sathiyasanka0107@gmail.com",
 //   Subject : "This is the subject",
 //   Body : "And this is the body"
 // }).then(
 //   message => alert(message)
 // );
-openPopup()
+let params={
+  email:email,
+  firstName:firstName,
+  lastName:lastName,
+  phone:phone,
+  subject:subject==="Other"?otherText:subject,
+  message:message,
 }
+console.log(params)
+emailjs.send("service_d5bgbnj","template_ick8fw9",params )
+.then(()=>{
+  openPopup()
+
+},()=>{
+  alert("wrong")
+})
+
+}
+
+
 
 // Automatically open the popup when the page loads
 //window.addEventListener("load", openPopup);
@@ -120,25 +145,25 @@ openPopup()
       </div>
 
       <div className="flex flex-col w-[90%]  md:w-[100%] mt-11 md:mt-0 ">
-        <form onSubmit={(e)=> formSubmit(e)} className="flex flex-col  self-center   gap-8">
+      <form ref={form} onSubmit={(e)=> formSubmit(e)} className="flex flex-col  self-center   gap-8">
           <div className='flex md:flex-row  flex-col gap-6'>
           <div className="flex flex-col md:w-[50%] ">
             <label className="contact_label">First Name</label>
-            <input className="contact_input" type="text" />
+            <input className="contact_input" onChange={(e)=>setFirstName(e.target.value)} value={firstName} type="text" />
           </div>
           <div className="flex flex-col md:w-[50%]">
             <label className="contact_label">Last Name</label>
-            <input className="contact_input" type="text" />
+            <input className="contact_input"  onChange={(e)=>setLastName(e.target.value)} type="text" />
           </div>
           </div>
           <div className='flex md:flex-row flex-col gap-6'>
           <div className="flex flex-col md:w-[50%] ">
             <label className="contact_label">Email</label>
-            <input className="contact_input" type="text" />
+            <input className="contact_input"  onChange={(e)=>setEmail(e.target.value)} type="text" />
           </div>
           <div className="flex flex-col md:w-[50%]">
-            <label className="contact_label">Phone Number</label>
-            <input className="contact_input" type="text" />
+            <label className="contact_label" setPhone>Phone Number</label>
+            <input  onChange={(e)=>setPhone(e.target.value)} value={phone} className="contact_input" type="tel" />
           </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -146,25 +171,25 @@ openPopup()
            
 <div class="flex md:flex-row flex-col gap-3">
     <div class="flex items-center  ">
-        <input id="inline-checked-radio"  type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
+        <input id="inline-checked-radio"  type="radio" value="General Inquiry" name="inline-radio-group" onChange={()=>setSubject('General Inquiry')} class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
         <label for="inline-checked-radio" class="ml-2  text-[12px] font-[Sofia] font-[400] text-[#F33288] ">General Inquiry</label>
     </div>
     <div class="flex items-center  ">
-        <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
+        <input id="inline-2-radio" type="radio" value="Carrer" name="inline-radio-group" onChange={()=>setSubject('Career')} class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
         <label for="inline-2-radio" class="ml-2 text-[12px] font-[Sofia] font-[400] text-[#F33288] ">Career</label>
     </div>
     <div class="flex items-center  ">
-        <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
+        <input id="inline-2-radio" type="radio" value="Other" name="inline-radio-group"  onChange={()=>setSubject('Other')} class="w-4 h-4 text-[#F33288] bg-[#f8cbdf]"/>
         <label for="inline-2-radio" class="ml-2 text-[12px] font-[Sofia] font-[400] text-[#F33288] ">Other</label>
         <input className="contact_input mb-3 w-full  md:hidden " type="text" />
 
     </div>
-    <input className="contact_input mb-3 w-full hidden md:block " type="text" />
+    <input className="contact_input mb-3 w-full hidden md:block " onkeydown="return false" value={otherText} type="none" readonly  onChange={(e)=>{subject==="Other"? setOtherText(e.target.value):setOtherText('')}}/>
     </div>
     </div>
           <div className="flex flex-col gap-2">
             <label className="contact_label">Message</label>
-            <input className="contact_input"  type="text" />
+            <textarea  onChange={(e)=>setMessage(e.target.value)} className="contact_input"  rows="2" cols="50"  type="text" />
           </div>
           <div className='contact_submit items-center'>
           <button className="flex " type="submit">Send Message
@@ -174,6 +199,7 @@ openPopup()
           </button>
           </div>
         </form>
+
       </div>
       
     </div>
