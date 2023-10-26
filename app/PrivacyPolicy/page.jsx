@@ -7,7 +7,7 @@ const page = () => {
     <NewNavbar />
     <div className='text-white  min-h-screen min-w-screen bg-[#000]  overflow-hidden   flex flex-col'>
        
-<h1 className='contact_text_header md:w-[40%] w-[80%] self-center text-center mt-11'>PRIVACY POLICY {process.env.TITLE}</h1>
+<h1 className='contact_text_header md:w-[40%] w-[80%] self-center text-center mt-11'>PRIVACY POLICY </h1>
 <div className=' flex justify-center pb-24'>
 <ul className='text_tnc_container  '>
     <li className='flex flex-col gap-2'>

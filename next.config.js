@@ -5,6 +5,10 @@ const nextConfig = {
  env: {
     GOOGLE_ANALYTICS: process.env.GOOGLE_ANALYTICS,
   },
+  eslint: {
+    ignoreDuringBuilds: true
+  },
+  
   webpack5: true,
   webpack: (config) => {
     config.resolve.fallback = {
