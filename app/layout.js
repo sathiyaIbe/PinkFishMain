@@ -2,7 +2,6 @@
 import Script from 'next/script';
 import { Footer, NewNavbar } from '../components';
 import '../styles/globals.css';
-import { initializeGoogleTagManager } from '../components/GoogleManager';
 import TagManager from 'react-gtm-module';
 import { useEffect } from 'react';
 const RootLayout = ({ children }) => {
