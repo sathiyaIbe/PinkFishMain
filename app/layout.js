@@ -1,12 +1,12 @@
-
+'use client'
 import { Footer, NewNavbar } from '../components';
 import '../styles/globals.css';
-
-
+import TagManager from 'react-gtm-module';
+import { useEffect } from 'react';
 const RootLayout = ({ children }) => {
-//   useEffect(() => {
-//     TagManager.initialize({ gtmId: process.env.GOOGLE_ANALYTICS });
-// }, []);
+  useEffect(() => {
+    TagManager.initialize({ gtmId: process.env.GOOGLE_ANALYTICS });
+}, []);
   return(
   <html lang="en">
     <head>
@@ -39,8 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      
     </head>
     <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD8WJKQX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 
       <div className="min-h-screen bg-black ">
       {/* <NewNavbar /> */}
