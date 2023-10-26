@@ -19,13 +19,7 @@ module.exports = {
       },
     },
   },
-
   plugins: [
-    require('flowbite/plugin'),
-    require('postcss-import'),
-    require('tailwindcss/nesting')(require('postcss-nesting')),
-    require('autoprefixer'),
-    require('tailwindcss'),
-  ]
-
+    require('flowbite/plugin')
+  ],
 };
