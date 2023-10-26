@@ -5,7 +5,7 @@ import {  motion } from "framer-motion";
 import { fadeIn, planetVariants, staggerContainer, textContainer, textVariant, textVariant2 } from "../../utils/motion";
 import { Footer, NewNavbar } from '../../components';
 import { useRef, useState } from 'react';
-import { createTransport } from 'nodemailer';
+
 const Contact = () => {
 let popupOverlayRef=useRef(null)
 let popupContainerRef=useRef(null)
