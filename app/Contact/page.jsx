@@ -34,18 +34,18 @@ function closePopup() {
 
 function formSubmit(e){
 e.preventDefault()
-Email.send({
-  Host : "smtp.gmail.com",
-  Username : "sathiyaibe@gmail.com",
-  Password : "Password07@#",
-  To : 'sathiyibe@gmail.com',
-  From : "sathiyasanka0107@gmail.com",
-  Subject : "This is the subject",
-  Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-
+// Email.send({
+//   Host : "smtp.gmail.com",
+//   Username : "sathiyaibe@gmail.com",
+//   Password : "Password07@#",
+//   To : 'sathiyibe@gmail.com',
+//   From : "sathiyasanka0107@gmail.com",
+//   Subject : "This is the subject",
+//   Body : "And this is the body"
+// }).then(
+//   message => alert(message)
+// );
+openPopup()
 }
 
 // Automatically open the popup when the page loads

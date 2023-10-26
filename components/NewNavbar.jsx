@@ -58,8 +58,8 @@ return (
     <div className='navbar_container_mob  '>
       <div className='flex'>
       <div className='w-[90%] self-center flex justify-between'>
-    <a className='self-center' href="/">
-    <img  src="/new_menu_logo_2.svg" className="  w-[140px] p-2 items-center" />
+    <a className='self-end' href="/">
+    <img  src="/new_menu_logo_2.svg" className="ml-6  w-[80px] items-center" />
       </a>
       <button type='button' onClick={()=>{  setToggleDropdown(((prev)=>!prev)); changeToggle()}}>
       <svg clipPath='pt-6' width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">

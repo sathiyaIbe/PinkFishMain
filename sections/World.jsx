@@ -170,7 +170,7 @@ return(
           <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
-          <a  className="event_tickets2 text-block_1 self-center ml-2" href='/countdown.html'> 
+          <a  className="event_tickets2 text-block self-center ml-2" href='/countdown.html'> 
             <button  alt="button">Get Your Tickets Now
            
               </button>
@@ -182,7 +182,7 @@ return(
        <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ml-2 ">
-           <a  className="event_tickets2 text-block_1 self-center "target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '> 
+           <a  className="event_tickets2 text-block self-center "target="_blank" href='https://www.ticketmelon.com/fsa/sidharthkl '> 
             <button  alt="button">Get Your Tickets Now
            
               </button>
