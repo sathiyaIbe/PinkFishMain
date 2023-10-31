@@ -41,18 +41,8 @@ function closePopup() {
 
 function formSubmit(e){
 e.preventDefault()
-emailjs.init('uXJJBD_QfTm7Q0FGK')
-// Email.send({
-//   Host : "smtp.gmail.com",
-//   Username : "sathiyaibe@gmail.com",
-//   Password : "Password07@#",
-//   To : 'sathiyasanka0107@gmail.com',
-//   From : "sathiyasanka0107@gmail.com",
-//   Subject : "This is the subject",
-//   Body : "And this is the body"
-// }).then(
-//   message => alert(message)
-// );
+emailjs.init('LG7J2OXSLLOa5pKI9')
+
 let params={
   email:email,
   firstName:firstName,
@@ -62,7 +52,7 @@ let params={
   message:message,
 }
 console.log(params)
-emailjs.send("service_d5bgbnj","template_ick8fw9",params )
+emailjs.send("service_2qisjeo","template_nfb2e2p",params )
 .then(()=>{
   openPopup()
 
