@@ -19,7 +19,7 @@ return (
         <img src="/Live/Logo.png" className="logo_img " />
       </Link>
       <div className="flex gap-6 ">
-      <Link href="/Live">
+      <Link href="/">
           <h1 className="menu_text_live ">Home</h1>
         </Link>
         <Link href="/Live/Events">
@@ -54,7 +54,7 @@ return (
 </button>
 {toggleDropdown &&
 <div className="dropdown_live">
-<Link href="/Live" className="menu_text_mob_live" onClick={()=>setToggleDropdown(false)}>Home </Link>
+<Link href="/" className="menu_text_mob_live" onClick={()=>setToggleDropdown(false)}>Home </Link>
      <Link href="Live/Events" className="menu_text_mob_live" onClick={()=>setToggleDropdown(false)}>Events</Link>
    
     <Link href="/Live/Contact" className="menu_text_mob_live mb-4" onClick={()=>setToggleDropdown(false)}>Contact</Link>
