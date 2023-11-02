@@ -2,9 +2,8 @@
 'use client'
 import { useEffect, useRef } from 'react';
 import { Footer, NewNavbar } from '../components';
-import { Gallery, Hero,World } from '../sections';
+import {  Hero,World } from '../sections';
 import '../styles/contact.css';
-import Link from 'next/link';
 
 const Page = () => {
   let popupOverlayRef=useRef(null)
@@ -51,7 +50,7 @@ function closePopup() {
  <div ref={popupOverlayRef} class="popup-overlay ">
     <div ref={popupContainerRef}  class="popup-container_main">
       <div class="popup-card_main mt-6">
-       <Link href='/countdown.html'> <img  src='/popup_desktop.png' className='' alt='img'/></Link>
+       <a href='/countdown.html'> <img  src='/popup_desktop.png' className='' alt='img'/></a>
        <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" />
        {/* <button }  className='' id="close-popup_mai" ><img src='close_icon.svg' alt="close" /> </button> */}
       </div>
@@ -75,7 +74,7 @@ function closePopup() {
     </div>
       <div class="popup-card_main ">
     
-       <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></Link>
+       <a href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></a>
 
       </div>
      
