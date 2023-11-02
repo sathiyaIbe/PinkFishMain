@@ -37,7 +37,8 @@ function closePopup() {
      <img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
  <World/>
  <Footer />
- <div ref={popupOverlayRef} class="popup-overlay hidden md:block">
+ <div className='hidden md:block'>
+ <div ref={popupOverlayRef} class="popup-overlay ">
     <div ref={popupContainerRef}  class="popup-container_main">
       <div class="popup-card_main mt-6">
     
@@ -52,6 +53,7 @@ function closePopup() {
     <button onClick={()=>{closePopup()}} id="close-popup_main" >X</button>
    </div> */}
     </div>
+  </div>
   </div>
   </div>
 );
