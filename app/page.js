@@ -55,6 +55,27 @@ function closePopup() {
     </div>
   </div>
   </div>
+
+  <div className=' md:hidden'>
+ <div ref={popupOverlayRef} class="popup-overlay ">
+    <div ref={popupContainerRef}  class="popup-container_main w-[90%] flex flex-col gap-3">
+     <div className='flex justify-end '>
+    <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button>
+    </div>
+      <div class="popup-card_main ">
+    
+       <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></Link>
+
+      </div>
+      {/* <div class="popup-card_main_mob md:hidden mt-6">
+    
+    <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className=' object-none' alt='img'/></Link>
+
+    <button onClick={()=>{closePopup()}} id="close-popup_main" >X</button>
+   </div> */}
+    </div>
+  </div>
+  </div>
   </div>
 );
   }

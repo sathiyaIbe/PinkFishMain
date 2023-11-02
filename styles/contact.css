@@ -452,8 +452,7 @@ contact_input:focus{
     opacity: 0;
     transform: scale(0.8);
     transition: all 0.5s ease-in-out;
-    padding: 40px;
-    @apply w-[70%]  md:h-[95%] flex flex-col justify-center;
+    @apply md:w-[70%]  md:h-[95%] flex flex-col justify-center md:p-[40px];
 
   }
   
@@ -501,5 +500,5 @@ contact_input:focus{
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    @apply text-[14px] md:text-[18px] font-[400] leading-[12px] md:leading-[21.5px] md:h-[50px] h-[0px] font-[Sofia]  text-[#fff] ;
+    @apply text-[14px] md:text-[18px] font-[400] leading-[12px] md:leading-[21.5px] md:h-[50px] h-[40px] font-[Sofia] w-fit  text-[#fff] ;
   }
