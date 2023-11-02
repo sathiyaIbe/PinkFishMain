@@ -9,22 +9,32 @@ import Link from 'next/link';
 const Page = () => {
   let popupOverlayRef=useRef(null)
 let popupContainerRef=useRef(null)
+let popupOverlayRefMob=useRef(null)
+let popupContainerRefMob=useRef(null)
 useEffect(()=>{
 openPopup()
 },[])
 
 function openPopup() {
   popupOverlayRef.current.style.display = "flex";
+  popupOverlayRefMob.current.style.display = "flex";
+
   setTimeout(() => {
     popupContainerRef.current.style.opacity = "1";
+    popupContainerRefMob.current.style.opacity = "1";
+    popupContainerRefMob.current.style.transform = "scale(1)";
     popupContainerRef.current.style.transform = "scale(1)";
   }, 100);
 }
 function closePopup() {
   popupContainerRef.current.style.opacity = "0";
+  popupContainerRefMob.current.style.opacity = "0";
   popupContainerRef.current.style.transform = "scale(0.8)";
+  popupContainerRefMob.current.style.transform = "scale(0.8)";
+
   setTimeout(() => {
     popupOverlayRef.current.style.display = "none";
+    popupOverlayRefMob.current.style.display = "none";
   }, 300);
 }
 
@@ -57,8 +67,8 @@ function closePopup() {
   </div>
 
   <div className=' md:hidden'>
- <div ref={popupOverlayRef} class="popup-overlay ">
-    <div ref={popupContainerRef}  class="popup-container_main w-[90%] flex flex-col gap-3">
+ <div ref={popupOverlayRefMob} class="popup-overlay ">
+    <div ref={popupContainerRefMob}  class="popup-container_main w-[90%] flex flex-col gap-3">
      <div className='flex justify-end '>
     <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button>
     </div>
@@ -67,12 +77,7 @@ function closePopup() {
        <Link href='/countdown.html'> <img  src='/popup_mob.png' className='object-cover' alt='img'/></Link>
 
       </div>
-      {/* <div class="popup-card_main_mob md:hidden mt-6">
-    
-    <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className=' object-none' alt='img'/></Link>
-
-    <button onClick={()=>{closePopup()}} id="close-popup_main" >X</button>
-   </div> */}
+     
     </div>
   </div>
   </div>
