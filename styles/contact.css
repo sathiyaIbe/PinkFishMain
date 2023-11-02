@@ -435,20 +435,44 @@ contact_input:focus{
   }
   
   .popup-container {
-    background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    width: 30em;
     opacity: 0;
     transform: scale(0.8);
     transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    width:30em;
+  }
+
+  .popup-container_main{
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease-in-out;
+    padding: 40px;
+    @apply w-[90%]  md:h-[95%];
   }
   
   .popup-card {
     padding: 20px;
     text-align: center;
+   
   }
+  .popup-card_main{
+    padding: 20px;
+    text-align: center;
+    @apply flex gap-3;
+  }
+  .popup-card_main_mob{
+    padding: 20px;
+    text-align: center;
+    @apply flex gap-3;
+  }
+
+
   
   .popup-card h2 {
     font-size: 24px;
@@ -469,3 +493,12 @@ contact_input:focus{
     @apply text-[14px] md:text-[18px] font-[400] leading-[12px] md:leading-[21.5px]   font-[Sofia]  text-[#fff] ;
   }
   
+  #close-popup_main {
+    background-color: #F33288;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    @apply text-[14px] md:text-[18px] font-[400] leading-[12px] md:leading-[21.5px] md:h-[50px] h-[40px] font-[Sofia]  text-[#fff] ;
+  }
