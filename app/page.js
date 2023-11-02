@@ -37,17 +37,17 @@ function closePopup() {
      <img className=' md:block hidden right-[0] top-[70%]  fixed  ' src='/fish.png' />
  <World/>
  <Footer />
- <div ref={popupOverlayRef} class="popup-overlay">
+ <div ref={popupOverlayRef} class="popup-overlay hidden md:block">
     <div ref={popupContainerRef}  class="popup-container_main">
-      <div class="popup-card_main hidden md:block mt-6">
+      <div class="popup-card_main mt-6">
     
        <Link href='/countdown.html'> <img  src='/popup_desktop.jpg' className='hidden md:block' alt='img'/></Link>
 
-       <button onClick={()=>{closePopup()}}  className='hidden md:block' id="close-popup_main" >X</button>
+       <button onClick={()=>{closePopup()}}  className='hidden md:block' id="close-popup_main" >X </button>
       </div>
       {/* <div class="popup-card_main_mob md:hidden mt-6">
     
-    <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className=' ' alt='img'/></Link>
+    <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className=' object-none' alt='img'/></Link>
 
     <button onClick={()=>{closePopup()}} id="close-popup_main" >X</button>
    </div> */}
