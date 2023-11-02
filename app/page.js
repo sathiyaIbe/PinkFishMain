@@ -51,7 +51,7 @@ function closePopup() {
  <div ref={popupOverlayRef} class="popup-overlay ">
     <div ref={popupContainerRef}  class="popup-container_main">
       <div class="popup-card_main mt-6">
-       <Link href='/countdown.html'> <img  src='/popup_desktop.jpg' className='' alt='img'/></Link>
+       <Link href='/countdown.html'> <img  src='/popup_desktop.png' className='' alt='img'/></Link>
        <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" />
        {/* <button }  className='' id="close-popup_mai" ><img src='close_icon.svg' alt="close" /> </button> */}
       </div>
@@ -75,7 +75,7 @@ function closePopup() {
     </div>
       <div class="popup-card_main ">
     
-       <Link href='/countdown.html'> <img  src='/popup_mob.png' className='object-cover' alt='img'/></Link>
+       <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></Link>
 
       </div>
      
