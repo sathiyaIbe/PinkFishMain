@@ -3305,7 +3305,7 @@ strong {
 }
 
 .slider.hide-lineup {
-  display: block;
+  display: none;
 }
 
 .carousel-arrow {
@@ -4000,7 +4000,7 @@ strong {
   font-family: Bebas Neue, sans-serif;
   font-size: 150px;
   line-height: 1;
-  display: none;
+  display: block;
 }
 
 .div-block-22 {
