@@ -495,8 +495,8 @@ contact_input:focus{
     background-color: #F33288;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 8px 10px;
     border-radius: 4px;
     cursor: pointer;
-    @apply text-[14px] md:text-[18px] font-[400] leading-[12px] md:leading-[21.5px] md:h-[30px] h-[30px] font-[Sofia] w-fit  text-[#fff] ;
+    @apply  md:h-[30px] h-[30px] font-[Sofia] w-fit  text-[#fff] ;
   }

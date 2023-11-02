@@ -51,10 +51,9 @@ function closePopup() {
  <div ref={popupOverlayRef} class="popup-overlay ">
     <div ref={popupContainerRef}  class="popup-container_main">
       <div class="popup-card_main mt-6">
-    
        <Link href='/countdown.html'> <img  src='/popup_desktop.jpg' className='' alt='img'/></Link>
-
-       <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button>
+       <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" />
+       {/* <button }  className='' id="close-popup_mai" ><img src='close_icon.svg' alt="close" /> </button> */}
       </div>
       {/* <div class="popup-card_main_mob md:hidden mt-6">
     
@@ -70,7 +69,9 @@ function closePopup() {
  <div ref={popupOverlayRefMob} class="popup-overlay ">
     <div ref={popupContainerRefMob}  class="popup-container_main w-[90%] flex flex-col gap-3">
      <div className='flex justify-end '>
-    <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button>
+    {/* <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button> */}
+    <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" />
+
     </div>
       <div class="popup-card_main ">
     
