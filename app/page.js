@@ -42,9 +42,9 @@ function closePopup() {
     <div ref={popupContainerRef}  class="popup-container_main">
       <div class="popup-card_main mt-6">
     
-       <Link href='/countdown.html'> <img  src='/popup_desktop.jpg' className='hidden md:block' alt='img'/></Link>
+       <Link href='/countdown.html'> <img  src='/popup_desktop.jpg' className='' alt='img'/></Link>
 
-       <button onClick={()=>{closePopup()}}  className='hidden md:block' id="close-popup_main" >X </button>
+       <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button>
       </div>
       {/* <div class="popup-card_main_mob md:hidden mt-6">
     
@@ -64,7 +64,7 @@ function closePopup() {
     </div>
       <div class="popup-card_main ">
     
-       <Link href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></Link>
+       <Link href='/countdown.html'> <img  src='/popup_mob.png' className='object-cover' alt='img'/></Link>
 
       </div>
       {/* <div class="popup-card_main_mob md:hidden mt-6">
