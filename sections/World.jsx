@@ -167,7 +167,7 @@ return(
        <SwiperSlide>
 
        <div className="container flex flex-col min-w-[100%]  ">
-          <img className="object-cover self-center w-[100%]" src="/countdown_banner_mob_1.png" />
+          <img className="object-none self-center " src="/countdown_banner_mob_1.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ">
             
           <a  className="event_tickets2 text-block self-center ml-2" href='/countdown.html'> 

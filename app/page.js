@@ -50,7 +50,7 @@ function closePopup() {
  <div ref={popupOverlayRef} class="popup-overlay ">
     <div ref={popupContainerRef}  class="popup-container_main">
       <div class="popup-card_main mt-6">
-       <a href='/countdown.html'> <img  src='/popup_desktop.png' className='' alt='img'/></a>
+       <a href='/countdown.html'> <img  src='/popup_desktop.jpg' className='' alt='img'/></a>
        <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" />
        {/* <button }  className='' id="close-popup_mai" ><img src='close_icon.svg' alt="close" /> </button> */}
       </div>
@@ -67,10 +67,11 @@ function closePopup() {
   <div className=' md:hidden'>
  <div ref={popupOverlayRefMob} class="popup-overlay ">
     <div ref={popupContainerRefMob}  class="popup-container_main w-[90%] flex flex-col gap-3">
-     <div className='flex justify-end '>
+     <div className='flex justify-end  '>
     {/* <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button> */}
+    <div className='w-fit'>
     <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" />
-
+    </div>
     </div>
       <div class="popup-card_main ">
     
