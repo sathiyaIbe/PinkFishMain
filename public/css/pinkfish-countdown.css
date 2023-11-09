@@ -5046,6 +5046,10 @@ strong {
     margin-bottom: 0;
   }
 
+  .frame-155.not-yet {
+    margin-top: 20px;
+  }
+
   .frame-155.bnpl {
     width: 100%;
   }
@@ -5871,6 +5875,10 @@ strong {
 
   .bold-text {
     display: flex;
+  }
+
+  .div-block-9 {
+    height: 15.6rem;
   }
 
   .div-block-9.mobile {

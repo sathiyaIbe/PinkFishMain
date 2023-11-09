@@ -72,10 +72,10 @@ function closePopup() {
      <div className='flex justify-end  '>
     {/* <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button> */}
     
-    <img onClick={()=>{closePopup()}} className='w-[50px] p-4 bg-[#F33288] rounded cursor-pointer'  src='close_icon.svg' alt="close" />
+    <img onClick={()=>{closePopup()}} className='w-[40px] p-3 bg-[#F33288] rounded cursor-pointer'  src='close_icon.svg' alt="close" />
     
     </div>
-      <div class="popup-card_main ">
+      <div class="popup-card_main  ">
     
        <a href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></a>
 
