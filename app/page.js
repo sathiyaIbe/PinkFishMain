@@ -11,7 +11,7 @@ let popupContainerRef=useRef(null)
 let popupOverlayRefMob=useRef(null)
 let popupContainerRefMob=useRef(null)
 useEffect(()=>{
-openPopup()
+// openPopup()
 },[])
 
 function openPopup() {
