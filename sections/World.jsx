@@ -116,12 +116,11 @@ return(
     </a>
     </div>
     </div>
-    <div className="hidden md:block ">
+    {/* <div className="hidden md:block ">
     <div className="flex flex-col     ">
       <div className="w-[90%] self-center">
     <div className="flex gap-4   ">
      
-      {/* <img src='/left_arrow_home.svg'  onClick={()=>{handlePrev(BannerRef)}} className="cursor-pointer" alt='arrow'/> */}
      
      
        <Swiper ref={BannerRef} navigation={false} autoplay={false} modules={[Navigation,Autoplay]}   className="mySwiper">
@@ -141,7 +140,7 @@ return(
           </div>
         </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
+       <SwiperSlide>
       <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[80%] self-center" src="/countdown_banner_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4">
@@ -152,10 +151,9 @@ return(
               </a>
           </div>
         </div>
-        </SwiperSlide> */}
+        </SwiperSlide> 
         </Swiper>
   
-      {/* <img className="cursor-pointer" src='/right_arrow_home.svg'   onClick={()=>{handleNext(BannerRef)}} alt='arrow'/> */}
       </div>
       </div>
     </div>
@@ -178,7 +176,7 @@ return(
           </div>
         </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
        <div className="container flex flex-col min-w-[100%]  ">
           <img className="object-cover w-[100%] self-center" src="/countdown_banner_mob_2.png" />
           <div className=" text-white flex flex-col justify-center gap-2 md:gap-4 ml-2 ">
@@ -189,9 +187,9 @@ return(
               </a>
           </div>
         </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
         </Swiper>
-    </div>
+    </div> */}
     <div className="flex flex-col  text-white">
       <div className="flex flex-col md:flex-row self-center  w-[80%]    ">
       <div className="md:w-1/2 flex flex-col gap-3 md:pr-4">
