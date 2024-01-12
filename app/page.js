@@ -48,8 +48,8 @@ function closePopup() {
  <Footer />
  <div className='hidden md:block'>
  <div ref={popupOverlayRef} class="popup-overlay ">
-    <div ref={popupContainerRef}  class="popup-container_main">
-      <div class="popup-card_main mt-6">
+    <div ref={popupContainerRef}  class="popup-container_main flex flex-col">
+      <div class="popup-card_main self-center w-[80%] flex mt-6">
        <a href='/countdown.html'> <img  src='/popup_desktop.jpg' className='' alt='img'/></a>
        {/* <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" /> */}
        <img onClick={()=>{closePopup()}} className='w-[30px] h-[30px] p-2 bg-[#F33288] rounded cursor-pointer'  src='close_icon.svg' alt="close" />
