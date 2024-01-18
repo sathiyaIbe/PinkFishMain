@@ -272,7 +272,7 @@ strong {
 .hero-content {
   z-index: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: none;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   flex-direction: column;
@@ -4429,6 +4429,10 @@ strong {
     display: none;
   }
 
+  .hero-content {
+    height: 80vh;
+  }
+
   .frame-155.bnpl {
     margin-top: 0;
   }
@@ -4500,6 +4504,10 @@ strong {
   .merch-img {
     height: auto;
     max-height: 100%;
+  }
+
+  .image-26 {
+    width: 100%;
   }
 }
 
