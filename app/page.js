@@ -78,7 +78,7 @@ function closePopup() {
     </div>
       <div class="popup-card_main  ">
     
-       <a href='/countdown.html'> <CldImage width="100" height="100"  priority  src='/popup_mob.jpg' className='object-cover' alt='img'/></a>
+       <a href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></a>
 
       </div>
      
