@@ -9,7 +9,6 @@ import { Footer, Navbar } from '../components';
 import { useEffect, useRef, useState } from 'react';
 import PartyBanner from './PartyBanner';
 import VideoPlayer from "react-background-video-player";
-
 const Hero = () => {
   let firstRef=useRef(null)
   let secondRef=useRef(null)
