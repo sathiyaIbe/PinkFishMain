@@ -51,9 +51,9 @@ function closePopup() {
  <div ref={popupOverlayRef} class="popup-overlay ">
     <div ref={popupContainerRef}  class="popup-container_main flex flex-col">
       <div class="popup-card_main self-center w-[80%] flex mt-6">
-       <a href='/countdown.html'> <img  src='/popup_desktop.jpg' className='' alt='img'/></a>
+       <a href='/countdown.html'> <img  src='popup_desktop_2.avif' className='' alt='img'/></a>
        {/* <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" /> */}
-       <img onClick={()=>{closePopup()}} className='w-[30px] h-[30px] p-2 bg-[#F33288] rounded cursor-pointer'  src='close_icon.svg' alt="close" />
+       <img onClick={()=>{closePopup()}} className='w-[30px] h-[30px] p-2 bg-[#F33288] rounded cursor-pointer'  src='close.png' alt="close" />
 
        {/* <button }  className='' id="close-popup_mai" ><img src='close_icon.svg' alt="close" /> </button> */}
       </div>
@@ -73,12 +73,12 @@ function closePopup() {
      <div className='flex justify-end  '>
     {/* <button onClick={()=>{closePopup()}}  className='' id="close-popup_main" >X </button> */}
     
-    <img onClick={()=>{closePopup()}} className='w-[40px] p-3 bg-[#F33288] rounded cursor-pointer'  src='close_icon.svg' alt="close" />
+    <img onClick={()=>{closePopup()}} className='w-[40px] p-3 bg-[#F33288] rounded cursor-pointer'  src='close.png' alt="close" />
     
     </div>
       <div class="popup-card_main  ">
     
-       <a href='/countdown.html'> <img  src='/popup_mob.jpg' className='object-cover' alt='img'/></a>
+       <a href='/countdown.html'> <img  src='popup_mob_1.avif' className='object-cover' alt='img'/></a>
 
       </div>
      
