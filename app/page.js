@@ -24,7 +24,7 @@ function openPopup() {
     popupContainerRefMob.current.style.opacity = "1";
     popupContainerRefMob.current.style.transform = "scale(1)";
     popupContainerRef.current.style.transform = "scale(1)";
-  }, 100);
+  }, 1);
 }
 function closePopup() {
   popupContainerRef.current.style.opacity = "0";
@@ -35,7 +35,7 @@ function closePopup() {
   setTimeout(() => {
     popupOverlayRef.current.style.display = "none";
     popupOverlayRefMob.current.style.display = "none";
-  }, 300);
+  }, 1);
 }
 
   return(
