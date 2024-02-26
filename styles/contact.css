@@ -6,7 +6,7 @@
     box-shadow: none !important;
     border-bottom: 1px solid #F33288;
     
-    @apply  p-1 border-b-2 text-[#F33288] focus:border-b-[#F33288];
+    @apply  p-1 border-b-2 text-[#F33288] focus:border-b-[#F33288] w-[100%] md:w-[100%];
 
 }
 ::placeholder {
