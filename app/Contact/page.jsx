@@ -134,7 +134,7 @@ emailjs.send("service_2qisjeo","template_nfb2e2p",params )
         </div>
       </div>
 
-      <div className="flex flex-col w-[90%]  md:w-[100%] mt-11 md:mt-0 ">
+      <div className="flex flex-col   md:w-[100%] mt-11 md:mt-0 ">
       <form ref={form} onSubmit={(e)=> formSubmit(e)} className="flex flex-col  self-center   gap-8">
           <div className='flex md:flex-row  flex-col gap-6'>
           <div className="flex flex-col md:w-[50%] ">

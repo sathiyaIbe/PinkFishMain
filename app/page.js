@@ -12,7 +12,7 @@ let popupContainerRef=useRef(null)
 let popupOverlayRefMob=useRef(null)
 let popupContainerRefMob=useRef(null)
 useEffect(()=>{
-openPopup()
+// openPopup()
 },[])
 
 function openPopup() {
@@ -24,7 +24,7 @@ function openPopup() {
     popupContainerRefMob.current.style.opacity = "1";
     popupContainerRefMob.current.style.transform = "scale(1)";
     popupContainerRef.current.style.transform = "scale(1)";
-  }, 1);
+  }, 0.1);
 }
 function closePopup() {
   popupContainerRef.current.style.opacity = "0";
@@ -35,9 +35,8 @@ function closePopup() {
   setTimeout(() => {
     popupOverlayRef.current.style.display = "none";
     popupOverlayRefMob.current.style.display = "none";
-  }, 1);
+  }, 1000);
 }
-
   return(
   <div className="bg-black min-h-[100vh]">
      

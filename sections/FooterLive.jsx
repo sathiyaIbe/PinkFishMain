@@ -33,7 +33,7 @@ const Footer = () => (
         </div>
         <div className="flex flex-col text-white md:items-start  items-center">
         <Link href="/">
-          <p className="cursor-pointer icon_text_live  mt-3">Main Main</p>
+          <p className="cursor-pointer icon_text_live  mt-3">Main Home</p>
           </Link>
           <Link href="/Live/Events">
           <p className="cursor-pointer icon_text_live  mt-2">Events</p>

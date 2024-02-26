@@ -1,12 +1,12 @@
 /* eslint-disable */
 .contact_input{
-    background-color: transparent;
+    background: transparent !important;
     border: none;
     outline: none !important;
     box-shadow: none !important;
     border-bottom: 1px solid #F33288;
     
-    @apply  p-1 border-b-2 text-[#F33288]
+    @apply  p-1 border-b-2 text-[#F33288] focus:border-b-[#F33288];
 
 }
 ::placeholder {
@@ -19,6 +19,9 @@ contact_input:focus{
     outline: none;
     box-shadow: none;
     border: none;
+    background:transparent;
+    border-bottom: 1px solid #F33288;
+
 }
 .contact_label{
     @apply text-[12px] leading-[20px] font-[400] font-[Sofia] text-[#F33288]

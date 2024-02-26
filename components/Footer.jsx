@@ -12,18 +12,28 @@ const Footer = () => (
         
        <div className='flex flex-col gap-6'>
         <h1 className="home_bottom_header ">as seen on</h1>
-        <div className="flex gap-6 self-center">
+        <div className="flex gap-6 ">
           {/* <img  src='/home_bottom_logo_mob_1.svg'/> */}
-          <img className="w-[140px]" src='/home_bottom_logo_mob_2.svg'/>
+          <img className="w-[140px]" src='/logo_tp.png'/>
           <img className='w-1/2' src='/home_bottom_logo_mob_3.svg'/>
           <img className="object-none" src='/home_bottom_logo_mob_4.svg'/>
 
         </div>
-        <div className="flex gap-6 self-center">
-          <img src='/home_bottom_logo_mob_5.svg'/>
+        <div className="flex gap-6 ">
+          <img src='/logo_gf_media.png'/>
           <img className="object-none" src='/home_bottom_logo_mob_6.svg'/>
           <img src='/home_bottom_logo_mob_7.svg'/>
 
+        </div>
+        <div className="flex gap-6 ">
+          <img src='/logo_yl.png'/>
+          <img className="object-none" src='/logo_mm.png'/>
+          <img src='/logo_bh.png'/>
+
+        </div>
+        <div className="flex gap-6 ">
+          <img src='/logo_juice.png'/>
+          
         </div>
         </div>
         <>
@@ -78,7 +88,7 @@ const Footer = () => (
     </div>
     <div className='flex flex-col  md:flex-row justify-between  w-[90%] md:w-[80%] self-center  gap-11'>
    
-  <h1 className="footer_bottom_text ">Copyright © 2023. All rights reserved</h1>
+  <h1 className="footer_bottom_text ">Copyright © 2024. All rights reserved</h1>
 
   <div className='flex gap-2 text-white items-center' >
   <Link href="PrivacyPolicy">
@@ -101,15 +111,22 @@ const Footer = () => (
         <h1 className="home_bottom_header_seen text-center mt-6">as seen on</h1>
         <div className="flex gap-6">
           {/* <img src='/home_bottom_logo_mob_1.svg'/> */}
-          <img className="w-[140px]" src='/home_bottom_logo_mob_2.svg'/>
+          <img className="w-[140px]" src='/logo_tp.png'/>
           <img src='/home_bottom_logo_mob_3.svg'/>
           <img className="object-none" src='/home_bottom_logo_mob_4.svg'/>
 
         </div>
         <div className="flex gap-6 items-center">
-          <img src='/home_bottom_logo_mob_5.svg'/>
+          <img src='/logo_gf_media.png'/>
           <img className="object-none" src='/home_bottom_logo_mob_6.svg'/>
           <img src='/home_bottom_logo_mob_7.svg'/>
+
+        </div>
+        
+        <div className="flex gap-6 ">
+          <img src='/logo_yl.png'/>
+          <img className="object-none" src='/logo_mm.png'/>
+          <img src='/logo_bh.png'/>
 
         </div>
         </div>

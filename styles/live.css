@@ -155,7 +155,7 @@
 }
 
 .navbar_container_mob_live{
-  @apply flex justify-end   w-[90%] self-center  md:hidden ;
+  @apply flex justify-end h-auto  w-[90%] self-center  md:hidden ;
 }
 
 .dropdown_live {
