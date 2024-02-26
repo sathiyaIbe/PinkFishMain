@@ -90,7 +90,7 @@ emailjs.send("service_2qisjeo","template_nfb2e2p",params )
           </div>
           </div>
           <div className='flex flex-col'>
-    <div className="  flex flex-col md:flex-row bg-contact pb-6 pt-11 md:w-[70%] w-[100%]  self-center">
+    <div className="  flex flex-col md:flex-row bg-contact pb-6 pt-11 md:w-[70%] min-w-[100vw]  self-center">
       <div className="md:basis-2/5  flex justify-center ">
         <div className='md:w-[60%] w-[80%] gap-3 flex flex-col justify-center'>
         <h1 className="contact_header hidden md:block">reach out to us</h1>
@@ -137,7 +137,7 @@ emailjs.send("service_2qisjeo","template_nfb2e2p",params )
       <div className="flex flex-col   md:w-[100%] mt-11 md:mt-0 ">
       <form ref={form} onSubmit={(e)=> formSubmit(e)} className="flex flex-col  self-center   gap-8">
           <div className='flex md:flex-row  flex-col gap-6'>
-          <div className="flex flex-col md:w-[50%] ">
+          <div className="flex flex-col w-[90%] md:w-[50%] ">
             <label className="contact_label">First Name</label>
             <input className="contact_input" onChange={(e)=>setFirstName(e.target.value)} value={firstName} type="text" />
           </div>

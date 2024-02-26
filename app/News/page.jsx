@@ -22,7 +22,7 @@ const Event = () => {
     <div className='flex flex-col self-center w-[70%] gap-6'>
       <div className='flex md:flex-row flex-col  gap-3'>
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-      <img src='/news_img_1.png' alt='news image' />
+      <img src='/news_img_1_1.png' alt='news image' />
       <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
     <h1 className='news_card_header '>PINKFISH Paints The New Year’s Pink With An Unforgettable Celebration By Having One Of Malaysia’s Biggest Countdown To 2024</h1>
 
@@ -34,7 +34,7 @@ const Event = () => {
     </div>
     </div>
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-      <img src='/news_img_2.png' alt='news image' />
+      <img src='/news_img_2_1.png' alt='news image' />
       <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
     <h1 className='news_card_header '>From TRX to Sarawak, here’s a list of top countdown parties across Malaysia to welcome 2024 </h1>
 
@@ -48,7 +48,7 @@ const Event = () => {
     </div>
     </div>
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-      <img src='/news_img_3.png' alt='news image' />
+      <img src='/news_img_3_1.png' alt='news image' />
       <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
     <h1 className='news_card_header '>#Showbiz: Malaysians welcome new year with electrifying EDM spectacle at Pinkish Countdown 2024 [NSTTV]</h1>
 
@@ -64,7 +64,7 @@ const Event = () => {
       <div className='flex md:flex-row flex-col md:justify-center  gap-3'>
 
       <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-        <img src='/news_img_4.png' alt='news image' />
+        <img src='/news_img_4_1.png' alt='news image' />
         <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
       <h1 className='news_card_header '>TYGA Gives Malaysian Fans A Taste On August 9 </h1>
   
@@ -76,7 +76,7 @@ const Event = () => {
       </div>
 
       <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-        <img src='/news_img_5.png' alt='news image' />
+        <img src='/news_img_5_1.png' alt='news image' />
         <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
       <h1 className='news_card_header '>US Rapper Tyga Is Coming To Malaysia For The First Time In August</h1>
   
@@ -91,7 +91,7 @@ const Event = () => {
       </div>
 
     <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-      <img src='/news_img_6.png' alt='news image' />
+      <img src='/news_img_6_1.png' alt='news image' />
       <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
     <h1 className='news_card_header '>Tyga is set to perform in Kuala Lumpur for the first time this August 2023.</h1>
 
@@ -109,7 +109,7 @@ const Event = () => {
       <div className='flex md:flex-row flex-col md:justify-center  gap-3'>
 
 <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-  <img src='/news_img_7.png' alt='news image' />
+  <img src='/news_img_7_1.png' alt='news image' />
   <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
 <h1 className='news_card_header '>PINKFISH FESTIVAL: ALL-NEW MUSIC & ARTS FESTIVAL IN M’SIA (30 APR 23)</h1>
 
@@ -129,7 +129,7 @@ expression and community in new and exciting ways!
 </div>
 </div>
 <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-    <img src='/news_img_8.png' alt='news image' />
+    <img src='/news_img_8_1.png' alt='news image' />
     <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
   <h1 className='news_card_header '>“What the Fish?!” Here’s How Pinkfish is Serving M’sia’s HOTTEST Music & 
   Arts Festival in 2023!</h1>
@@ -147,7 +147,7 @@ at the end of April will definitely be worth the hype!
   </div>
   </div>
 <div className='basis-1/3 border rounded border-white flex flex-col gap-4'>
-  <img src='/news_img_9.png' alt='news image' />
+  <img src='/news_img_9_1.png' alt='news image' />
   <div className='flex flex-col gap-4 self-center pb-4 w-[90%]'>
 <h1 className='news_card_header '>Pinkfish Festival Happening In KL</h1>
 

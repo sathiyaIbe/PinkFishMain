@@ -87,6 +87,7 @@ contact_input:focus{
     background-image: url("/contact_bg.png");
     background-repeat: no-repeat;
     background-size:contain;
+
     }
 @media screen and (max-width:768px) {
     
