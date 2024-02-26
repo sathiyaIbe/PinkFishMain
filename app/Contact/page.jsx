@@ -134,10 +134,10 @@ emailjs.send("service_2qisjeo","template_nfb2e2p",params )
         </div>
       </div>
 
-      <div className="flex flex-col   md:w-[100%] mt-11 md:mt-0 ">
+      <div className="flex flex-col ml-6   md:w-[100%] mt-11 md:mt-0 ">
       <form ref={form} onSubmit={(e)=> formSubmit(e)} className="flex flex-col  self-center   gap-8">
           <div className='flex md:flex-row  flex-col gap-6'>
-          <div className="flex flex-col w-[90%] md:w-[50%] ">
+          <div className="flex flex-col  md:w-[50%] ">
             <label className="contact_label">First Name</label>
             <input className="contact_input" onChange={(e)=>setFirstName(e.target.value)} value={firstName} type="text" />
           </div>

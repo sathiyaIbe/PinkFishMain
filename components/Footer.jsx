@@ -111,24 +111,32 @@ const Footer = () => (
         <h1 className="home_bottom_header_seen text-center mt-6">as seen on</h1>
         <div className="flex gap-6">
           {/* <img src='/home_bottom_logo_mob_1.svg'/> */}
-          <img className="w-[140px]" src='/logo_tp.png'/>
+          <img className="" src='/logo_tp.png'/>
           <img src='/home_bottom_logo_mob_3.svg'/>
-          <img className="object-none" src='/home_bottom_logo_mob_4.svg'/>
+         
 
         </div>
         <div className="flex gap-6 items-center">
+        <img className="object-none" src='/home_bottom_logo_mob_4.svg'/>
           <img src='/logo_gf_media.png'/>
-          <img className="object-none" src='/home_bottom_logo_mob_6.svg'/>
           <img src='/home_bottom_logo_mob_7.svg'/>
+         
 
         </div>
         
         <div className="flex gap-6 ">
-          <img src='/logo_yl.png'/>
-          <img className="object-none" src='/logo_mm.png'/>
-          <img src='/logo_bh.png'/>
+        <img className="object-none" src='/home_bottom_logo_mob_6.svg'/>
+        <img src='/logo_yl.png'/>
+         
 
         </div>
+        <div className="flex gap-6 ">
+        <img className="object-none" src='/logo_mm.png'/>
+
+          <img src='/logo_juice.png'/>
+          <img src='/logo_bh.png'/>
+
+          </div>
         </div>
   <hr className="hr_line_footer w-[110%] self-center " />
   <div className="flex flex-col text-white mt-11 mb-11  gap-1  ">
