@@ -94,7 +94,7 @@ return(
     <div className="flex flex-col w-[80%] self-center  mt-11 mb-11">
      
         <div className="flex justify-between">
-        <a href='/music&festival.html'> 
+        <a href='/music&festival'> 
     <img className="md:block hidden " src='/hero_logo_3.png' />
     </a>
     <a   href='/countdown.html'> 
@@ -105,7 +105,7 @@ return(
   </a>
     </div>
     <div className="flex justify-between">
-      <a href="/music&festival.html">
+      <a href="/music&festival">
     <img className="md:hidden" src='/hero_logo_mob_3.png' />
     </a>
     <a   href='/countdown.html'> 
