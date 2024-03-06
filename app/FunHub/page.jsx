@@ -35,7 +35,7 @@ festival. Headliners included DJ Snake, Yellow Claw, Meduza & Dash Berlin, and w
 regional & local acts like Joe Flizzow, Ramengvrl, Gemini & many more.</p>
 
 
-    <Link className='fan_button self-center' href='/music&festival'>
+    <Link className='fan_button self-center' href='/music&artsfestival'>
     <button className='' type='button'>Make Memories</button>
     </Link>
 
