@@ -28,13 +28,10 @@ const Footer = () => (
         <div className="flex gap-6 ">
           <img src='/logo_yl.png'/>
           <img className="object-none" src='/logo_mm.png'/>
-          <img src='/logo_bh.png'/>
-
-        </div>
-        <div className="flex gap-6 ">
-          <img src='/logo_juice.png'/>
           
+          <img src='/logo_juice.png'/>
         </div>
+      
         </div>
         <>
         <h1 className="home_bottom_header">Follow us</h1> 
@@ -134,7 +131,7 @@ const Footer = () => (
         <img className="object-none" src='/logo_mm.png'/>
 
           <img src='/logo_juice.png'/>
-          <img src='/logo_bh.png'/>
+         
 
           </div>
         </div>
