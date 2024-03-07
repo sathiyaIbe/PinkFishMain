@@ -456,7 +456,7 @@ strong {
 }
 
 .text-3.coming-soon-text {
-  color: rgba(255, 255, 255, .57);
+  color: #fff;
 }
 
 .text-3.buy-tix-text {
@@ -3298,6 +3298,10 @@ strong {
   width: 200px;
 }
 
+.vvip-button.hide {
+  display: none;
+}
+
 .front-card-info {
   flex: 0 auto;
   line-height: 20px;
@@ -3319,6 +3323,7 @@ strong {
   flex-direction: column;
   align-items: center;
   display: flex;
+  position: relative;
 }
 
 .div-block-8 {
@@ -5149,6 +5154,7 @@ strong {
   margin-bottom: 0;
   padding-top: 60px;
   padding-bottom: 4em;
+  overflow: hidden;
 }
 
 .div-block-29.hide {
@@ -5166,6 +5172,11 @@ strong {
     display: none;
   }
 
+  .hero {
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero-content {
     height: 70vh;
     justify-content: space-between;
@@ -5174,6 +5185,8 @@ strong {
 
   ._5-columns {
     height: 800px;
+    justify-content: center;
+    align-items: center;
   }
 
   .column.hero-logo.pff-hero-logo {
