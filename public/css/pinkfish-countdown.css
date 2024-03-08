@@ -430,6 +430,10 @@ strong {
   background-color: #ac005c;
 }
 
+.frame-155.sold-out {
+  background-color: #252425;
+}
+
 .frame-156 {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -3744,6 +3748,10 @@ strong {
   display: none;
 }
 
+.div-block-9.soldout {
+  background-image: linear-gradient(rgba(18, 113, 165, .82) 52%, rgba(120, 204, 250, .87));
+}
+
 .bold-text-2, .text-span, .bold-text-3, .text-span-2, .link, .link-2 {
   color: #ed2582;
 }
@@ -5156,7 +5164,7 @@ strong {
 }
 
 .div-block-29 {
-  background-image: linear-gradient(#f4b189, #78ccfa);
+  background-image: linear-gradient(#874827, #f4b189 52%, #78ccfa);
   margin-bottom: 0;
   padding-top: 60px;
   padding-bottom: 4em;
@@ -5923,6 +5931,10 @@ strong {
     opacity: 1;
     display: block;
     position: absolute;
+  }
+
+  .div-block-9.soldout {
+    background-image: linear-gradient(rgba(18, 113, 165, .69) 52%, rgba(120, 204, 250, .74));
   }
 
   .column-11 {
