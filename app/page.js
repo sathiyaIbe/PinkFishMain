@@ -50,7 +50,7 @@ function closePopup() {
  <div ref={popupOverlayRef} class="popup-overlay ">
     <div ref={popupContainerRef}  class="popup-container_main flex flex-col">
       <div class="popup-card_main self-center w-[80%] flex mt-6">
-       <a href='/music&artsfestival'> <img  src='popup_desktop.png' className='' alt='img'/></a>
+       <a href='/music&artsfestival'> <img  src='popup_desktop_new.png' className='' alt='img'/></a>
        {/* <img onClick={()=>{closePopup()}} id="close-popup_main" src='close_icon.svg' alt="close" /> */}
        <img onClick={()=>{closePopup()}} className='w-[30px] h-[30px] p-2 bg-[#F33288] rounded cursor-pointer'  src='close.png' alt="close" />
 
@@ -77,7 +77,7 @@ function closePopup() {
     </div>
       <div class="popup-card_main  ">
     
-       <a href='/music&artsfestival'> <img  src='popup_mob.png' className='object-cover' alt='img'/></a>
+       <a href='/music&artsfestival'> <img  src='popup_mob_new.png' className='object-cover' alt='img'/></a>
 
       </div>
      
