@@ -4440,7 +4440,8 @@ strong {
 }
 
 .map.pff-map {
-  background-image: linear-gradient(rgba(255, 255, 255, .72), rgba(255, 255, 255, .72)), linear-gradient(#6cb5e9, #0194e5);
+  background-color: #78ccfa;
+  background-image: none;
 }
 
 .map.pff-map.hide {
@@ -4450,12 +4451,13 @@ strong {
 .div-block-24 {
   width: 100%;
   background-image: none;
-  flex-direction: row;
+  flex-flow: column;
   justify-content: center;
   align-self: center;
   align-items: center;
   padding: 0% 5%;
   display: flex;
+  position: relative;
 }
 
 .image-23 {
@@ -4464,6 +4466,10 @@ strong {
   padding-top: 0%;
   padding-bottom: 0%;
   position: relative;
+}
+
+.image-23.no-padding.margin {
+  margin-bottom: 1em;
 }
 
 .merchandise {
@@ -5167,6 +5173,12 @@ strong {
   max-width: 100%;
 }
 
+.legend {
+  width: 35em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 @media screen and (min-width: 1920px) {
   .navbarcontainer.mobile {
     display: none;
@@ -5317,8 +5329,15 @@ strong {
   }
 
   .image-23 {
+    width: auto;
+    height: 45em;
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+
+  .image-23.no-padding {
+    padding-top: 0%;
+    padding-bottom: 0%;
   }
 
   .cell {
@@ -5402,6 +5421,10 @@ strong {
 
   .slider-4, .slider-5 {
     margin-bottom: 8em;
+  }
+
+  .legend {
+    width: 45em;
   }
 }
 
@@ -6329,6 +6352,10 @@ strong {
 
   .text-block-11 {
     font-size: 100px;
+  }
+
+  .image-23.no-padding {
+    width: 100%;
   }
 
   .merch-btn {
