@@ -263,7 +263,7 @@ strong {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 64px;
   display: flex;
   overflow: hidden;
@@ -282,14 +282,15 @@ strong {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px 24px 0;
+  padding: 24px;
   display: flex;
   position: relative;
 }
 
 ._5-columns {
   width: 100%;
-  height: 450px;
+  height: 350px;
+  max-height: 55vh;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   flex-direction: column;
@@ -830,8 +831,8 @@ strong {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 24px;
   display: flex;
 }
@@ -4389,6 +4390,7 @@ strong {
 }
 
 .div-block-23 {
+  display: block;
   position: relative;
   top: -76px;
 }
@@ -5187,6 +5189,11 @@ strong {
   margin-bottom: 1em;
 }
 
+.div-block-31 {
+  max-height: 40vh;
+  min-height: 25vh;
+}
+
 @media screen and (min-width: 1920px) {
   .navbarcontainer.mobile {
     display: none;
@@ -5201,10 +5208,11 @@ strong {
     height: 70vh;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
   }
 
   ._5-columns {
-    height: 800px;
+    height: 600px;
     justify-content: center;
     align-items: center;
   }
@@ -7832,6 +7840,10 @@ strong {
 
   .heading-9 {
     font-size: 3.25em;
+  }
+
+  .div-block-31 {
+    min-height: 10vh;
   }
 }
 
