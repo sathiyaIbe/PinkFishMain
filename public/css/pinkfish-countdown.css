@@ -596,7 +596,7 @@ strong {
 }
 
 .column-3.hide {
-  display: none;
+  display: flex;
 }
 
 .countdown-title {
@@ -8098,11 +8098,6 @@ strong {
 
 #w-node-_658bddcd-a940-358c-af7b-bbf460627657-d172fecc, #w-node-_8365f5ff-a10e-5049-6b14-e3bc2663c129-d172fecc {
   grid-area: span 1 / span 1 / span 1 / span 1;
-}
-
-#w-node-_8abfebc4-3e7a-ca51-40b8-eaaebaab6fbf-4c8dc8ef, #w-node-e8f2bf58-6838-1d08-e319-6f48b96e6aad-4c8dc8ef {
-  align-self: center;
-  justify-self: end;
 }
 
 #w-node-b8b91059-bdb5-7348-f6f4-75660ae71258-4c8dc8ef {
