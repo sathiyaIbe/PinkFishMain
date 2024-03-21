@@ -6064,7 +6064,7 @@ strong {
     height: 250px;
   }
 
-  .slider {
+  .slider, .slider.hide-lineup.hide {
     display: flex;
   }
 
@@ -8076,7 +8076,7 @@ strong {
   }
 }
 
-#w-node-_8abfebc4-3e7a-ca51-40b8-eaaebaab6fbf-79de2dbf, #w-node-e8f2bf58-6838-1d08-e319-6f48b96e6aad-79de2dbf {
+#w-node-e8f2bf58-6838-1d08-e319-6f48b96e6aad-79de2dbf {
   align-self: center;
   justify-self: end;
 }
