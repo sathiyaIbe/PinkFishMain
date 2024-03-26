@@ -1304,7 +1304,10 @@ strong {
 }
 
 .paragraph.lava-lounge-body.no-margin {
+  text-transform: uppercase;
   margin-bottom: 0;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 16px;
 }
 
 .card-content {
@@ -5329,8 +5332,13 @@ strong {
 }
 
 .grey-icon-btn {
+  width: 30px;
   height: 30px;
-  filter: brightness(23%);
+}
+
+.grey-icon-btn.bigger {
+  width: auto;
+  height: 40px;
 }
 
 .email-link {
@@ -6316,7 +6324,7 @@ strong {
   }
 
   .socmed-wrapper {
-    flex-flow: column;
+    flex-flow: row;
   }
 }
 
@@ -6632,6 +6640,14 @@ strong {
 
   .title-logo {
     height: 4em;
+  }
+
+  .socmed-wrapper {
+    flex-flow: column;
+  }
+
+  .socmed-wrapper.mobile {
+    flex-flow: row;
   }
 }
 
@@ -8188,7 +8204,17 @@ strong {
   justify-self: auto;
 }
 
-#w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142162-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f414215f-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142160-79de2dbf, #w-node-ec8f1618-ee3d-a3fb-96e9-56e0c1ef44f7-79de2dbf, #w-node-ec8f1618-ee3d-a3fb-96e9-56e0c1ef44f8-79de2dbf, #w-node-_8c712fe6-164b-58ff-1043-4d8e7310d1be-79de2dbf, #w-node-_8c712fe6-164b-58ff-1043-4d8e7310d1bf-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142165-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142166-79de2dbf {
+#w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142162-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f414215f-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142160-79de2dbf, #w-node-ec8f1618-ee3d-a3fb-96e9-56e0c1ef44f7-79de2dbf, #w-node-ec8f1618-ee3d-a3fb-96e9-56e0c1ef44f8-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142165-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142166-79de2dbf {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-f4f50039-a9fa-463b-7133-2d8051f01467-79de2dbf {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: auto;
+  justify-self: auto;
+}
+
+#w-node-f4f50039-a9fa-463b-7133-2d8051f01468-79de2dbf, #w-node-f4f50039-a9fa-463b-7133-2d8051f0146b-79de2dbf, #w-node-f4f50039-a9fa-463b-7133-2d8051f0146c-79de2dbf, #w-node-f4f50039-a9fa-463b-7133-2d8051f0146f-79de2dbf, #w-node-f4f50039-a9fa-463b-7133-2d8051f01470-79de2dbf, #w-node-f4f50039-a9fa-463b-7133-2d8051f01477-79de2dbf, #w-node-f4f50039-a9fa-463b-7133-2d8051f01478-79de2dbf {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
