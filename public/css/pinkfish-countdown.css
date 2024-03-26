@@ -430,6 +430,11 @@ strong {
   padding: 10px 20px;
 }
 
+.frame-155.mobile {
+  background-color: #710cf6;
+  box-shadow: 0 5px 8px rgba(113, 12, 246, .27);
+}
+
 .frame-155.coming-soon {
   background-color: #ac005c;
 }
@@ -1161,13 +1166,13 @@ strong {
 
 .container-3 {
   width: 700px;
-  height: 251px;
+  height: 320px;
   max-width: none;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  background-image: url('../images/VVIP-Lounge.png'), linear-gradient(151deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .35) 46%, rgba(255, 255, 255, .1));
+  background-image: url('../images/VVIP-SpacePlus-Lounge.png'), linear-gradient(151deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .35) 46%, rgba(255, 255, 255, .1));
   background-position: 50%, 0 0;
   background-size: cover, auto;
   border: 2px solid rgba(146, 146, 146, .31);
@@ -1240,6 +1245,7 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0;
   display: flex;
 }
 
@@ -1262,7 +1268,7 @@ strong {
 }
 
 .h3.lava-lounge {
-  color: #fff;
+  color: #494949;
   text-align: left;
   letter-spacing: 0;
   margin-top: 0;
@@ -1270,7 +1276,7 @@ strong {
   font-family: Heading Pro Trial, sans-serif;
   font-size: 25px;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 25px;
   display: block;
 }
 
@@ -1291,10 +1297,14 @@ strong {
 }
 
 .paragraph.lava-lounge-body {
-  color: #fff;
+  color: #494949;
   text-align: center;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 14px;
+}
+
+.paragraph.lava-lounge-body.no-margin {
+  margin-bottom: 0;
 }
 
 .card-content {
@@ -2927,6 +2937,7 @@ strong {
 .card_side.is-back.vvip-gold {
   transform-style: preserve-3d;
   background-color: #d17b25;
+  transform: rotateX(0)rotateY(180deg)rotateZ(0);
 }
 
 .card_side.is-front {
@@ -2949,7 +2960,7 @@ strong {
 }
 
 .card_side.is-front.vip {
-  background-image: url('../images/VIP-ticket-BG_1.jpg'), linear-gradient(to bottom, #7500ce 14%, var(--brand-light-pink) 87%);
+  background-image: url('../images/VIP-ticket-BG_1.jpg'), linear-gradient(180deg, #7500ce 14%, var(--brand-light-pink) 87%);
   background-position: 50% 0, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: contain, auto;
@@ -3305,10 +3316,15 @@ strong {
 
 .vvip-button {
   width: 200px;
+  margin-bottom: 20px;
 }
 
 .vvip-button.hide {
   display: none;
+}
+
+.vvip-button.margin {
+  margin-top: 20px;
 }
 
 .front-card-info {
@@ -4459,7 +4475,15 @@ strong {
   padding-top: 10px;
 }
 
-.image-19, .image-20, .image-21, .image-22 {
+.image-19 {
+  height: 30px;
+}
+
+.image-19.grey-icon {
+  filter: brightness(23%);
+}
+
+.image-20, .image-21, .image-22 {
   height: 30px;
 }
 
@@ -4824,10 +4848,14 @@ strong {
 .title-wrapper {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  flex-direction: column;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.title-wrapper.hide {
+  display: none;
 }
 
 .icon-side {
@@ -5274,9 +5302,60 @@ strong {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+}
+
+.div-block-32.single-pass {
+  display: block;
+}
+
+.title-logo {
+  height: 5.5em;
+}
+
+.faq-link {
+  color: #ed2582;
+  font-weight: 700;
+}
+
+.grid-6 {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.grey-icon-btn {
+  height: 30px;
+  filter: brightness(23%);
+}
+
+.email-link {
+  color: #494949;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.phone-link {
+  color: #494949;
+  text-decoration: underline;
+}
+
+.socmed-link-box {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.socmed-wrapper {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  display: flex;
 }
 
 @media screen and (min-width: 1920px) {
@@ -6233,7 +6312,11 @@ strong {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    display: grid;
+    display: flex;
+  }
+
+  .socmed-wrapper {
+    flex-flow: column;
   }
 }
 
@@ -6292,6 +6375,7 @@ strong {
   }
 
   .container-3 {
+    height: 230px;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -6541,6 +6625,14 @@ strong {
   .header {
     margin-top: 4em;
   }
+
+  .div-block-32 {
+    flex-flow: column;
+  }
+
+  .title-logo {
+    height: 4em;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -6693,7 +6785,7 @@ strong {
   }
 
   .frame-155.mobile {
-    background-color: #ff0086;
+    background-color: #710cf6;
     margin-top: 0;
     margin-bottom: 4px;
   }
@@ -6750,7 +6842,11 @@ strong {
   }
 
   .column-3.hide {
-    display: none;
+    display: flex;
+  }
+
+  .column-3.no-margin {
+    padding-bottom: 0;
   }
 
   .countdown-title {
@@ -6909,7 +7005,7 @@ strong {
 
   .container-3 {
     width: 90%;
-    height: 100px;
+    height: 140px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -8074,11 +8170,26 @@ strong {
   .div-block-32 {
     grid-template-columns: 1fr;
   }
+
+  .faq-link {
+    color: #ed2582;
+    font-weight: 700;
+  }
 }
 
 #w-node-e8f2bf58-6838-1d08-e319-6f48b96e6aad-79de2dbf {
   align-self: center;
   justify-self: end;
+}
+
+#w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142161-79de2dbf {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: auto;
+  justify-self: auto;
+}
+
+#w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142162-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f414215f-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142160-79de2dbf, #w-node-ec8f1618-ee3d-a3fb-96e9-56e0c1ef44f7-79de2dbf, #w-node-ec8f1618-ee3d-a3fb-96e9-56e0c1ef44f8-79de2dbf, #w-node-_8c712fe6-164b-58ff-1043-4d8e7310d1be-79de2dbf, #w-node-_8c712fe6-164b-58ff-1043-4d8e7310d1bf-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142165-79de2dbf, #w-node-_7b4b16ee-1a04-2632-7cb5-0be4f4142166-79de2dbf {
+  grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 #w-node-b8b91059-bdb5-7348-f6f4-75660ae71258-79de2dbf {
