@@ -14,7 +14,7 @@ const initialState = {
   message:'',
   phone:'',
   };
-onst Contact = () => {
+const Contact = () => {
   const [{ firstName, email, lastName, subject,message,otherText,phone }, setState] = useState(initialState);
  let popupOverlayRef = useRef(null);
   let popupContainerRef = useRef(null);
